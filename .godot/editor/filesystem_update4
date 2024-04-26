@@ -11,3 +11,5 @@ res://scenes/ladder/Ladder.gd
 res://scenes/planet/ShateredPlanet.tscn
 res://scenes/ShateredPiece/ShateredPiece.tscn
 res://scenes/ShateredPiece/ShateredPiece.gd
+res://scenes/crystal/crystal.tscn
+res://scenes/crystal/crystal.gd
