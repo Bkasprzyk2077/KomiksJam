@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://b65g61nsh1hb7"]
+
+[ext_resource type="Texture2D" uid="uid://ccut1cb1yk4b8" path="res://assets/moon.png" id="1_60fp8"]
+[ext_resource type="Script" path="res://scenes/planet/Planet.gd" id="1_wnpmx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4fg0l"]
+radius = 129.1
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vgn5s"]
+radius = 196.61
+
+[node name="Planet" type="StaticBody2D"]
+script = ExtResource("1_wnpmx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_60fp8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4fg0l")
+
+[node name="GravityArea" type="Area2D" parent="."]
+gravity_space_override = 3
+gravity_point = true
+gravity_point_center = Vector2(2.08165e-12, 2.08165e-12)
+gravity_direction = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GravityArea"]
+shape = SubResource("CircleShape2D_vgn5s")
+
+[connection signal="body_entered" from="GravityArea" to="." method="_on_gravity_area_body_entered"]
+[connection signal="body_exited" from="GravityArea" to="." method="_on_gravity_area_body_exited"]

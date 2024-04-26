@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://g3i700whpyd1"]
+
+[ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
+[ext_resource type="PackedScene" uid="uid://b7ylnl3t7oefk" path="res://scenes/player/player.tscn" id="2_epjfe"]
+[ext_resource type="PackedScene" uid="uid://blelnyh6fur1e" path="res://scenes/box/box.tscn" id="3_4dm35"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="BackGround" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="BackGround"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0745098, 0, 0.341176, 1)
+
+[node name="Planet" parent="." instance=ExtResource("1_xfal0")]
+position = Vector2(600, 415)
+scale = Vector2(1.95, 1.95)
+
+[node name="Planet2" parent="." instance=ExtResource("1_xfal0")]
+position = Vector2(1355, 500)
+scale = Vector2(1.95, 1.95)
+
+[node name="Player" parent="." instance=ExtResource("2_epjfe")]
+position = Vector2(441, 58)
+
+[node name="Box" parent="." instance=ExtResource("3_4dm35")]
+position = Vector2(733, 58)
