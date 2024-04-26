@@ -20,8 +20,10 @@ func _physics_process(delta):
 			
 
 	if Input.is_action_just_pressed("up"):
-		print("TEST")
-		if $FloorDetect.overlaps_body(current_moon):
+		print($FloorDetect.get_overlapping_bodies())
+		if $FloorDetect.has_overlapping_bodies():
+			#if self in $FloorDetect.get_overlapping_bodies():
+				#return
 			apply_impulse(-moon_direction * jump_force)
 	
 	
