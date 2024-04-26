@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 @onready var sprite_2d = $AnimatedSprite2D
-@export var jump_power = 300
+@export var jump_force = 500
 
 var current_moon
 var moon_direction
@@ -22,7 +22,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("up"):
 		print("TEST")
 		if $FloorDetect.overlaps_body(current_moon):
-			apply_impulse(-moon_direction * jump_power)
+			apply_impulse(-moon_direction * jump_force)
 	
 	
 func animate():

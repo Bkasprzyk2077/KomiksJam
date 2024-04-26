@@ -1,11 +1,12 @@
+AnimatableBody2D
+Area2D
+Node2D
 Sprite2D
 CollisionShape2D
+StaticBody2D
 Camera2D
-Area2D
 AnimatedSprite2D
 RigidBody2D
 CanvasLayer
 ColorRect
-Node2D
 Node
-StaticBody2D

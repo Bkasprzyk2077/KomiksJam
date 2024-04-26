@@ -1,19 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://b65g61nsh1hb7"]
+[gd_scene load_steps=6 format=3 uid="uid://m0pul1vrrkn1"]
 
-[ext_resource type="Texture2D" uid="uid://ccut1cb1yk4b8" path="res://assets/moon.png" id="1_60fp8"]
-[ext_resource type="Script" path="res://scenes/planet/Planet.gd" id="1_wnpmx"]
+[ext_resource type="Script" path="res://scenes/planet/Planet.gd" id="1_rf00i"]
+[ext_resource type="Texture2D" uid="uid://ccut1cb1yk4b8" path="res://assets/moon.png" id="2_uldrs"]
+[ext_resource type="PackedScene" uid="uid://bajl8c1vdrurl" path="res://scenes/ShateredPiece/ShateredPiece.tscn" id="3_2exkw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4fg0l"]
 radius = 129.1
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgn5s"]
-radius = 490.86
+radius = 196.61
 
 [node name="Planet" type="StaticBody2D"]
-script = ExtResource("1_wnpmx")
+script = ExtResource("1_rf00i")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_60fp8")
+texture = ExtResource("2_uldrs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_4fg0l")
@@ -25,7 +26,11 @@ gravity_point_center = Vector2(2.08165e-12, 2.08165e-12)
 gravity_direction = Vector2(2.08165e-12, 2.08165e-12)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GravityArea"]
+scale = Vector2(2.25, 2.25)
 shape = SubResource("CircleShape2D_vgn5s")
+
+[node name="ShateredPiece" parent="." instance=ExtResource("3_2exkw")]
+position = Vector2(-5, -256)
 
 [connection signal="body_entered" from="GravityArea" to="." method="_on_gravity_area_body_entered"]
 [connection signal="body_exited" from="GravityArea" to="." method="_on_gravity_area_body_exited"]
