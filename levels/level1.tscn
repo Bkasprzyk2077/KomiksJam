@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=8 format=3 uid="uid://g3i700whpyd1"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://blelnyh6fur1e" path="res://scenes/box/box.tscn" id="3_4dm35"]
 [ext_resource type="PackedScene" uid="uid://cvdowe4v0qw83" path="res://scenes/crystal/crystal.tscn" id="4_gqu7u"]
 [ext_resource type="PackedScene" uid="uid://oruit62yrf76" path="res://scenes/ladder/Ladder.tscn" id="4_srd2r"]
+[ext_resource type="PackedScene" uid="uid://3fdfi4qqyp74" path="res://scenes/spaceship/SpaceShip.tscn" id="7_opdnm"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_fw2l1")
@@ -31,15 +32,17 @@ scale = Vector2(3.29, 3.29)
 
 [node name="Player" parent="." instance=ExtResource("2_epjfe")]
 position = Vector2(1129, 646)
-jump_force = 850
 
 [node name="Box" parent="." instance=ExtResource("3_4dm35")]
-position = Vector2(218, 766)
+position = Vector2(417, -71)
 
 [node name="Crystal" parent="." instance=ExtResource("4_gqu7u")]
-position = Vector2(220, 38)
+position = Vector2(129, 214)
 
 [node name="Ladder" parent="." instance=ExtResource("4_srd2r")]
 position = Vector2(2337, 506)
 rotation = 1.61334
 scale = Vector2(1.43458, 8.84104)
+
+[node name="SpaceShip" parent="." instance=ExtResource("7_opdnm")]
+position = Vector2(964, -763)

@@ -2,13 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="1_okilm"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci4wa"]
-size = Vector2(128, 128)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6b6a0"]
+size = Vector2(125, 125)
 
-[node name="Box" type="RigidBody2D"]
+[node name="Box" type="RigidBody2D" groups=["box"]]
+mass = 0.25
+gravity_scale = 0.25
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_okilm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_ci4wa")
+shape = SubResource("RectangleShape2D_6b6a0")
