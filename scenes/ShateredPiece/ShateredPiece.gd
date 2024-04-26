@@ -2,7 +2,7 @@ extends AnimatableBody2D
 
 @export var radius = 500
 @export var speed: float = .5
-var d = 0
+@export var d: float = 0
 
 func _physics_process(delta):
 	d += delta

@@ -1,12 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=7 format=3 uid="uid://g3i700whpyd1"]
 
+[ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
 [ext_resource type="PackedScene" uid="uid://b7ylnl3t7oefk" path="res://scenes/player/player.tscn" id="2_epjfe"]
 [ext_resource type="PackedScene" uid="uid://blelnyh6fur1e" path="res://scenes/box/box.tscn" id="3_4dm35"]
+[ext_resource type="PackedScene" uid="uid://cvdowe4v0qw83" path="res://scenes/crystal/crystal.tscn" id="4_gqu7u"]
 [ext_resource type="PackedScene" uid="uid://oruit62yrf76" path="res://scenes/ladder/Ladder.tscn" id="4_srd2r"]
-[ext_resource type="PackedScene" uid="uid://m0pul1vrrkn1" path="res://scenes/planet/ShateredPlanet.tscn" id="5_7o2f8"]
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_fw2l1")
 
 [node name="BackGround" type="CanvasLayer" parent="."]
 layer = -1
@@ -21,26 +23,23 @@ color = Color(0.0745098, 0, 0.341176, 1)
 
 [node name="Planet" parent="." instance=ExtResource("1_xfal0")]
 position = Vector2(600, 415)
-scale = Vector2(1.95, 1.95)
+scale = Vector2(3.29, 3.29)
+
+[node name="Planet2" parent="." instance=ExtResource("1_xfal0")]
+position = Vector2(4099, 600)
+scale = Vector2(3.29, 3.29)
 
 [node name="Player" parent="." instance=ExtResource("2_epjfe")]
-position = Vector2(-922, 541)
+position = Vector2(1129, 646)
+jump_force = 850
 
 [node name="Box" parent="." instance=ExtResource("3_4dm35")]
-position = Vector2(733, 58)
+position = Vector2(218, 766)
+
+[node name="Crystal" parent="." instance=ExtResource("4_gqu7u")]
+position = Vector2(220, 38)
 
 [node name="Ladder" parent="." instance=ExtResource("4_srd2r")]
-position = Vector2(1266, 604)
-rotation = 1.83142
-scale = Vector2(2.96, 2.96)
-
-[node name="Planet2" parent="." instance=ExtResource("5_7o2f8")]
-position = Vector2(-1176, 717)
-
-[node name="GravityArea" parent="Planet2" index="2"]
-scale = Vector2(2.3, 2.3)
-
-[node name="ShateredPiece" parent="Planet2" index="3"]
-radius = 600
-
-[editable path="Planet2"]
+position = Vector2(2337, 506)
+rotation = 1.61334
+scale = Vector2(1.43458, 8.84104)
