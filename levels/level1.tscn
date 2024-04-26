@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=7 format=3 uid="uid://g3i700whpyd1"]
 
+[ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
 [ext_resource type="PackedScene" uid="uid://b7ylnl3t7oefk" path="res://scenes/player/player.tscn" id="2_epjfe"]
 [ext_resource type="PackedScene" uid="uid://blelnyh6fur1e" path="res://scenes/box/box.tscn" id="3_4dm35"]
+[ext_resource type="PackedScene" uid="uid://cvdowe4v0qw83" path="res://scenes/crystal/crystal.tscn" id="4_gqu7u"]
+[ext_resource type="PackedScene" uid="uid://bajl8c1vdrurl" path="res://scenes/ShateredPiece/ShateredPiece.tscn" id="6_xk28d"]
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_fw2l1")
 
 [node name="BackGround" type="CanvasLayer" parent="."]
 layer = -1
@@ -21,8 +25,27 @@ color = Color(0.0745098, 0, 0.341176, 1)
 position = Vector2(600, 415)
 scale = Vector2(1.95, 1.95)
 
+[node name="ShateredPiece" parent="Planet" instance=ExtResource("6_xk28d")]
+scale = Vector2(0.5, 0.5)
+radius = 250
+
 [node name="Player" parent="." instance=ExtResource("2_epjfe")]
-position = Vector2(329, 180)
+position = Vector2(1008, 491)
 
 [node name="Box" parent="." instance=ExtResource("3_4dm35")]
-position = Vector2(733, 58)
+position = Vector2(339, 726)
+
+[node name="Crystal" parent="." instance=ExtResource("4_gqu7u")]
+position = Vector2(287, 474)
+
+[node name="Crystal2" parent="." instance=ExtResource("4_gqu7u")]
+position = Vector2(308, 240)
+
+[node name="Crystal3" parent="." instance=ExtResource("4_gqu7u")]
+position = Vector2(501, 102)
+
+[node name="Crystal4" parent="." instance=ExtResource("4_gqu7u")]
+position = Vector2(718, 114)
+
+[node name="Crystal5" parent="." instance=ExtResource("4_gqu7u")]
+position = Vector2(883, 243)

@@ -13,3 +13,5 @@ res://scenes/ShateredPiece/ShateredPiece.tscn
 res://scenes/ShateredPiece/ShateredPiece.gd
 res://scenes/crystal/crystal.tscn
 res://scenes/crystal/crystal.gd
+res://levels/level1.gd
+res://global/GameEvents.gd

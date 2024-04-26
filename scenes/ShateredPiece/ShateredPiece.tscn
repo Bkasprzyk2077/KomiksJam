@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="1_pnlfi"]
 [ext_resource type="Script" path="res://scenes/ShateredPiece/ShateredPiece.gd" id="1_qho0g"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3i16"]
-size = Vector2(300, 53.09)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wxopj"]
+size = Vector2(295.17, 235.68)
 
 [node name="ShateredPiece" type="AnimatableBody2D"]
 sync_to_physics = false
@@ -15,4 +15,6 @@ scale = Vector2(2.33594, 0.421875)
 texture = ExtResource("1_pnlfi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_l3i16")
+position = Vector2(-0.500004, 0)
+scale = Vector2(1, 0.23)
+shape = SubResource("RectangleShape2D_wxopj")
