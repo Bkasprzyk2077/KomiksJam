@@ -1,7 +1,7 @@
-extends MarginContainer
+extends Control
 
-@onready var label = $HBoxContainer/MarginContainer/Label
-@onready var texture_rect = $HBoxContainer/MarginContainer2/Avatar
+@onready var label = $NinePatchRect/MarginContainer/Label
+@onready var texture_rect = $NinePatchRect/MarginContainer2/Avatar
 @onready var letter_display_timer = $LetterDisplayTimer
 @onready var animation_player = $AnimationPlayer
 
