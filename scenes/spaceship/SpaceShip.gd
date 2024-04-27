@@ -12,3 +12,4 @@ func _on_box_catcher_body_entered(body):
 
 func all_boxes_kicked():
 	print("ALL boxes colected")
+	DialogManager.start_dialog("res://dialogs/dialog1.txt")
