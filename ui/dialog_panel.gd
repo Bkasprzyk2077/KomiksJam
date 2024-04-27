@@ -31,7 +31,6 @@ func set_up_text(text_file: String):
 	while not file.eof_reached():
 		dialog_lines.append(file.get_line())
 	dialog_lines.pop_back()
-	print(dialog_lines)
 	label.text = ""
 	display_line()
 	

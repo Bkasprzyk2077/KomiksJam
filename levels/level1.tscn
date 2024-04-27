@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=14 format=3 uid="uid://g3i700whpyd1"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
@@ -11,10 +11,11 @@
 [ext_resource type="PackedScene" uid="uid://cj8uup5kdv1fk" path="res://scenes/box/BoxSpawner.tscn" id="9_im8uj"]
 [ext_resource type="PackedScene" uid="uid://dl2w38cym5jdp" path="res://scenes/enemy/enemy.tscn" id="10_4mb5y"]
 [ext_resource type="PackedScene" uid="uid://kym2ito8cchp" path="res://scenes/crystal/hidden_crystal.tscn" id="10_vjrt2"]
+[ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="12_tfrbu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
 shader = ExtResource("2_ccg2i")
-shader_parameter/effect_amount = 1.407
+shader_parameter/effect_amount = 1.05
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_fw2l1")
@@ -52,7 +53,7 @@ position = Vector2(4099, 600)
 scale = Vector2(3.29, 3.29)
 
 [node name="Player" parent="." instance=ExtResource("2_epjfe")]
-position = Vector2(-111, 539)
+position = Vector2(4275, 14)
 
 [node name="Ladder" parent="." instance=ExtResource("4_srd2r")]
 position = Vector2(2337, 506)
@@ -64,6 +65,10 @@ position = Vector2(964, -763)
 
 [node name="DialogArea" parent="." instance=ExtResource("8_pdfx4")]
 position = Vector2(290, 780)
+dialog_text_file = "res://dialogs/dialog1.txt"
+
+[node name="DialogArea2" parent="." instance=ExtResource("8_pdfx4")]
+position = Vector2(555, 919)
 dialog_text_file = "res://dialogs/dialog1.txt"
 
 [node name="BoxSpawner" parent="." instance=ExtResource("9_im8uj")]
@@ -85,3 +90,17 @@ position = Vector2(3699, 285)
 
 [node name="HiddenCrystal2" parent="Crystals" instance=ExtResource("10_vjrt2")]
 position = Vector2(4534, 942)
+
+[node name="SpawnSpaceShip" parent="." instance=ExtResource("12_tfrbu")]
+position = Vector2(3174, -285)
+
+[node name="Marker2D" parent="SpawnSpaceShip/Points" index="0"]
+position = Vector2(765, 63)
+
+[node name="Marker2D2" type="Marker2D" parent="SpawnSpaceShip/Points" index="1"]
+position = Vector2(1657, 448)
+
+[node name="Marker2D3" type="Marker2D" parent="SpawnSpaceShip/Points" index="2"]
+position = Vector2(1834, 1464)
+
+[editable path="SpawnSpaceShip"]

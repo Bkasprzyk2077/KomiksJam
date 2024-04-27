@@ -7,3 +7,10 @@ res://scenes/player/player.tscn
 res://ui/main_menu/MainMenu.tscn
 res://global/SceneTransition.tscn
 res://global/SceneTransition.gd
+res://scenes/dialog_area/DialogArea.gd
+res://scenes/dialog_area/DialogArea.tscn
+res://ui/dialog_panel.gd
+res://scenes/planet/Planet.tscn
+res://scenes/player/player.gd
+res://scenes/spaceship/SpawnSpaceShip.tscn
+res://scenes/spaceship/SpawnSpaceShip.gd
