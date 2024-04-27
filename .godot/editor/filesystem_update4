@@ -14,3 +14,11 @@ res://global/SceneTransition.gd
 res://levels/level1.gd
 res://scenes/enemy/enemy.tscn
 res://levels/level0.tscn
+res://scenes/planet/Planet_A.tscn
+res://scenes/spaceship/SpawnSpaceShip.tscn
+res://scenes/planet/Planet_C.tscn
+res://scenes/spaceship/SpawnSpaceShip.gd
+res://scenes/spaceship/EscapeSpaceShip.tscn
+res://scenes/enemy/enemy.gd
+res://scenes/crystal/crystal.tscn
+res://scenes/spaceship/EscapeSpaceShip.gd

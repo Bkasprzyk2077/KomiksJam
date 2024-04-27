@@ -23,6 +23,7 @@ func _physics_process(delta):
 func death():
 	#var player = get_tree().get_first_node_in_group("player")
 	#player.apply_impulse(-moon_direction * 1000)
+	GameEvents.emit_enemy_killed()
 	queue_free()
 
 

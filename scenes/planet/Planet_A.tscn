@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://coiihl2p3mc6t"]
+
+[ext_resource type="Script" path="res://scenes/planet/Planet.gd" id="1_rml37"]
+[ext_resource type="Texture2D" uid="uid://e035rec0km1r" path="res://assets/planet_A/planeta_a_2_warstwa.png" id="2_is6vw"]
+[ext_resource type="Texture2D" uid="uid://dpduv8aebw8yh" path="res://assets/planet_A/planeta_a.png" id="3_cuwoj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4fg0l"]
+radius = 253.86
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vgn5s"]
+radius = 587.87
+
+[node name="Planet" type="StaticBody2D"]
+script = ExtResource("1_rml37")
+
+[node name="Back" type="Sprite2D" parent="."]
+scale = Vector2(0.480238, 0.480238)
+texture = ExtResource("3_cuwoj")
+
+[node name="Front" type="Sprite2D" parent="."]
+scale = Vector2(0.480238, 0.480238)
+texture = ExtResource("2_is6vw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4fg0l")
+
+[node name="GravityArea" type="Area2D" parent="."]
+gravity_space_override = 3
+gravity_point = true
+gravity_point_center = Vector2(2.08165e-12, 2.08165e-12)
+gravity_direction = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GravityArea"]
+shape = SubResource("CircleShape2D_vgn5s")
+
+[connection signal="body_entered" from="GravityArea" to="." method="_on_gravity_area_body_entered"]
+[connection signal="body_exited" from="GravityArea" to="." method="_on_gravity_area_body_exited"]
