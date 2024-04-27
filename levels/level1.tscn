@@ -73,7 +73,9 @@ position = Vector2(290, 780)
 position = Vector2(4085, 1110)
 
 [node name="BoxSpawner" parent="." instance=ExtResource("9_im8uj")]
-position = Vector2(1058, 97)
+position = Vector2(946, 78)
+rotation = 0.790494
+scale = Vector2(0.559644, 0.559644)
 
 [node name="Enemy" parent="." instance=ExtResource("10_4mb5y")]
 position = Vector2(913, 881)

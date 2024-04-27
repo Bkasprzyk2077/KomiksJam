@@ -1,21 +1,63 @@
-[gd_scene load_steps=4 format=3 uid="uid://3fdfi4qqyp74"]
+[gd_scene load_steps=12 format=3 uid="uid://3fdfi4qqyp74"]
 
 [ext_resource type="Script" path="res://scenes/spaceship/SpaceShip.gd" id="1_iwsfl"]
-[ext_resource type="Texture2D" uid="uid://b3oxxnraa50bh" path="res://assets/Illustration3.png" id="2_d2l1d"]
+[ext_resource type="Texture2D" uid="uid://d3ie10d2wk27h" path="res://assets/ship/1.png" id="2_vejuv"]
+[ext_resource type="Texture2D" uid="uid://5s0d4rq40pnn" path="res://assets/ship/2.png" id="3_ubdny"]
+[ext_resource type="Texture2D" uid="uid://doj21f0sgrggk" path="res://assets/ship/3.png" id="4_r6mlt"]
+[ext_resource type="Texture2D" uid="uid://bjlw0vt7p7rl0" path="res://assets/ship/4.png" id="5_e7xp4"]
+[ext_resource type="Texture2D" uid="uid://cydpflft2g3vo" path="res://assets/ship/5.png" id="6_75jt4"]
+[ext_resource type="Texture2D" uid="uid://jwmtlvvcpx3n" path="res://assets/ship/6.png" id="7_kgff1"]
+[ext_resource type="Texture2D" uid="uid://bdtl3tcruxfg8" path="res://assets/ship/7.png" id="8_rm2q1"]
+[ext_resource type="Texture2D" uid="uid://blfmwtbydhwkh" path="res://assets/ship/8.png" id="9_ns0dq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_judlp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vejuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ubdny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_r6mlt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_e7xp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_75jt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kgff1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rm2q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ns0dq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xxjmc"]
-size = Vector2(375, 375)
+size = Vector2(1326, 468.5)
 
 [node name="SpaceShip" type="Node2D"]
 script = ExtResource("1_iwsfl")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3, 3)
-texture = ExtResource("2_d2l1d")
+sprite_frames = SubResource("SpriteFrames_judlp")
+autoplay = "default"
+frame_progress = 0.692206
 
 [node name="BoxCatcher" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BoxCatcher"]
+position = Vector2(-63, 46.75)
 shape = SubResource("RectangleShape2D_xxjmc")
 
 [connection signal="body_entered" from="BoxCatcher" to="." method="_on_box_catcher_body_entered"]

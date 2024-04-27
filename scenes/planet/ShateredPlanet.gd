@@ -2,9 +2,6 @@ extends StaticBody2D
 
 var i = 0
 
-func _ready():
-	get_tree().get_first_node_in_group("player").jump_force += 300
-
 func _physics_process(delta):
 	$Sprite2.rotation += delta/8
 	$Sprite3.rotation += delta/10

@@ -14,6 +14,7 @@ func _ready():
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
+	#print(jump_force)
 	zoom()
 	animate()
 	switch_camera()

@@ -24,3 +24,13 @@ res://scenes/dialog_area/LoreArea.tscn
 res://scenes/dialog_area/DialogArea.gd
 res://scenes/dialog_area/DialogArea.tscn
 res://scenes/dialog_area/LoreArea.gd
+res://scenes/box/BoxSpawner.tscn
+res://levels/level1.gd
+res://scenes/spaceship/SpaceShip.tscn
+res://levels/level2.tscn
+res://scenes/planet/ShateredPlanet.tscn
+res://scenes/planet/ShateredPlanet.gd
+res://levels/level2.gd
+res://ui/main_menu/MainMenu.gd
+res://scenes/harvester/Harvester.tscn
+res://scenes/harvester/Harvester.gd

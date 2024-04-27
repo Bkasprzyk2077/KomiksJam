@@ -24,13 +24,13 @@ func on_crystal_gather():
 	crystal_count_current += 1
 	if crystal_count_current >= crystal_count_to_dig:
 		all_crystals_conected()
-	print(str(crystal_count_current) + " / " + str(crystal_count_to_dig))
+	#print(str(crystal_count_current) + " / " + str(crystal_count_to_dig))
 	
 func on_enemy_killed():
 	enemy_count_current += 1
 	if enemy_count_current >= enemy_count_to_kill:
 		all_enemies_killed()
-	print(str(enemy_count_current) + " / " + str(enemy_count_to_kill))
+	#print(str(enemy_count_current) + " / " + str(enemy_count_to_kill))
 
 func all_crystals_conected():
 	current_task_count += 1
