@@ -112,3 +112,5 @@ curve = SubResource("Curve2D_sww78")
 [node name="SpawnSpaceShip" parent="Path2D" instance=ExtResource("12_tfrbu")]
 position = Vector2(3244, 373)
 rotation = -0.244018
+
+[editable path="Planet2"]

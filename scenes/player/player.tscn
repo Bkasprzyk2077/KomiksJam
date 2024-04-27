@@ -49,6 +49,9 @@ contact_monitor = true
 script = ExtResource("1_mfcxx")
 jump_force = 600
 
+[node name="DeathTimer" type="Timer" parent="."]
+wait_time = 3.0
+
 [node name="CrystalDetectorCanvas" type="CanvasLayer" parent="."]
 layer = 2
 
@@ -100,4 +103,5 @@ position = Vector2(2, -250)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 
+[connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
 [connection signal="body_entered" from="BoxKickArea" to="." method="_on_box_kick_area_body_entered"]

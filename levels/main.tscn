@@ -36,4 +36,4 @@ grow_vertical = 2
 [node name="Planet" parent="." instance=ExtResource("2_w4xbu")]
 
 [node name="Player" parent="." instance=ExtResource("3_1o8g7")]
-position = Vector2(-198, -1164)
+position = Vector2(1540, -213)

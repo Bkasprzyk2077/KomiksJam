@@ -1,3 +1,6 @@
+Timer
+CollisionShape2D
+Area2D
 AnimationPlayer
 Camera2D
 Path2D
@@ -9,6 +12,3 @@ CanvasLayer
 Button
 TextureButton
 Label
-VBoxContainer
-ProgressBar
-CollisionShape2D

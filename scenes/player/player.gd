@@ -9,6 +9,9 @@ extends RigidBody2D
 var current_moon
 var moon_direction
 
+func _ready():
+	GameEvents.connect("player_death", death)
+
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
 	zoom()
@@ -99,3 +102,11 @@ func zoom():
 func _on_box_kick_area_body_entered(body):
 	if body.is_in_group("box"):
 		body.apply_impulse(global_position.direction_to($BoxKickArea/KickDirection.global_position)*100)
+
+
+func death():
+	SceneTransition.reload_scene()
+	
+
+func _on_death_timer_timeout():
+	death()
