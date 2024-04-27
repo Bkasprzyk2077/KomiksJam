@@ -1,0 +1,130 @@
+[gd_scene load_steps=12 format=3 uid="uid://cyuucb651mmwe"]
+
+[ext_resource type="Script" path="res://levels/level1.gd" id="1_oj6bn"]
+[ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_y2oi7"]
+[ext_resource type="PackedScene" uid="uid://coiihl2p3mc6t" path="res://scenes/planet/Planet_A.tscn" id="4_f8e8t"]
+[ext_resource type="PackedScene" uid="uid://cm7vqlildigai" path="res://scenes/spaceship/EscapeSpaceShip.tscn" id="4_uf6j1"]
+[ext_resource type="PackedScene" uid="uid://blelnyh6fur1e" path="res://scenes/box/box.tscn" id="6_eg223"]
+[ext_resource type="PackedScene" uid="uid://dl2w38cym5jdp" path="res://scenes/enemy/enemy.tscn" id="8_4eu5p"]
+[ext_resource type="PackedScene" uid="uid://cvdowe4v0qw83" path="res://scenes/crystal/crystal.tscn" id="10_gxjfp"]
+[ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="11_2v7bo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
+shader = ExtResource("2_y2oi7")
+shader_parameter/effect_amount = 1.05
+
+[sub_resource type="Curve2D" id="Curve2D_wfxu5"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 643, 258, -379.072, 8.98984, 379.072, -8.98984, 1260, 396, -127.356, 23.9729, 127.356, -23.9729, 1749, 237, -221.749, 49.4441, 221.749, -49.4441, 2273, 249, -238.231, 151.329, 238.231, -151.329, 2689, 90, 0, 0, 0, 0, 3670, 323)
+}
+point_count = 6
+
+[sub_resource type="Curve2D" id="Curve2D_kmaac"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 5751, 1121, 92.1733, 104.887, -92.1733, -104.887, 5348, 772, -38.1407, 100.649, 38.1407, -100.649, 5291, 415, 0, 0, 0, 0, 5469, -102)
+}
+point_count = 4
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_oj6bn")
+
+[node name="BackGround" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="BackGround"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0745098, 0, 0.341176, 1)
+
+[node name="DialogCanvas" type="CanvasLayer" parent="." groups=["dialog_canvas"]]
+layer = 2
+
+[node name="FishEye" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="FishEye"]
+material = SubResource("ShaderMaterial_nrclr")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(-2197, 400)
+curve = SubResource("Curve2D_wfxu5")
+
+[node name="SpawnSpaceShip" parent="Path2D" instance=ExtResource("11_2v7bo")]
+position = Vector2(643, 258)
+rotation = 0.220041
+
+[node name="Path2D2" type="Path2D" parent="."]
+curve = SubResource("Curve2D_kmaac")
+
+[node name="ExitSpaceShip" parent="Path2D2" instance=ExtResource("4_uf6j1")]
+position = Vector2(5751, 1121)
+rotation = -2.42788
+next_level = "res://levels/level1.tscn"
+
+[node name="Planet" parent="." instance=ExtResource("4_f8e8t")]
+position = Vector2(-52, 109)
+metadata/_edit_group_ = true
+
+[node name="Planet5" parent="." instance=ExtResource("4_f8e8t")]
+position = Vector2(760, -1258)
+metadata/_edit_group_ = true
+
+[node name="Planet6" parent="." instance=ExtResource("4_f8e8t")]
+position = Vector2(1379, 400)
+metadata/_edit_group_ = true
+
+[node name="Planet7" parent="." instance=ExtResource("4_f8e8t")]
+position = Vector2(2657, 57)
+scale = Vector2(1.6, 1.6)
+metadata/_edit_group_ = true
+
+[node name="GravityArea" parent="Planet7" index="3"]
+scale = Vector2(0.79, 0.79)
+
+[node name="Planet8" parent="." instance=ExtResource("4_f8e8t")]
+position = Vector2(4688, 428)
+scale = Vector2(1.6, 1.6)
+metadata/_edit_group_ = true
+
+[node name="GravityArea" parent="Planet8" index="3"]
+scale = Vector2(0.79, 0.79)
+
+[node name="Planet2" parent="." instance=ExtResource("4_f8e8t")]
+position = Vector2(-47.0001, -816)
+rotation = -1.1392
+scale = Vector2(0.58, 0.58)
+
+[node name="Planet3" parent="." instance=ExtResource("4_f8e8t")]
+position = Vector2(1293, -514)
+rotation = -1.1392
+scale = Vector2(0.58, 0.58)
+
+[node name="Planet4" parent="." instance=ExtResource("4_f8e8t")]
+position = Vector2(3619, 517)
+rotation = -1.1392
+scale = Vector2(0.58, 0.58)
+
+[node name="Crystal" parent="." instance=ExtResource("10_gxjfp")]
+position = Vector2(2651, -443)
+
+[node name="Box" parent="." instance=ExtResource("6_eg223")]
+position = Vector2(2479, 537)
+
+[node name="Box2" parent="." instance=ExtResource("6_eg223")]
+position = Vector2(2631, 568)
+
+[node name="Enemy" parent="." instance=ExtResource("8_4eu5p")]
+position = Vector2(4705, -81)
+
+[editable path="Planet"]
+[editable path="Planet5"]
+[editable path="Planet6"]
+[editable path="Planet7"]
+[editable path="Planet8"]

@@ -10,6 +10,21 @@
 [ext_resource type="PackedScene" uid="uid://cgodkks1j31ku" path="res://scenes/ShateredPiece/ShateredPieceSmall.tscn" id="8_0yv40"]
 [ext_resource type="PackedScene" uid="uid://domygxbtkv475" path="res://scenes/ShateredPiece/ShateredPieceMid.tscn" id="8_mv4do"]
 
+[sub_resource type="Animation" id="Animation_gdbp8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite4:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_upbmk"]
 resource_name = "bg_scale"
 length = 10.0
@@ -28,32 +43,17 @@ tracks/0/keys = {
 "values": [Vector2(0.6, 0.6), Vector2(1, 1), Vector2(0.6, 0.6)]
 }
 
-[sub_resource type="Animation" id="Animation_gdbp8"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite4:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tdbxy"]
 _data = {
 "RESET": SubResource("Animation_gdbp8"),
 "bg_scale": SubResource("Animation_upbmk")
 }
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_4fg0l"]
-radius = 235.55
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgn5s"]
 radius = 814.69
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kt1kw"]
+radius = 74.67
 
 [node name="ShateredPlanet" type="StaticBody2D"]
 script = ExtResource("1_763s4")
@@ -84,9 +84,6 @@ texture = ExtResource("4_dbbg4")
 texture = ExtResource("2_i3wfi")
 offset = Vector2(-27.99, 2.08165e-12)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_4fg0l")
-
 [node name="GravityArea" type="Area2D" parent="."]
 gravity_space_override = 3
 gravity_point = true
@@ -97,6 +94,11 @@ gravity_direction = Vector2(2.08165e-12, 2.08165e-12)
 visible = false
 scale = Vector2(2.25, 2.25)
 shape = SubResource("CircleShape2D_vgn5s")
+
+[node name="DeathArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea"]
+shape = SubResource("CircleShape2D_kt1kw")
 
 [node name="ShateredPieceBig" parent="." instance=ExtResource("7_guq1x")]
 position = Vector2(-5, -427)
@@ -123,3 +125,4 @@ speed = -0.6
 
 [connection signal="body_entered" from="GravityArea" to="." method="_on_gravity_area_body_entered"]
 [connection signal="body_exited" from="GravityArea" to="." method="_on_gravity_area_body_exited"]
+[connection signal="body_entered" from="DeathArea" to="." method="_on_death_area_body_entered"]

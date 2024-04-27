@@ -23,7 +23,7 @@ size = Vector2(54.18, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pe4ba"]
 size = Vector2(35.145, 64.66)
 
-[node name="Enemy" type="RigidBody2D"]
+[node name="Enemy" type="RigidBody2D" groups=["enemy"]]
 script = ExtResource("1_g47vr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

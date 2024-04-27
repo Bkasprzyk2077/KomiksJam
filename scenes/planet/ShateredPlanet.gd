@@ -19,3 +19,8 @@ func _on_gravity_area_body_exited(body):
 	if "current_moon" in body:
 		if body.current_moon == self:
 			body.current_moon = null
+
+
+func _on_death_area_body_entered(body):
+	if body.has_method("death"):
+		body.death()
