@@ -51,10 +51,10 @@ func animate():
 		sprite_2d.play("run")
 		
 	if Input.is_action_just_pressed("left"):
-		sprite_2d.flip_h = true
+		sprite_2d.flip_h = false
 		$BoxKickArea.position.x = -138
 	elif Input.is_action_just_pressed("right"):
-		sprite_2d.flip_h = false
+		sprite_2d.flip_h = true
 		$BoxKickArea.position.x = 138
 
 func detect_crystal():
