@@ -16,3 +16,11 @@ res://scenes/planet/Planet.gd
 res://scenes/ShateredPiece/ShateredPiece.tscn
 res://ui/dialog_panel.gd
 res://ui/dialog_panel.tscn
+res://ui/main_menu/MainMenu.tscn
+res://global/DialogManager.gd
+res://levels/main.tscn
+res://scenes/ShateredPiece/ShateredPieceSmall.tscn
+res://scenes/ShateredPiece/ShateredPieceBig.tscn
+res://scenes/ShateredPiece/ShateredPieceMid.tscn
+res://levels/level1.gd
+res://scenes/planet/ShateredPlanet.gd

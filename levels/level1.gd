@@ -6,7 +6,7 @@ var crystal_count_current: int = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	GameEvents.connect("crystal_gather", on_crystal_gather)
-
+	
 
 func on_crystal_gather():
 	crystal_count_current += 1

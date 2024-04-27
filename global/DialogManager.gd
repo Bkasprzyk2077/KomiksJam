@@ -3,6 +3,9 @@ extends Node
 @onready var dialog_panel_scene = preload("res://ui/dialog_panel.tscn")
 var dialog_canvas
 
+func _ready():
+	pass
+
 func start_dialog(dialog_text_file):
 	dialog_canvas = get_tree().get_first_node_in_group("dialog_canvas")
 	var dialog_panel_instance = dialog_panel_scene.instantiate()

@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cj8uup5kdv1fk" path="res://scenes/box/BoxSpawner.tscn" id="9_im8uj"]
 [ext_resource type="PackedScene" uid="uid://dl2w38cym5jdp" path="res://scenes/enemy/enemy.tscn" id="10_4mb5y"]
 [ext_resource type="PackedScene" uid="uid://kym2ito8cchp" path="res://scenes/crystal/hidden_crystal.tscn" id="10_vjrt2"]
-[ext_resource type="PackedScene" uid="uid://b7ylnl3t7oefk" path="res://scenes/player/player.tscn" id="11_sad6f"]
+[ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="12_tfrbu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
 shader = ExtResource("2_ccg2i")
@@ -63,7 +63,7 @@ rotation = 1.61334
 scale = Vector2(1.43458, 8.84104)
 
 [node name="SpaceShip" parent="." instance=ExtResource("7_opdnm")]
-position = Vector2(964, -763)
+position = Vector2(826, -953)
 
 [node name="DialogArea" parent="." instance=ExtResource("8_pdfx4")]
 position = Vector2(290, 780)
@@ -109,5 +109,6 @@ rotation = 1.73512
 position = Vector2(-13, -197)
 curve = SubResource("Curve2D_sww78")
 
-[node name="Player" parent="." instance=ExtResource("11_sad6f")]
-position = Vector2(3848, -417)
+[node name="SpawnSpaceShip" parent="Path2D" instance=ExtResource("12_tfrbu")]
+position = Vector2(3244, 373)
+rotation = -0.244018

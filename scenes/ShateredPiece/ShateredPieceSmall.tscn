@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgodkks1j31ku"]
+
+[ext_resource type="Script" path="res://scenes/ShateredPiece/ShateredPiece.gd" id="1_co0iw"]
+[ext_resource type="Texture2D" uid="uid://h7jl22ilotcd" path="res://assets/planet_B/pB6_small_platform.png" id="2_oxbtw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wxopj"]
+size = Vector2(249.43, 235.68)
+
+[node name="ShateredPieceSmall" type="AnimatableBody2D"]
+position = Vector2(451.229, 215.388)
+sync_to_physics = false
+script = ExtResource("1_co0iw")
+d = 39.95
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_oxbtw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.500004, 0)
+scale = Vector2(1, 0.23)
+shape = SubResource("RectangleShape2D_wxopj")
