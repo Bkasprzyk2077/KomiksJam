@@ -27,6 +27,10 @@ SceneTransition="*res://global/SceneTransition.tscn"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 
+[gui]
+
+theme/custom_font="res://ui/ClashDisplay-Variable.ttf"
+
 [input]
 
 up={

@@ -15,9 +15,9 @@ func _ready():
 	GameEvents.connect("enemy_killed", on_enemy_killed)
 
 func _process(delta):
-	print(str(current_task_count) + " tasks per " + str(task_count))
+	#print(str(current_task_count) + " tasks per " + str(task_count))
 	if current_task_count >= task_count:
-		print("test")
+		#print("test")
 		GameEvents.emit_call_escape_ship()
 
 func on_crystal_gather():

@@ -69,7 +69,13 @@ func detect_crystal():
 		progress_bar.value = 1000 - distance
 	else:
 		$CrystalDetectorCanvas/VBoxContainer.visible = false
-		
+
+func check_platforms():
+	var platforms = get_tree().get_nodes_in_group("platform")
+	for platform in platforms:
+		if $FloorDetect.overlaps_body(platform):
+			return true
+	return false
 
 func find_closest_or_furthest(node: Object, group_name: String, get_closest:= true) -> Object:
 	var target_group = get_tree().get_nodes_in_group(group_name)

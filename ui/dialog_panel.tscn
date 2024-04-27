@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://cxceb1cu70igf"]
 
-[ext_resource type="Texture2D" uid="uid://dlndnhukoqc2a" path="res://assets/dialog_panel.png" id="1_e648d"]
 [ext_resource type="Script" path="res://ui/dialog_panel.gd" id="1_svuhd"]
-[ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="2_8til7"]
+[ext_resource type="Texture2D" uid="uid://b1n2w1fh0dmbr" path="res://assets/UI/menu_dialog_box.png" id="2_w3g8e"]
+[ext_resource type="Texture2D" uid="uid://dc01xdttp7d6q" path="res://assets/player/avatars/robot awatar 1.png" id="3_6iy17"]
 
 [sub_resource type="Animation" id="Animation_3awa4"]
 length = 0.001
@@ -88,18 +88,19 @@ script = ExtResource("1_svuhd")
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 texture_filter = 1
 layout_mode = 2
-texture = ExtResource("1_e648d")
-region_rect = Rect2(0, 0, 36, 36)
-patch_margin_left = 12
-patch_margin_top = 12
-patch_margin_right = 12
-patch_margin_bottom = 12
+texture = ExtResource("2_w3g8e")
+region_rect = Rect2(0, 0, 1635, 255)
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 8
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
@@ -108,7 +109,8 @@ theme_override_constants/margin_bottom = 8
 [node name="Label" type="Label" parent="HBoxContainer/MarginContainer"]
 custom_minimum_size = Vector2(1000, 2.08165e-12)
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.956863, 0.360784, 0.192157, 1)
+theme_override_font_sizes/font_size = 48
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -122,7 +124,7 @@ theme_override_constants/margin_bottom = 8
 
 [node name="Avatar" type="TextureRect" parent="HBoxContainer/MarginContainer2"]
 layout_mode = 2
-texture = ExtResource("2_8til7")
+texture = ExtResource("3_6iy17")
 expand_mode = 2
 
 [node name="LetterDisplayTimer" type="Timer" parent="."]
@@ -133,9 +135,5 @@ libraries = {
 "": SubResource("AnimationLibrary_ejsng")
 }
 autoplay = "in"
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 2
-size_flags_horizontal = 4
 
 [connection signal="timeout" from="LetterDisplayTimer" to="." method="_on_letter_display_timer_timeout"]

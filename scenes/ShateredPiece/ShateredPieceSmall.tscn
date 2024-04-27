@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wxopj"]
 size = Vector2(249.43, 235.68)
 
-[node name="ShateredPieceSmall" type="AnimatableBody2D"]
+[node name="ShateredPieceSmall" type="AnimatableBody2D" groups=["platform"]]
 position = Vector2(451.229, 215.388)
 sync_to_physics = false
 script = ExtResource("1_co0iw")
