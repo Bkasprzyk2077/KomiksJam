@@ -1,9 +1,9 @@
+AnimationPlayer
 Camera2D
 Path2D
 PathFollow2D
 Marker2D
 Node2D
-AnimationPlayer
 ColorRect
 CanvasLayer
 Button
@@ -12,4 +12,3 @@ Label
 VBoxContainer
 ProgressBar
 CollisionShape2D
-Area2D

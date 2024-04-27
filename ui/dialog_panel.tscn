@@ -123,6 +123,7 @@ theme_override_constants/margin_bottom = 8
 [node name="Avatar" type="TextureRect" parent="HBoxContainer/MarginContainer2"]
 layout_mode = 2
 texture = ExtResource("2_8til7")
+expand_mode = 2
 
 [node name="LetterDisplayTimer" type="Timer" parent="."]
 one_shot = true

@@ -11,6 +11,7 @@ var moon_direction
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
+	zoom()
 	animate()
 	switch_camera()
 	detect_crystal()
@@ -39,7 +40,7 @@ func _physics_process(delta):
 func animate():
 	if !current_moon:
 		sprite_2d.play("fly")
-	if !$FloorDetect.overlaps_body(current_moon):
+	elif !$FloorDetect.overlaps_body(current_moon):
 		sprite_2d.play("fly")
 	elif abs(linear_velocity) <= Vector2(.05,.05):
 		sprite_2d.play("idle")
@@ -85,6 +86,15 @@ func find_closest_or_furthest(node: Object, group_name: String, get_closest:= tr
 func switch_camera():
 	if Input.is_action_just_pressed("camera_switch"):
 		$Camera2D.ignore_rotation = !$Camera2D.ignore_rotation
+
+
+func zoom():
+	if Input.is_action_just_released('wheel_down'):
+		$Camera2D.zoom.x += 0.25
+		$Camera2D.zoom.y += 0.25
+	if Input.is_action_just_released('wheel_up') and $Camera2D.zoom.x > .5 and $Camera2D.zoom.y > .5:
+		$Camera2D.zoom.x -= 0.25
+		$Camera2D.zoom.y -= 0.25
 
 func _on_box_kick_area_body_entered(body):
 	if body.is_in_group("box"):
