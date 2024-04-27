@@ -15,3 +15,8 @@ res://scenes/player/player.gd
 res://scenes/spaceship/SpawnSpaceShip.tscn
 res://scenes/spaceship/SpawnSpaceShip.gd
 res://levels/FilmGrain.gdshader
+res://scenes/enemy/enemy.gd
+res://scenes/box/BoxSpawner.gd
+res://scenes/crystal/crystal.gd
+res://scenes/crystal/hidden_crystal.gd
+res://scenes/ladder/Ladder.gd

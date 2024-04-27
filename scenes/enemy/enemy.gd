@@ -8,8 +8,9 @@ var moon_direction
 var move_direction = 1
 
 func _physics_process(delta):
-	if death_area.overlaps_body(get_tree().get_first_node_in_group("player")):
-		death()
+	if get_tree().get_first_node_in_group("player"):
+		if death_area.overlaps_body(get_tree().get_first_node_in_group("player")):
+			death()
 	if current_moon:
 		moon_direction = global_position.direction_to(current_moon.global_position)
 		rotation = deg_to_rad(rad_to_deg(moon_direction.angle()) - 90)
