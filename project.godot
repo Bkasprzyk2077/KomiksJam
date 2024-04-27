@@ -18,6 +18,7 @@ config/icon="res://assets/icon.svg"
 [autoload]
 
 GameEvents="*res://global/GameEvents.gd"
+DialogManager="*res://global/DialogManager.gd"
 
 [display]
 

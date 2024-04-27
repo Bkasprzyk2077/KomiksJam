@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://3fdfi4qqyp74"]
 
-[ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="1_i8hp3"]
 [ext_resource type="Script" path="res://scenes/spaceship/SpaceShip.gd" id="1_iwsfl"]
+[ext_resource type="Texture2D" uid="uid://b3oxxnraa50bh" path="res://assets/Illustration3.png" id="2_d2l1d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xxjmc"]
 size = Vector2(375, 375)
@@ -11,7 +11,7 @@ script = ExtResource("1_iwsfl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)
-texture = ExtResource("1_i8hp3")
+texture = ExtResource("2_d2l1d")
 
 [node name="BoxCatcher" type="Area2D" parent="."]
 
