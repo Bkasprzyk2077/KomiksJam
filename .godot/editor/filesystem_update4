@@ -14,3 +14,4 @@ res://scenes/planet/Planet.tscn
 res://scenes/player/player.gd
 res://scenes/spaceship/SpawnSpaceShip.tscn
 res://scenes/spaceship/SpawnSpaceShip.gd
+res://levels/FilmGrain.gdshader

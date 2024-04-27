@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=15 format=3 uid="uid://g3i700whpyd1"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
@@ -17,6 +17,12 @@
 shader = ExtResource("2_ccg2i")
 shader_parameter/effect_amount = 1.05
 
+[sub_resource type="Curve2D" id="Curve2D_sww78"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3244, 373, -372.42, -190.882, 372.42, 190.882, 4458, 68, 0, 0, 0, 0, 5101, 944)
+}
+point_count = 3
+
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_fw2l1")
 
@@ -30,6 +36,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.0745098, 0, 0.341176, 1)
+
+[node name="SpawnSpaceShip_Points#Marker2D2" type="Marker2D" parent="."]
+position = Vector2(1657, 448)
+
+[node name="SpawnSpaceShip_Points#Marker2D3" type="Marker2D" parent="."]
+position = Vector2(1833, 2420)
 
 [node name="DialogCanvas" type="CanvasLayer" parent="." groups=["dialog_canvas"]]
 layer = 2
@@ -91,16 +103,12 @@ position = Vector2(3699, 285)
 [node name="HiddenCrystal2" parent="Crystals" instance=ExtResource("10_vjrt2")]
 position = Vector2(4534, 942)
 
-[node name="SpawnSpaceShip" parent="." instance=ExtResource("12_tfrbu")]
-position = Vector2(3174, -285)
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(-13, -197)
+curve = SubResource("Curve2D_sww78")
 
-[node name="Marker2D" parent="SpawnSpaceShip/Points" index="0"]
-position = Vector2(765, 63)
+[node name="SpawnSpaceShip" parent="Path2D" instance=ExtResource("12_tfrbu")]
+position = Vector2(3244, 373)
+rotation = -0.246141
 
-[node name="Marker2D2" type="Marker2D" parent="SpawnSpaceShip/Points" index="1"]
-position = Vector2(1657, 448)
-
-[node name="Marker2D3" type="Marker2D" parent="SpawnSpaceShip/Points" index="2"]
-position = Vector2(1834, 1464)
-
-[editable path="SpawnSpaceShip"]
+[editable path="Path2D/SpawnSpaceShip"]

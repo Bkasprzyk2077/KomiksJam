@@ -3,14 +3,10 @@
 [ext_resource type="Script" path="res://scenes/spaceship/SpawnSpaceShip.gd" id="1_0cfkp"]
 [ext_resource type="Texture2D" uid="uid://b3oxxnraa50bh" path="res://assets/Illustration3.png" id="2_y88kj"]
 
-[node name="SpawnSpaceShip" type="Node2D"]
+[node name="SpawnSpaceShip" type="PathFollow2D"]
 script = ExtResource("1_0cfkp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)
 texture = ExtResource("2_y88kj")
 flip_h = true
-
-[node name="Points" type="Node2D" parent="."]
-
-[node name="Marker2D" type="Marker2D" parent="Points"]
