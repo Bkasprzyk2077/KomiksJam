@@ -36,12 +36,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.0745098, 0, 0.341176, 1)
 
-[node name="SpawnSpaceShip_Points#Marker2D2" type="Marker2D" parent="."]
-position = Vector2(1657, 448)
-
-[node name="SpawnSpaceShip_Points#Marker2D3" type="Marker2D" parent="."]
-position = Vector2(1833, 2420)
-
 [node name="DialogCanvas" type="CanvasLayer" parent="." groups=["dialog_canvas"]]
 layer = 2
 
@@ -69,14 +63,14 @@ rotation = 1.61334
 scale = Vector2(1.43458, 8.84104)
 
 [node name="SpaceShip" parent="." instance=ExtResource("7_opdnm")]
-position = Vector2(964, -763)
+position = Vector2(826, -953)
 
 [node name="DialogArea" parent="." instance=ExtResource("8_pdfx4")]
 position = Vector2(290, 780)
 dialog_text_file = "res://dialogs/dialog1.txt"
 
 [node name="DialogArea2" parent="." instance=ExtResource("8_pdfx4")]
-position = Vector2(555, 919)
+position = Vector2(4085, 1110)
 dialog_text_file = "res://dialogs/dialog1.txt"
 
 [node name="BoxSpawner" parent="." instance=ExtResource("9_im8uj")]
@@ -90,14 +84,26 @@ position = Vector2(1122, 337)
 
 [node name="Crystals" type="Node2D" parent="."]
 
-[node name="Crystal" parent="Crystals" instance=ExtResource("4_gqu7u")]
-position = Vector2(129, 214)
-
 [node name="HiddenCrystal" parent="Crystals" instance=ExtResource("10_vjrt2")]
+position = Vector2(3699, 285)
+
+[node name="HiddenCrystal3" parent="Crystals" instance=ExtResource("10_vjrt2")]
 position = Vector2(3699, 285)
 
 [node name="HiddenCrystal2" parent="Crystals" instance=ExtResource("10_vjrt2")]
 position = Vector2(4534, 942)
+
+[node name="Crystal" parent="Crystals" instance=ExtResource("4_gqu7u")]
+position = Vector2(4483, 252)
+rotation = 0.752599
+
+[node name="Crystal2" parent="Crystals" instance=ExtResource("4_gqu7u")]
+position = Vector2(4582, 458)
+rotation = 1.1889
+
+[node name="Crystal3" parent="Crystals" instance=ExtResource("4_gqu7u")]
+position = Vector2(4599, 656)
+rotation = 1.73512
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(-13, -197)
@@ -106,5 +112,3 @@ curve = SubResource("Curve2D_sww78")
 [node name="SpawnSpaceShip" parent="Path2D" instance=ExtResource("12_tfrbu")]
 position = Vector2(3244, 373)
 rotation = -0.244018
-
-[editable path="Path2D/SpawnSpaceShip"]

@@ -5,7 +5,7 @@ extends MarginContainer
 @onready var letter_display_timer = $LetterDisplayTimer
 @onready var animation_player = $AnimationPlayer
 
-var faces = ["res://assets/icon.svg", "res://assets/icon.svg"]
+var faces = ["res://assets/icon.svg", "res://assets/siencetist/naukowiec.png"]
 
 var dialog_lines = []
 

@@ -1,3 +1,39 @@
-[gd_scene format=3 uid="uid://cpfsv1uf5ygyp"]
+[gd_scene load_steps=6 format=3 uid="uid://cpfsv1uf5ygyp"]
+
+[ext_resource type="Script" path="res://levels/level1.gd" id="1_br1ao"]
+[ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_sc65j"]
+[ext_resource type="PackedScene" uid="uid://m0pul1vrrkn1" path="res://scenes/planet/ShateredPlanet.tscn" id="2_w4xbu"]
+[ext_resource type="PackedScene" uid="uid://b7ylnl3t7oefk" path="res://scenes/player/player.tscn" id="3_1o8g7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_klb14"]
+shader = ExtResource("2_sc65j")
+shader_parameter/effect_amount = 1.05
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_br1ao")
+
+[node name="BackGround" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="BackGround"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0745098, 0, 0.341176, 1)
+
+[node name="FishEye" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="FishEye"]
+material = SubResource("ShaderMaterial_klb14")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Planet" parent="." instance=ExtResource("2_w4xbu")]
+
+[node name="Player" parent="." instance=ExtResource("3_1o8g7")]
+position = Vector2(-198, -1164)
