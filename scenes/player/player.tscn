@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://b7ylnl3t7oefk"]
+[gd_scene load_steps=27 format=3 uid="uid://b7ylnl3t7oefk"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_mfcxx"]
 [ext_resource type="Texture2D" uid="uid://b1g7rpxixynkr" path="res://assets/player/fall/1.png" id="2_sgb0k"]
@@ -20,6 +20,12 @@
 [ext_resource type="Texture2D" uid="uid://cu0yxo5j1eami" path="res://assets/player/fall/7.png" id="8_uxua2"]
 [ext_resource type="Texture2D" uid="uid://bdtcil431um2c" path="res://assets/player/run/7.png" id="9_opshd"]
 [ext_resource type="Texture2D" uid="uid://cul6xspqvdnbd" path="res://assets/player/run/8.png" id="10_ypl5r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwxtt"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_736fe"]
+bg_color = Color(0.956863, 0.360784, 0.192157, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rn7dd"]
 animations = [{
@@ -122,6 +128,7 @@ wait_time = 7.0
 layer = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CrystalDetectorCanvas"]
+custom_minimum_size = Vector2(661.76, 85.06)
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -132,13 +139,17 @@ grow_horizontal = 2
 
 [node name="Label" type="Label" parent="CrystalDetectorCanvas/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 46
 text = "Kryształ w pobliżu"
 horizontal_alignment = 1
 
 [node name="ProgressBar" type="ProgressBar" parent="CrystalDetectorCanvas/VBoxContainer"]
-custom_minimum_size = Vector2(500, 28.79)
+custom_minimum_size = Vector2(500, 61.83)
 layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_vwxtt")
+theme_override_styles/fill = SubResource("StyleBoxFlat_736fe")
 max_value = 1000.0
+value = 142.29
 show_percentage = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -12,3 +12,11 @@ res://scenes/crystal/crystal.tscn
 res://scenes/crystal/hidden_crystal.tscn
 res://scenes/planet/Planet_A.tscn
 res://scenes/planet/ShateredPlanet.tscn
+res://scenes/box/box.tscn
+res://scenes/player/player.gd
+res://scenes/player/player.tscn
+res://ui/main_menu/MainMenu.tscn
+res://ui/main_menu/MainMenu.gd
+res://scenes/enemy/enemy.tscn
+res://scenes/enemy/enemy.gd
+res://scenes/ladder/Ladder.tscn

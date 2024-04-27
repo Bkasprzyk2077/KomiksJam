@@ -1,17 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://dl2w38cym5jdp"]
+[gd_scene load_steps=8 format=3 uid="uid://dl2w38cym5jdp"]
 
 [ext_resource type="Script" path="res://scenes/enemy/enemy.gd" id="1_g47vr"]
-[ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="1_ljnpj"]
+[ext_resource type="Texture2D" uid="uid://co3v54bcxuavb" path="res://assets/enemy/IMG_0406.png" id="2_y4g1l"]
+[ext_resource type="Texture2D" uid="uid://dpkjiiesg08dg" path="res://assets/enemy/IMG_0407.png" id="3_2jpqb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ofqun"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_ljnpj")
+"texture": ExtResource("2_y4g1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2jpqb")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c82r7"]
@@ -27,7 +31,11 @@ size = Vector2(35.145, 64.66)
 script = ExtResource("1_g47vr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -18)
 sprite_frames = SubResource("SpriteFrames_ofqun")
+autoplay = "default"
+frame_progress = 0.692165
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_c82r7")

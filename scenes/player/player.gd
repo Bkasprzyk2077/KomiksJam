@@ -14,12 +14,11 @@ func _ready():
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
-	#print(jump_force)
 	zoom()
 	animate()
 	switch_camera()
 	detect_crystal()
-	if Input.is_action_pressed("interact"):
+	if Input.is_action_pressed("kick"):
 		kick_shape.disabled = false
 	else:
 		kick_shape.disabled = true

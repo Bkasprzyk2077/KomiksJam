@@ -65,7 +65,7 @@ position = Vector2(-506, 1497)
 rotation = -0.065996
 
 [node name="Path2D2" type="Path2D" parent="."]
-position = Vector2(6158, 2480)
+position = Vector2(-196, -42)
 curve = SubResource("Curve2D_4bs8i")
 
 [node name="ExitSpaceShip" parent="Path2D2" instance=ExtResource("4_qryw7")]

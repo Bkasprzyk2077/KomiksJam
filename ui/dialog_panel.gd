@@ -19,6 +19,9 @@ var punctuation_time = 0.2
 
 signal animation_finished
 
+func _ready():
+	get_tree().paused = true
+
 
 func _input(event):
 	if event.is_action_pressed("ui_accept") and dialog_lines:
@@ -65,6 +68,7 @@ func emit_animation_finished():
 	animation_finished.emit()
 	
 func end_dialog():
+	get_tree().paused = false
 	animation_player.play("out")
 
 func _on_letter_display_timer_timeout():
