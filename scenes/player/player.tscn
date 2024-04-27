@@ -50,6 +50,7 @@ script = ExtResource("1_mfcxx")
 jump_force = 600
 
 [node name="CrystalDetectorCanvas" type="CanvasLayer" parent="."]
+layer = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CrystalDetectorCanvas"]
 anchors_preset = 5
@@ -96,5 +97,7 @@ disabled = true
 position = Vector2(2, -250)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
 
 [connection signal="body_entered" from="BoxKickArea" to="." method="_on_box_kick_area_body_entered"]

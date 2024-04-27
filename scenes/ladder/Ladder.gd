@@ -4,7 +4,10 @@ extends Node2D
 @onready var start = $Start
 @onready var end = $End
 
+@warning_ignore("unused_parameter")
 func _physics_process(delta):
+	if !get_tree().get_first_node_in_group("player"):
+		return
 	if area_2d.overlaps_body(get_tree().get_first_node_in_group("player")):
 		var player = get_tree().get_first_node_in_group("player")
 		if Input.is_action_pressed("up"):

@@ -37,6 +37,8 @@ func _physics_process(delta):
 	
 	
 func animate():
+	if !current_moon:
+		sprite_2d.play("fly")
 	if !$FloorDetect.overlaps_body(current_moon):
 		sprite_2d.play("fly")
 	elif abs(linear_velocity) <= Vector2(.05,.05):

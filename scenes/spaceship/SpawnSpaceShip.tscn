@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cre4lmk4xb56j"]
+
+[ext_resource type="Script" path="res://scenes/spaceship/SpawnSpaceShip.gd" id="1_0cfkp"]
+[ext_resource type="PackedScene" uid="uid://b7ylnl3t7oefk" path="res://scenes/player/player.tscn" id="2_l8not"]
+[ext_resource type="Texture2D" uid="uid://b3oxxnraa50bh" path="res://assets/Illustration3.png" id="2_y88kj"]
+
+[node name="SpawnSpaceShip" type="PathFollow2D"]
+script = ExtResource("1_0cfkp")
+player_scene = ExtResource("2_l8not")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_y88kj")
+flip_h = true
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]

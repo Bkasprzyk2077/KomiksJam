@@ -3,10 +3,12 @@ extends Area2D
 @export var box_scene: PackedScene
 
 			
+@warning_ignore("unused_parameter")
 func _physics_process(delta):
-	if overlaps_body(get_tree().get_first_node_in_group("player")):
-		if Input.is_action_just_pressed("interact"):
-			spawn_box()
+	if get_tree().get_first_node_in_group("player"):
+		if overlaps_body(get_tree().get_first_node_in_group("player")):
+			if Input.is_action_just_pressed("interact"):
+				spawn_box()
 
 
 func spawn_box():
