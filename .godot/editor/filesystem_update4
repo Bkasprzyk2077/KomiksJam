@@ -1,6 +1,11 @@
-res://scenes/box/box.tscn
 res://levels/level1.tscn
 res://scenes/player/player.tscn
-res://scenes/player/player.gd
-res://scenes/spaceship/SpaceShip.gd
+res://scenes/box/box.tscn
 res://scenes/spaceship/SpaceShip.tscn
+res://ui/dialog_panel.tscn
+res://ui/dialog_panel.gd
+res://scenes/dialog_area/DialogArea.tscn
+res://scenes/dialog_area/DialogArea.gd
+res://global/DialogManager.gd
+res://dialogs/dialog1.txt
+res://scenes/box/box.gd
