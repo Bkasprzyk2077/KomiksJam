@@ -1,9 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=10 format=3 uid="uid://g3i700whpyd1"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
 [ext_resource type="PackedScene" uid="uid://b7ylnl3t7oefk" path="res://scenes/player/player.tscn" id="2_epjfe"]
-[ext_resource type="PackedScene" uid="uid://blelnyh6fur1e" path="res://scenes/box/box.tscn" id="3_4dm35"]
 [ext_resource type="PackedScene" uid="uid://cvdowe4v0qw83" path="res://scenes/crystal/crystal.tscn" id="4_gqu7u"]
 [ext_resource type="PackedScene" uid="uid://oruit62yrf76" path="res://scenes/ladder/Ladder.tscn" id="4_srd2r"]
 [ext_resource type="PackedScene" uid="uid://3fdfi4qqyp74" path="res://scenes/spaceship/SpaceShip.tscn" id="7_opdnm"]
@@ -38,9 +37,6 @@ scale = Vector2(3.29, 3.29)
 [node name="Player" parent="." instance=ExtResource("2_epjfe")]
 position = Vector2(1129, 646)
 
-[node name="Box" parent="." instance=ExtResource("3_4dm35")]
-position = Vector2(417, -71)
-
 [node name="Crystal" parent="." instance=ExtResource("4_gqu7u")]
 position = Vector2(129, 214)
 
@@ -57,7 +53,10 @@ position = Vector2(290, 780)
 dialog_text_file = "res://dialogs/dialog1.txt"
 
 [node name="BoxSpawner" parent="." instance=ExtResource("9_im8uj")]
-position = Vector2(871, -25)
+position = Vector2(1016, 60)
 
 [node name="Enemy" parent="." instance=ExtResource("10_4mb5y")]
 position = Vector2(913, 881)
+
+[node name="Enemy2" parent="." instance=ExtResource("10_4mb5y")]
+position = Vector2(1130, 430)

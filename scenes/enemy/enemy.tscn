@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dl2w38cym5jdp"]
+[gd_scene load_steps=7 format=3 uid="uid://dl2w38cym5jdp"]
 
 [ext_resource type="Script" path="res://scenes/enemy/enemy.gd" id="1_g47vr"]
 [ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="1_ljnpj"]
@@ -20,6 +20,9 @@ radius = 65.14
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2vwbv"]
 size = Vector2(54.18, 20)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pe4ba"]
+size = Vector2(35.145, 64.66)
+
 [node name="Enemy" type="RigidBody2D"]
 script = ExtResource("1_g47vr")
 
@@ -34,3 +37,11 @@ shape = SubResource("CircleShape2D_c82r7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathArea"]
 position = Vector2(0, -67)
 shape = SubResource("RectangleShape2D_2vwbv")
+
+[node name="PlayerKicker" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerKicker"]
+position = Vector2(62.5725, 0)
+shape = SubResource("RectangleShape2D_pe4ba")
+
+[connection signal="body_entered" from="PlayerKicker" to="." method="_on_player_kicker_body_entered"]
