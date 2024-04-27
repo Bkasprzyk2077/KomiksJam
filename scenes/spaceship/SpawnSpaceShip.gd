@@ -6,7 +6,7 @@ var spawned_player = false
 
 @export var player_scene: PackedScene
 @export var spawn_player_ratio: float = .5
-@export var speed: float = 200
+@export var speed: float = 500
 
 func _process(delta):
 	if progress_ratio >= spawn_player_ratio and !spawned_player:

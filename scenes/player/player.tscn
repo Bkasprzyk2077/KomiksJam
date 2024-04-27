@@ -116,7 +116,7 @@ script = ExtResource("1_mfcxx")
 jump_force = 600
 
 [node name="DeathTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 7.0
 
 [node name="CrystalDetectorCanvas" type="CanvasLayer" parent="."]
 layer = 2
@@ -146,7 +146,7 @@ position = Vector2(2.08165e-12, -23.29)
 scale = Vector2(0.72, 0.72)
 sprite_frames = SubResource("SpriteFrames_rn7dd")
 animation = &"fly"
-frame_progress = 0.083053
+frame_progress = 0.0342702
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_pgnkq")

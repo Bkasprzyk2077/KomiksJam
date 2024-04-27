@@ -1,0 +1,10 @@
+!Rozpoczynamy test chodzenia. Użyj A i D, żeby się poruszać.
+!Możesz zmieniać tryb soczewki, wciskając R, lub przybliżać widok, przewijając kółkiem myszki.
+!System chodzenia sprawny. Teraz przetestuj skok, wciskając W.
+!Skakanie działa. Wypróbuj zasięg skoku i skocz na na planetę obok.
+!Planety mają różne pola grawitacyjne. Nie do każdej w zasięgu wzroku możesz od razu doskoczyć.
+!Fantastycznie! Podążaj dalej tą trasą!
+!Na następnej planecie czeka przesyłka. Odbierz ją E.
+!Pudełka możemy też wyrzucać w kosmos! Spróbuj kopnać je, wciskając Space.
+!Możemy ruszać na kolejną misję! Na następnej planecie jest most, którym przejdziesz.
+!Uważaj! Występuje na niej niezidentyfikowany obiekt. Omijaj go przeskakując W.

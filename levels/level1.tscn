@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=15 format=3 uid="uid://g3i700whpyd1"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dl2w38cym5jdp" path="res://scenes/enemy/enemy.tscn" id="10_4mb5y"]
 [ext_resource type="PackedScene" uid="uid://kym2ito8cchp" path="res://scenes/crystal/hidden_crystal.tscn" id="10_vjrt2"]
 [ext_resource type="PackedScene" uid="uid://b7ylnl3t7oefk" path="res://scenes/player/player.tscn" id="11_y2yey"]
+[ext_resource type="PackedScene" uid="uid://cinv0f0wiju1v" path="res://scenes/dialog_area/LoreArea.tscn" id="12_gtfxg"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
 shader = ExtResource("2_ccg2i")
@@ -67,11 +68,9 @@ position = Vector2(826, -953)
 
 [node name="DialogArea" parent="." instance=ExtResource("8_pdfx4")]
 position = Vector2(290, 780)
-dialog_text_file = "res://dialogs/dialog1.txt"
 
 [node name="DialogArea2" parent="." instance=ExtResource("8_pdfx4")]
 position = Vector2(4085, 1110)
-dialog_text_file = "res://dialogs/dialog1.txt"
 
 [node name="BoxSpawner" parent="." instance=ExtResource("9_im8uj")]
 position = Vector2(1058, 97)
@@ -110,6 +109,9 @@ position = Vector2(-13, -197)
 curve = SubResource("Curve2D_sww78")
 
 [node name="Player" parent="." instance=ExtResource("11_y2yey")]
-position = Vector2(488, -256)
+position = Vector2(96, 78)
+
+[node name="LoreArea" parent="." instance=ExtResource("12_gtfxg")]
+position = Vector2(24, 441)
 
 [editable path="Planet2"]

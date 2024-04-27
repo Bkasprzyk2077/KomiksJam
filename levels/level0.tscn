@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cyuucb651mmwe"]
+[gd_scene load_steps=14 format=3 uid="uid://cyuucb651mmwe"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_oj6bn"]
 [ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_y2oi7"]
@@ -6,7 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://cm7vqlildigai" path="res://scenes/spaceship/EscapeSpaceShip.tscn" id="4_uf6j1"]
 [ext_resource type="PackedScene" uid="uid://blelnyh6fur1e" path="res://scenes/box/box.tscn" id="6_eg223"]
 [ext_resource type="PackedScene" uid="uid://dl2w38cym5jdp" path="res://scenes/enemy/enemy.tscn" id="8_4eu5p"]
+[ext_resource type="PackedScene" uid="uid://dmisqj6t8fr15" path="res://scenes/dialog_area/DialogArea.tscn" id="9_3s6kg"]
 [ext_resource type="PackedScene" uid="uid://cvdowe4v0qw83" path="res://scenes/crystal/crystal.tscn" id="10_gxjfp"]
+[ext_resource type="PackedScene" uid="uid://oruit62yrf76" path="res://scenes/ladder/Ladder.tscn" id="10_kf26b"]
 [ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="11_2v7bo"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
@@ -61,6 +63,7 @@ position = Vector2(643, 258)
 rotation = 0.220041
 
 [node name="Path2D2" type="Path2D" parent="."]
+position = Vector2(750, 11)
 curve = SubResource("Curve2D_kmaac")
 
 [node name="ExitSpaceShip" parent="Path2D2" instance=ExtResource("4_uf6j1")]
@@ -89,7 +92,7 @@ metadata/_edit_group_ = true
 scale = Vector2(0.79, 0.79)
 
 [node name="Planet8" parent="." instance=ExtResource("4_f8e8t")]
-position = Vector2(4688, 428)
+position = Vector2(5436, 532)
 scale = Vector2(1.6, 1.6)
 metadata/_edit_group_ = true
 
@@ -121,7 +124,30 @@ position = Vector2(2479, 537)
 position = Vector2(2631, 568)
 
 [node name="Enemy" parent="." instance=ExtResource("8_4eu5p")]
-position = Vector2(4705, -81)
+position = Vector2(5465, 47)
+
+[node name="DialogArea" parent="." instance=ExtResource("9_3s6kg")]
+position = Vector2(-53, 478)
+
+[node name="DialogArea2" parent="." instance=ExtResource("9_3s6kg")]
+position = Vector2(620, -887)
+
+[node name="DialogArea4" parent="." instance=ExtResource("9_3s6kg")]
+position = Vector2(171, -668)
+
+[node name="DialogArea5" parent="." instance=ExtResource("9_3s6kg")]
+position = Vector2(1375, -38)
+
+[node name="DialogArea6" parent="." instance=ExtResource("9_3s6kg")]
+position = Vector2(3331, 367)
+
+[node name="DialogArea3" parent="." instance=ExtResource("9_3s6kg")]
+position = Vector2(-87, -256)
+
+[node name="Ladder" parent="." instance=ExtResource("10_kf26b")]
+position = Vector2(4368, 542)
+rotation = 1.56337
+scale = Vector2(2.38064, 3.93829)
 
 [editable path="Planet"]
 [editable path="Planet5"]
