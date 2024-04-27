@@ -1,3 +1,8 @@
+ProgressBar
+Label
+VBoxContainer
+Node2D
+CanvasLayer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
@@ -7,8 +12,4 @@ Marker2D
 AnimationPlayer
 AnimationTree
 Timer
-CanvasLayer
 TextureRect
-Label
-MarginContainer
-HBoxContainer

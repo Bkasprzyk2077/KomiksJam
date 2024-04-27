@@ -1,15 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://kym2ito8cchp"]
 
-[ext_resource type="Script" path="res://scenes/crystal/crystal.gd" id="1_6fxql"]
+[ext_resource type="Script" path="res://scenes/crystal/hidden_crystal.gd" id="1_xl1qi"]
 [ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="2_ek37e"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hoe0x"]
 radius = 101.22
 
-[node name="Crystal" type="Node2D"]
-script = ExtResource("1_6fxql")
+[node name="HiddenCrystal" type="Node2D" groups=["hidden_crystal"]]
+script = ExtResource("1_xl1qi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 scale = Vector2(0.5, 1)
 texture = ExtResource("2_ek37e")
 

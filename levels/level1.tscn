@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=11 format=3 uid="uid://g3i700whpyd1"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="PackedScene" uid="uid://b65g61nsh1hb7" path="res://scenes/planet/Planet.tscn" id="1_xfal0"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dmisqj6t8fr15" path="res://scenes/dialog_area/DialogArea.tscn" id="8_pdfx4"]
 [ext_resource type="PackedScene" uid="uid://cj8uup5kdv1fk" path="res://scenes/box/BoxSpawner.tscn" id="9_im8uj"]
 [ext_resource type="PackedScene" uid="uid://dl2w38cym5jdp" path="res://scenes/enemy/enemy.tscn" id="10_4mb5y"]
+[ext_resource type="PackedScene" uid="uid://kym2ito8cchp" path="res://scenes/crystal/hidden_crystal.tscn" id="10_vjrt2"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_fw2l1")
@@ -35,10 +36,7 @@ position = Vector2(4099, 600)
 scale = Vector2(3.29, 3.29)
 
 [node name="Player" parent="." instance=ExtResource("2_epjfe")]
-position = Vector2(1129, 646)
-
-[node name="Crystal" parent="." instance=ExtResource("4_gqu7u")]
-position = Vector2(129, 214)
+position = Vector2(4273, 80)
 
 [node name="Ladder" parent="." instance=ExtResource("4_srd2r")]
 position = Vector2(2337, 506)
@@ -53,10 +51,21 @@ position = Vector2(290, 780)
 dialog_text_file = "res://dialogs/dialog1.txt"
 
 [node name="BoxSpawner" parent="." instance=ExtResource("9_im8uj")]
-position = Vector2(1016, 60)
+position = Vector2(1058, 97)
 
 [node name="Enemy" parent="." instance=ExtResource("10_4mb5y")]
 position = Vector2(913, 881)
 
 [node name="Enemy2" parent="." instance=ExtResource("10_4mb5y")]
-position = Vector2(1130, 430)
+position = Vector2(1122, 337)
+
+[node name="Crystals" type="Node2D" parent="."]
+
+[node name="Crystal" parent="Crystals" instance=ExtResource("4_gqu7u")]
+position = Vector2(129, 214)
+
+[node name="HiddenCrystal" parent="Crystals" instance=ExtResource("10_vjrt2")]
+position = Vector2(3699, 285)
+
+[node name="HiddenCrystal2" parent="Crystals" instance=ExtResource("10_vjrt2")]
+position = Vector2(4534, 942)
