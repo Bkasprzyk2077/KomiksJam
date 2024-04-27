@@ -10,3 +10,5 @@ res://scenes/player/player.gd
 res://scenes/player/player.tscn
 res://scenes/ladder/Ladder.gd
 res://scenes/ladder/Ladder.tscn
+res://ui/main_menu/MainMenu.tscn
+res://levels/FishEye.gdshader

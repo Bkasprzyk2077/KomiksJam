@@ -1,8 +1,11 @@
-ProgressBar
+ColorRect
+CanvasLayer
+Button
+TextureButton
 Label
 VBoxContainer
+ProgressBar
 Node2D
-CanvasLayer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
@@ -10,6 +13,3 @@ Sprite2D
 RigidBody2D
 Marker2D
 AnimationPlayer
-AnimationTree
-Timer
-TextureRect

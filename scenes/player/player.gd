@@ -11,7 +11,7 @@ var moon_direction
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
-	#animate()
+	animate()
 	switch_camera()
 	detect_crystal()
 	if Input.is_action_pressed("interact"):
@@ -43,12 +43,13 @@ func animate():
 		sprite_2d.play("idle")
 	else:
 		sprite_2d.play("run")
-	
-	
+		
 	if Input.is_action_just_pressed("left"):
 		sprite_2d.flip_h = true
+		$BoxKickArea.position.x = -138
 	elif Input.is_action_just_pressed("right"):
 		sprite_2d.flip_h = false
+		$BoxKickArea.position.x = 138
 
 func detect_crystal():
 	var closest_crystal = find_closest_or_furthest(self, "hidden_crystal")
