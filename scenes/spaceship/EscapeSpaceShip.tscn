@@ -1,7 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://cm7vqlildigai"]
+[gd_scene load_steps=8 format=3 uid="uid://cm7vqlildigai"]
 
 [ext_resource type="Script" path="res://scenes/spaceship/EscapeSpaceShip.gd" id="1_vddks"]
-[ext_resource type="Texture2D" uid="uid://b3oxxnraa50bh" path="res://assets/Illustration3.png" id="3_unij8"]
+[ext_resource type="Texture2D" uid="uid://bkaxy6ksftgh8" path="res://assets/ship/bez/1.png" id="2_s807v"]
+[ext_resource type="Texture2D" uid="uid://cihtuwrksk3rq" path="res://assets/ship/bez/2.png" id="3_k65h6"]
+[ext_resource type="Texture2D" uid="uid://ba1kn6now4jkd" path="res://assets/ship/bez/3.png" id="4_5g3mw"]
+[ext_resource type="Texture2D" uid="uid://4bdk3wqvuaf0" path="res://assets/ship/bez/4.png" id="5_n1454"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m16d3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_s807v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_k65h6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5g3mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n1454")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2byrt"]
 radius = 179.8
@@ -9,8 +32,9 @@ radius = 179.8
 [node name="ExitSpaceShip" type="PathFollow2D"]
 script = ExtResource("1_vddks")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("3_unij8")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m16d3")
+autoplay = "default"
 flip_h = true
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]

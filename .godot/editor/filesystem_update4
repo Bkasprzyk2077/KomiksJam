@@ -27,3 +27,7 @@ res://ui/FinishLorePanel.gd
 res://levels/level2.tscn
 res://sounds/MusicPlayer.tscn
 res://sounds/MusicPlayer.gd
+res://scenes/spaceship/SpawnSpaceShip.tscn
+res://scenes/spaceship/EscapeSpaceShip.tscn
+res://dialogs/3_crystals_1.txt
+res://scenes/player/player2.tscn

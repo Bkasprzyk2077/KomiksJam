@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://b7ylnl3t7oefk"]
+[gd_scene load_steps=33 format=3 uid="uid://b7ylnl3t7oefk"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_mfcxx"]
 [ext_resource type="Texture2D" uid="uid://b1g7rpxixynkr" path="res://assets/player/fall/1.png" id="2_sgb0k"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://rmpo1h0so3hu" path="res://assets/player/kick/3.png" id="16_4ben3"]
 [ext_resource type="Texture2D" uid="uid://cy1saauvvrmnj" path="res://assets/player/kick/4.png" id="17_i60hd"]
 [ext_resource type="Texture2D" uid="uid://f113jtb2mj8r" path="res://assets/player/kick/5.png" id="18_3ag81"]
+[ext_resource type="Texture2D" uid="uid://c22wkmojlrmk6" path="res://assets/UI_STEROWANIE.png" id="26_bres2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwxtt"]
 bg_color = Color(0, 0, 0, 1)
@@ -176,6 +177,16 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_736fe")
 max_value = 1000.0
 value = 142.29
 show_percentage = false
+
+[node name="TextureRect" type="TextureRect" parent="CrystalDetectorCanvas"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_bottom = 310.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+texture = ExtResource("26_bres2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 3

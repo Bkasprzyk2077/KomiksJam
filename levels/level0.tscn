@@ -158,6 +158,7 @@ position = Vector2(5444, 532)
 scale = Vector2(1.92519, 1.92519)
 
 [node name="LoreArea" parent="." instance=ExtResource("17_jcsas")]
+z_index = 3
 position = Vector2(-539, 86)
 
 [editable path="Planet7"]
