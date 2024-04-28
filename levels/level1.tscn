@@ -1,8 +1,8 @@
 [gd_scene load_steps=18 format=3 uid="uid://g3i700whpyd1"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
+[ext_resource type="Texture2D" uid="uid://cqhk6yq2kkuvu" path="res://assets/bg/IMG_0416.png" id="2_8brt4"]
 [ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_ccg2i"]
-[ext_resource type="Texture2D" uid="uid://ctorachpk4m6h" path="res://assets/bg/tło tutorial.png" id="2_grld5"]
 [ext_resource type="PackedScene" uid="uid://coiihl2p3mc6t" path="res://scenes/planet/Planet_A.tscn" id="3_0en5b"]
 [ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="3_fqjm4"]
 [ext_resource type="PackedScene" uid="uid://cj8uup5kdv1fk" path="res://scenes/box/BoxSpawner.tscn" id="4_8nyn5"]
@@ -46,10 +46,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_grld5")
+texture = ExtResource("2_8brt4")
 expand_mode = 3
 
 [node name="ColorRect" type="ColorRect" parent="BackGround"]
+visible = false
 modulate = Color(1, 1, 1, 0.690196)
 anchors_preset = 15
 anchor_right = 1.0

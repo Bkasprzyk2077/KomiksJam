@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://cpfsv1uf5ygyp"]
+[gd_scene load_steps=15 format=3 uid="uid://cpfsv1uf5ygyp"]
 
 [ext_resource type="Script" path="res://levels/level2.gd" id="1_586f0"]
+[ext_resource type="Texture2D" uid="uid://dd0upnujgpp3x" path="res://assets/bg/tło lvl1.png" id="2_ey6qx"]
 [ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_gteak"]
 [ext_resource type="PackedScene" uid="uid://m0pul1vrrkn1" path="res://scenes/planet/ShateredPlanet.tscn" id="3_yhqa5"]
 [ext_resource type="PackedScene" uid="uid://c0jviop3fdx4c" path="res://scenes/harvester/Harvester.tscn" id="4_wudko"]
@@ -35,7 +36,20 @@ should_flip = true
 [node name="BackGround" type="CanvasLayer" parent="."]
 layer = -1
 
+[node name="TextureRect" type="TextureRect" parent="BackGround"]
+modulate = Color(0.552941, 0.666667, 0.945098, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -474.139
+offset_right = 474.139
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ey6qx")
+expand_mode = 3
+
 [node name="ColorRect" type="ColorRect" parent="BackGround"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -96,7 +110,10 @@ lore = ExtResource("9_4hg22")
 position = Vector2(-1229, 1625)
 
 [node name="Planet_x2" parent="." instance=ExtResource("9_fyrdq")]
-position = Vector2(1321, -1567)
+position = Vector2(1360, -1579)
+
+[node name="GravityArea" parent="Planet_x2" index="5"]
+scale = Vector2(1.16, 1.16)
 
 [node name="DialogArea" parent="." instance=ExtResource("10_qaduf")]
 position = Vector2(1144, -1871)
@@ -104,3 +121,4 @@ dialog_text_file = "res://dialogs/shattered_0.txt"
 
 [editable path="Planet"]
 [editable path="Path2D2/ExitSpaceShip"]
+[editable path="Planet_x2"]
