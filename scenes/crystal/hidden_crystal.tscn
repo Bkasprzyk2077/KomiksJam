@@ -1,7 +1,46 @@
-[gd_scene load_steps=4 format=3 uid="uid://kym2ito8cchp"]
+[gd_scene load_steps=12 format=3 uid="uid://kym2ito8cchp"]
 
 [ext_resource type="Script" path="res://scenes/crystal/hidden_crystal.gd" id="1_xl1qi"]
-[ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="2_ek37e"]
+[ext_resource type="Texture2D" uid="uid://cqkvfalm5mi52" path="res://assets/crystals/dig/1.png" id="2_u6ciq"]
+[ext_resource type="Texture2D" uid="uid://cl1xghjsax1py" path="res://assets/crystals/dig/2.png" id="3_0bbwr"]
+[ext_resource type="Texture2D" uid="uid://bhc7plqi0w3xr" path="res://assets/crystals/dig/3.png" id="4_aiaci"]
+[ext_resource type="Texture2D" uid="uid://cmhjsqo472j66" path="res://assets/crystals/dig/4.png" id="5_u3i8f"]
+[ext_resource type="Texture2D" uid="uid://b5q7di38s2ait" path="res://assets/crystals/dig/5.png" id="6_uygro"]
+[ext_resource type="Texture2D" uid="uid://dmus6ueoic7uh" path="res://assets/crystals/dig/6.png" id="7_28iu4"]
+[ext_resource type="Texture2D" uid="uid://c773ummm3fh1e" path="res://assets/crystals/dig/7.png" id="8_4c4ua"]
+[ext_resource type="Texture2D" uid="uid://hyoqeh42c0f8" path="res://assets/crystals/dig/8.png" id="9_selxd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_osaa1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_u6ciq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0bbwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_aiaci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u3i8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uygro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_28iu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4c4ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_selxd")
+}],
+"loop": false,
+"name": &"dig",
+"speed": 8.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hoe0x"]
 radius = 101.22
@@ -9,10 +48,11 @@ radius = 101.22
 [node name="HiddenCrystal" type="Node2D" groups=["crystal", "hidden_crystal"]]
 script = ExtResource("1_xl1qi")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 visible = false
 scale = Vector2(0.5, 1)
-texture = ExtResource("2_ek37e")
+sprite_frames = SubResource("SpriteFrames_osaa1")
+animation = &"dig"
 
 [node name="Area2D" type="Area2D" parent="."]
 

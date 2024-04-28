@@ -13,7 +13,7 @@ func next_image():
 		$AnimationPlayer.play("next")
 	else:
 		get_tree().paused = false
-		queue_free()
+		SceneTransition.change_scene("res://levels/level0.tscn")
 
 func change_img():
 	$TextureRect.texture = load(images.pop_front())

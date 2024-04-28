@@ -105,6 +105,7 @@ disabled = true
 [node name="LoreArea" parent="Path2D2/ExitSpaceShip" instance=ExtResource("8_3va5c")]
 scale = Vector2(1.54969, 1.54969)
 lore = ExtResource("9_4hg22")
+images = ["res://assets/lore/outro1.png", "res://assets/lore/outro2.png", "res://assets/lore/outro3.png"]
 
 [node name="Planet_x" parent="." instance=ExtResource("9_fyrdq")]
 position = Vector2(-1229, 1625)

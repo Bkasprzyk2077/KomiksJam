@@ -218,12 +218,14 @@ rotation = -5.33169
 
 [node name="HiddenCrystal" parent="." instance=ExtResource("8_jdxb7")]
 position = Vector2(-1036, 3090)
+rotation = 1.19526
 
 [node name="HiddenCrystal2" parent="." instance=ExtResource("8_jdxb7")]
 position = Vector2(-3145, -2069)
 
 [node name="HiddenCrystal3" parent="." instance=ExtResource("8_jdxb7")]
 position = Vector2(-5392, -971)
+rotation = 3.0997
 
 [node name="DialogArea" parent="." instance=ExtResource("13_u2m7l")]
 position = Vector2(1896, 1025)
