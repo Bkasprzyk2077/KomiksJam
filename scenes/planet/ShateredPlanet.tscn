@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://m0pul1vrrkn1"]
+[gd_scene load_steps=16 format=3 uid="uid://m0pul1vrrkn1"]
 
 [ext_resource type="Script" path="res://scenes/planet/ShateredPlanet.gd" id="1_763s4"]
 [ext_resource type="Texture2D" uid="uid://djkpd1d3wpp5x" path="res://assets/planet_B/pB3_orbita.png" id="2_0frb1"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bajl8c1vdrurl" path="res://scenes/ShateredPiece/ShateredPieceBig.tscn" id="7_guq1x"]
 [ext_resource type="PackedScene" uid="uid://cgodkks1j31ku" path="res://scenes/ShateredPiece/ShateredPieceSmall.tscn" id="8_0yv40"]
 [ext_resource type="PackedScene" uid="uid://domygxbtkv475" path="res://scenes/ShateredPiece/ShateredPieceMid.tscn" id="8_mv4do"]
+[ext_resource type="AudioStream" uid="uid://b5pe2lewcdcme" path="res://sounds/jądro_planety.wav" id="10_3jonb"]
 
 [sub_resource type="Animation" id="Animation_gdbp8"]
 length = 0.001
@@ -123,6 +124,10 @@ speed = 0.4
 
 [node name="ShateredPieceSmall" parent="." instance=ExtResource("8_0yv40")]
 speed = -0.6
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_3jonb")
+autoplay = true
 
 [connection signal="body_entered" from="GravityArea" to="." method="_on_gravity_area_body_entered"]
 [connection signal="body_exited" from="GravityArea" to="." method="_on_gravity_area_body_exited"]

@@ -10,6 +10,8 @@ func _process(delta):
 			$Sprite2D.visible = true
 			$Sprite2D.play("dig")
 			$Area2D/CollisionShape2D.disabled = true
+			$AudioStreamPlayer.pitch_scale = randf_range(.5, 1.5)
+			$AudioStreamPlayer.play()
 			await $Sprite2D.animation_finished
 			GameEvents.emit_crystal_gather()
 			queue_free()

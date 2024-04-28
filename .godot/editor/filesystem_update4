@@ -15,3 +15,8 @@ res://ui/main_menu/MainMenu.tscn
 res://scenes/player/player.gd
 res://scenes/player/player.tscn
 res://ui/dialog_panel.tscn
+res://ui/dialog_panel.gd
+res://scenes/crystal/crystal.tscn
+res://scenes/crystal/crystal.gd
+res://scenes/planet/Planet.tscn
+res://scenes/planet/Planet.gd

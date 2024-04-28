@@ -116,6 +116,8 @@ func zoom():
 
 func _on_box_kick_area_body_entered(body):
 	if body.is_in_group("box"):
+		$AudioStreamPlayer.pitch_scale = randf_range(.5, 1.5)
+		$AudioStreamPlayer.play()
 		body.apply_impulse(global_position.direction_to($BoxKickArea/KickDirection.global_position)*100)
 
 

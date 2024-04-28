@@ -12,4 +12,6 @@ func _process(delta):
 			if Input.is_action_just_pressed("interact"):
 				$Area2D/CollisionShape2D.disabled = true
 				GameEvents.emit_crystal_gather()
+				$AudioStreamPlayer.pitch_scale = randf_range(.5, 1.5)
+				$AudioStreamPlayer.play()
 				animation_player.play("mine")

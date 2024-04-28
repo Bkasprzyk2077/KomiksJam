@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://b7ylnl3t7oefk"]
+[gd_scene load_steps=34 format=3 uid="uid://b7ylnl3t7oefk"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_mfcxx"]
 [ext_resource type="Texture2D" uid="uid://b1g7rpxixynkr" path="res://assets/player/fall/1.png" id="2_sgb0k"]
@@ -26,6 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://cy1saauvvrmnj" path="res://assets/player/kick/4.png" id="17_i60hd"]
 [ext_resource type="Texture2D" uid="uid://f113jtb2mj8r" path="res://assets/player/kick/5.png" id="18_3ag81"]
 [ext_resource type="Texture2D" uid="uid://c22wkmojlrmk6" path="res://assets/UI_STEROWANIE.png" id="26_bres2"]
+[ext_resource type="AudioStream" uid="uid://ccqfs8hpgn6cl" path="res://sounds/kopniecie_uderzenie.wav" id="27_6ejh7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwxtt"]
 bg_color = Color(0, 0, 0, 1)
@@ -219,6 +220,9 @@ position = Vector2(2, -250)
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_6ejh7")
 
 [connection signal="timeout" from="DeathTimer" to="." method="_on_death_timer_timeout"]
 [connection signal="body_entered" from="BoxKickArea" to="." method="_on_box_kick_area_body_entered"]

@@ -1,7 +1,6 @@
 extends StaticBody2D
 
 var i = 0
-
 #
 #func _ready():
 	#$AnimationPlayer.speed_scale = randf_range(0.8, 1.2)

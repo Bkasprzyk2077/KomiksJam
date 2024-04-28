@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b65g61nsh1hb7"]
+[gd_scene load_steps=6 format=3 uid="uid://b65g61nsh1hb7"]
 
 [ext_resource type="Texture2D" uid="uid://ccut1cb1yk4b8" path="res://assets/moon.png" id="1_60fp8"]
 [ext_resource type="Script" path="res://scenes/planet/Planet.gd" id="1_wnpmx"]
+[ext_resource type="AudioStream" uid="uid://ci1mgm6kqknmp" path="res://sounds/szybkie-przesjcie.wav" id="3_b7jck"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4fg0l"]
 radius = 129.1
@@ -26,6 +27,9 @@ gravity_direction = Vector2(2.08165e-12, 2.08165e-12)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GravityArea"]
 shape = SubResource("CircleShape2D_vgn5s")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_b7jck")
 
 [connection signal="body_entered" from="GravityArea" to="." method="_on_gravity_area_body_entered"]
 [connection signal="body_exited" from="GravityArea" to="." method="_on_gravity_area_body_exited"]

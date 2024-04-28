@@ -40,6 +40,8 @@ func display_line():
 	if line_index >= len(dialog_lines):
 		end_dialog()
 		return
+	$AudioStreamPlayer.pitch_scale = randf_range(.5, 1.5)
+	$AudioStreamPlayer.play()
 	label.text = ""
 	text = dialog_lines[line_index]
 	line_index += 1

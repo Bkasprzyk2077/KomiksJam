@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://kym2ito8cchp"]
+[gd_scene load_steps=13 format=3 uid="uid://kym2ito8cchp"]
 
 [ext_resource type="Script" path="res://scenes/crystal/hidden_crystal.gd" id="1_xl1qi"]
 [ext_resource type="Texture2D" uid="uid://cqkvfalm5mi52" path="res://assets/crystals/dig/1.png" id="2_u6ciq"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dmus6ueoic7uh" path="res://assets/crystals/dig/6.png" id="7_28iu4"]
 [ext_resource type="Texture2D" uid="uid://c773ummm3fh1e" path="res://assets/crystals/dig/7.png" id="8_4c4ua"]
 [ext_resource type="Texture2D" uid="uid://hyoqeh42c0f8" path="res://assets/crystals/dig/8.png" id="9_selxd"]
+[ext_resource type="AudioStream" uid="uid://oy3sdywlw8r4" path="res://sounds/podnoszenie_przedmiotu.wav" id="10_olc17"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_osaa1"]
 animations = [{
@@ -58,3 +59,6 @@ animation = &"dig"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_hoe0x")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_olc17")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cvdowe4v0qw83"]
+[gd_scene load_steps=8 format=3 uid="uid://cvdowe4v0qw83"]
 
 [ext_resource type="Script" path="res://scenes/crystal/crystal.gd" id="1_8pdsq"]
 [ext_resource type="Texture2D" uid="uid://chk0xgxdvxpo" path="res://assets/crystals/k1.png" id="2_sfxrh"]
+[ext_resource type="AudioStream" uid="uid://oy3sdywlw8r4" path="res://sounds/podnoszenie_przedmiotu.wav" id="3_m4pt0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hoe0x"]
 radius = 101.22
@@ -98,3 +99,6 @@ shape = SubResource("CircleShape2D_hoe0x")
 libraries = {
 "": SubResource("AnimationLibrary_6wywh")
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_m4pt0")
