@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cyuucb651mmwe"]
+[gd_scene load_steps=20 format=3 uid="uid://cyuucb651mmwe"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_oj6bn"]
 [ext_resource type="Texture2D" uid="uid://ctorachpk4m6h" path="res://assets/bg/tło tutorial.png" id="2_gu8dq"]
@@ -16,7 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://h4dgu3obdes8" path="res://scenes/planet/Planet_G.tscn" id="14_p418t"]
 [ext_resource type="PackedScene" uid="uid://4eagwde0gdp" path="res://scenes/planet/Planet_I.tscn" id="15_7t6k7"]
 [ext_resource type="PackedScene" uid="uid://db6dakh28nd4m" path="res://scenes/planet/Planet_J.tscn" id="16_ttpv4"]
-[ext_resource type="PackedScene" uid="uid://cinv0f0wiju1v" path="res://scenes/dialog_area/LoreArea.tscn" id="17_jcsas"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
 shader = ExtResource("2_y2oi7")
@@ -187,9 +186,5 @@ scale = Vector2(1.64771, 1.64771)
 
 [node name="GravityArea" parent="Planet_J2" index="4"]
 scale = Vector2(0.75, 0.75)
-
-[node name="LoreArea" parent="." instance=ExtResource("17_jcsas")]
-z_index = 3
-position = Vector2(-539, 86)
 
 [editable path="Planet_J2"]

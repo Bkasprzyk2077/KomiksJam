@@ -12,3 +12,5 @@ res://ui/IntroPanel.tscn
 res://ui/LorePanel.gd
 res://ui/main_menu/MainMenu.gd
 res://ui/main_menu/MainMenu.tscn
+res://scenes/player/player.gd
+res://scenes/player/player.tscn

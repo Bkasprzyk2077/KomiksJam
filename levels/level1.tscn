@@ -232,7 +232,7 @@ position = Vector2(1896, 1025)
 dialog_text_file = "res://dialogs/3_crystals_1.txt"
 
 [node name="DialogArea2" parent="." instance=ExtResource("13_u2m7l")]
-position = Vector2(703, 277)
+position = Vector2(198, 351)
 dialog_text_file = "res://dialogs/3_crystals_0.txt"
 
 [editable path="Planet7"]

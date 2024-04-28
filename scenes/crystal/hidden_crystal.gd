@@ -9,6 +9,7 @@ func _process(delta):
 		if Input.is_action_just_pressed("interact"):
 			$Sprite2D.visible = true
 			$Sprite2D.play("dig")
+			$Area2D/CollisionShape2D.disabled = true
 			await $Sprite2D.animation_finished
 			GameEvents.emit_crystal_gather()
 			queue_free()

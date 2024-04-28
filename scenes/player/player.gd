@@ -15,7 +15,7 @@ func _ready():
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
 	if Input.is_action_just_pressed("reset"):
-		SceneTransition.reload_scene()
+		SceneTransition.change_scene("res://ui/main_menu/MainMenu.tscn")
 	zoom()
 	animate()
 	switch_camera()
