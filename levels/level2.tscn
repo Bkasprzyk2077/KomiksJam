@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cpfsv1uf5ygyp"]
+[gd_scene load_steps=13 format=3 uid="uid://cpfsv1uf5ygyp"]
 
 [ext_resource type="Script" path="res://levels/level2.gd" id="1_586f0"]
 [ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_gteak"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://coiihl2p3mc6t" path="res://scenes/planet/Planet_A.tscn" id="5_0s4eh"]
 [ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="5_b8jw8"]
 [ext_resource type="PackedScene" uid="uid://cm7vqlildigai" path="res://scenes/spaceship/EscapeSpaceShip.tscn" id="6_d60kh"]
+[ext_resource type="PackedScene" uid="uid://cinv0f0wiju1v" path="res://scenes/dialog_area/LoreArea.tscn" id="8_3va5c"]
+[ext_resource type="PackedScene" uid="uid://6xaviah41n5s" path="res://ui/FinishLorePanel.tscn" id="9_4hg22"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_klb14"]
 shader = ExtResource("2_gteak")
@@ -49,6 +51,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="DialogCanvas" type="CanvasLayer" parent="." groups=["dialog_canvas"]]
+layer = 2
+
 [node name="Planet" parent="." instance=ExtResource("3_yhqa5")]
 
 [node name="GravityArea" parent="Planet" index="6"]
@@ -79,4 +84,12 @@ curve = SubResource("Curve2D_rpmpj")
 position = Vector2(-2653, 2481)
 rotation = -0.354061
 
+[node name="CollisionShape2D" parent="Path2D2/ExitSpaceShip/Area2D" index="0"]
+disabled = true
+
+[node name="LoreArea" parent="Path2D2/ExitSpaceShip" instance=ExtResource("8_3va5c")]
+scale = Vector2(1.54969, 1.54969)
+lore = ExtResource("9_4hg22")
+
 [editable path="Planet"]
+[editable path="Path2D2/ExitSpaceShip"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cyuucb651mmwe"]
+[gd_scene load_steps=21 format=3 uid="uid://cyuucb651mmwe"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_oj6bn"]
 [ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_y2oi7"]
@@ -11,6 +11,12 @@
 [ext_resource type="PackedScene" uid="uid://oruit62yrf76" path="res://scenes/ladder/Ladder.tscn" id="10_kf26b"]
 [ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="11_2v7bo"]
 [ext_resource type="PackedScene" uid="uid://7pe5s0pan5by" path="res://scenes/planet/Planet_D.tscn" id="11_5u58i"]
+[ext_resource type="PackedScene" uid="uid://dvabnm4lfnr4s" path="res://scenes/planet/Planet_E.tscn" id="12_200kg"]
+[ext_resource type="PackedScene" uid="uid://bg450ryv2u417" path="res://scenes/planet/Planet_F.tscn" id="13_wwqkr"]
+[ext_resource type="PackedScene" uid="uid://h4dgu3obdes8" path="res://scenes/planet/Planet_G.tscn" id="14_p418t"]
+[ext_resource type="PackedScene" uid="uid://4eagwde0gdp" path="res://scenes/planet/Planet_I.tscn" id="15_7t6k7"]
+[ext_resource type="PackedScene" uid="uid://db6dakh28nd4m" path="res://scenes/planet/Planet_J.tscn" id="16_ttpv4"]
+[ext_resource type="PackedScene" uid="uid://cinv0f0wiju1v" path="res://scenes/dialog_area/LoreArea.tscn" id="17_jcsas"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
 shader = ExtResource("2_y2oi7")
@@ -42,6 +48,10 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.0745098, 0, 0.341176, 1)
 
+[node name="TextureRect" type="TextureRect" parent="BackGround"]
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="DialogCanvas" type="CanvasLayer" parent="." groups=["dialog_canvas"]]
 layer = 2
 
@@ -72,14 +82,6 @@ position = Vector2(5751, 1121)
 rotation = -2.42788
 next_level = "res://levels/level1.tscn"
 
-[node name="Planet5" parent="." instance=ExtResource("4_f8e8t")]
-position = Vector2(760, -1258)
-metadata/_edit_group_ = true
-
-[node name="Planet6" parent="." instance=ExtResource("4_f8e8t")]
-position = Vector2(1379, 400)
-metadata/_edit_group_ = true
-
 [node name="Planet7" parent="." instance=ExtResource("4_f8e8t")]
 position = Vector2(2657, 57)
 scale = Vector2(1.6, 1.6)
@@ -87,24 +89,6 @@ metadata/_edit_group_ = true
 
 [node name="GravityArea" parent="Planet7" index="5"]
 scale = Vector2(0.79, 0.79)
-
-[node name="Planet8" parent="." instance=ExtResource("4_f8e8t")]
-position = Vector2(5436, 532)
-scale = Vector2(1.6, 1.6)
-metadata/_edit_group_ = true
-
-[node name="GravityArea" parent="Planet8" index="5"]
-scale = Vector2(0.79, 0.79)
-
-[node name="Planet2" parent="." instance=ExtResource("4_f8e8t")]
-position = Vector2(-47.0001, -816)
-rotation = -1.1392
-scale = Vector2(0.58, 0.58)
-
-[node name="Planet3" parent="." instance=ExtResource("4_f8e8t")]
-position = Vector2(1293, -514)
-rotation = -1.1392
-scale = Vector2(0.58, 0.58)
 
 [node name="Planet4" parent="." instance=ExtResource("4_f8e8t")]
 position = Vector2(3619, 517)
@@ -132,7 +116,7 @@ position = Vector2(620, -887)
 dialog_text_file = "res://dialogs/2_Tutorial1.txt"
 
 [node name="DialogArea4" parent="." instance=ExtResource("9_3s6kg")]
-position = Vector2(171, -668)
+position = Vector2(160, -717)
 dialog_text_file = "res://dialogs/2_Tutorial4.txt"
 
 [node name="DialogArea5" parent="." instance=ExtResource("9_3s6kg")]
@@ -155,7 +139,25 @@ scale = Vector2(1.97594, 3.90043)
 [node name="Planet_D" parent="." instance=ExtResource("11_5u58i")]
 position = Vector2(-161, 96)
 
-[editable path="Planet5"]
-[editable path="Planet6"]
+[node name="Planet_D2" parent="." instance=ExtResource("12_200kg")]
+position = Vector2(-134, -881)
+scale = Vector2(0.668545, 0.668545)
+
+[node name="Planet_D3" parent="." instance=ExtResource("13_wwqkr")]
+position = Vector2(757, -1252)
+
+[node name="Planet_F" parent="." instance=ExtResource("14_p418t")]
+position = Vector2(1288, -503)
+scale = Vector2(0.600965, 0.600965)
+
+[node name="Planet_I" parent="." instance=ExtResource("15_7t6k7")]
+position = Vector2(1385, 422)
+
+[node name="Planet_J" parent="." instance=ExtResource("16_ttpv4")]
+position = Vector2(5444, 532)
+scale = Vector2(1.92519, 1.92519)
+
+[node name="LoreArea" parent="." instance=ExtResource("17_jcsas")]
+position = Vector2(-539, 86)
+
 [editable path="Planet7"]
-[editable path="Planet8"]

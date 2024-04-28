@@ -178,6 +178,7 @@ value = 142.29
 show_percentage = false
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 3
 position = Vector2(2.08165e-12, -23.29)
 scale = Vector2(0.72, 0.72)
 sprite_frames = SubResource("SpriteFrames_rn7dd")

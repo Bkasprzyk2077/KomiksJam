@@ -14,6 +14,8 @@ func _ready():
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
+	if Input.is_action_just_pressed("reset"):
+		SceneTransition.reload_scene()
 	zoom()
 	animate()
 	switch_camera()

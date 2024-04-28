@@ -1,7 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714284143
+::res://::1714289945
 export_presets.cfg::TextFile::-1::1714268650::0::1::::<><>::
-::res://assets/::1714284864
+::res://assets/::1714287195
+Box.png::CompressedTexture2D::6873045334450722168::1714287194::1714287195::1::::<><>::
 dialog_panel.png::CompressedTexture2D::7958382007232733886::1714177894::1714177894::1::::<><>::
 drabina.png::CompressedTexture2D::8986634846996131739::1714268028::1714268028::1::::<><>::
 icon.svg::CompressedTexture2D::8299719655529447117::1714069145::1714156878::1::::<><>::
@@ -138,24 +139,24 @@ shattered_1.txt::TextFile::-1::1714268028::0::1::::<><>::
 task_end_boxes.txt::TextFile::-1::1714268028::0::1::::<><>::
 task_end_crystals.txt::TextFile::-1::1714268028::0::1::::<><>::
 task_end_enemies.txt::TextFile::-1::1714268028::0::1::::<><>::
-::res://global/::1714284723
+::res://global/::1714289916
 DialogManager.gd::GDScript::-1::1714268028::0::1::::<>Node<>::
 GameEvents.gd::GDScript::-1::1714242156::0::1::::<>Node<>::
 SceneTransition.gd::GDScript::-1::1714242156::0::1::::<>Node2D<>::
-SceneTransition.gdshader::Shader::-1::1714284723::0::1::::<><>::
+SceneTransition.gdshader::Shader::-1::1714289916::0::1::::<><>::
 SceneTransition.tscn::PackedScene::155818325458980889::1714236773::0::1::::<><>::res://global/SceneTransition.gd<>res://global/SceneTransition.gdshader<>uid://cs1hic7hdi4xu::::res://assets/WHITE_CIRCLE.png
-::res://levels/::1714284723
-FilmGrain.gdshader::Shader::-1::1714284723::0::1::::<><>::
-FishEye.gdshader::Shader::-1::1714284723::0::1::::<><>::
-level0.tscn::PackedScene::6499879183033894688::1714284701::0::1::::<><>::res://levels/level1.gd<>res://levels/FishEye.gdshader<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://blelnyh6fur1e::::res://scenes/box/box.tscn<>uid://dl2w38cym5jdp::::res://scenes/enemy/enemy.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn<>uid://cvdowe4v0qw83::::res://scenes/crystal/crystal.tscn<>uid://oruit62yrf76::::res://scenes/ladder/Ladder.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn
+::res://levels/::1714289916
+FilmGrain.gdshader::Shader::-1::1714289916::0::1::::<><>::
+FishEye.gdshader::Shader::-1::1714289916::0::1::::<><>::
+level0.tscn::PackedScene::6499879183033894688::1714289916::0::1::::<><>::res://levels/level1.gd<>res://levels/FishEye.gdshader<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://blelnyh6fur1e::::res://scenes/box/box.tscn<>uid://dl2w38cym5jdp::::res://scenes/enemy/enemy.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn<>uid://cvdowe4v0qw83::::res://scenes/crystal/crystal.tscn<>uid://oruit62yrf76::::res://scenes/ladder/Ladder.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://7pe5s0pan5by::::res://scenes/planet/Planet_D.tscn<>uid://dvabnm4lfnr4s::::res://scenes/planet/Planet_E.tscn<>uid://bg450ryv2u417::::res://scenes/planet/Planet_F.tscn<>uid://h4dgu3obdes8::::res://scenes/planet/Planet_G.tscn<>uid://4eagwde0gdp::::res://scenes/planet/Planet_I.tscn<>uid://db6dakh28nd4m::::res://scenes/planet/Planet_J.tscn<>uid://cinv0f0wiju1v::::res://scenes/dialog_area/LoreArea.tscn
 level1.gd::GDScript::-1::1714284639::0::1::::<>Node2D<>::
-level1.tscn::PackedScene::479479873002371528::1714268739::0::1::::<><>::res://levels/level1.gd<>res://levels/FishEye.gdshader<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://cj8uup5kdv1fk::::res://scenes/box/BoxSpawner.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://3fdfi4qqyp74::::res://scenes/spaceship/SpaceShip.tscn<>uid://kym2ito8cchp::::res://scenes/crystal/hidden_crystal.tscn<>uid://cvdowe4v0qw83::::res://scenes/crystal/crystal.tscn<>uid://dl2w38cym5jdp::::res://scenes/enemy/enemy.tscn<>uid://b5dlmkfds7kxh::::res://scenes/planet/Planet_C.tscn<>uid://oruit62yrf76::::res://scenes/ladder/Ladder.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn
+level1.tscn::PackedScene::479479873002371528::1714288089::0::1::::<><>::res://levels/level1.gd<>res://levels/FishEye.gdshader<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://cj8uup5kdv1fk::::res://scenes/box/BoxSpawner.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://3fdfi4qqyp74::::res://scenes/spaceship/SpaceShip.tscn<>uid://kym2ito8cchp::::res://scenes/crystal/hidden_crystal.tscn<>uid://cvdowe4v0qw83::::res://scenes/crystal/crystal.tscn<>uid://dl2w38cym5jdp::::res://scenes/enemy/enemy.tscn<>uid://b5dlmkfds7kxh::::res://scenes/planet/Planet_C.tscn<>uid://oruit62yrf76::::res://scenes/ladder/Ladder.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn
 level2.gd::GDScript::-1::1714268028::0::1::::<>Node2D<>::
-level2.tscn::PackedScene::5837127715040196247::1714268028::0::1::::<><>::res://levels/level2.gd<>res://levels/FishEye.gdshader<>uid://m0pul1vrrkn1::::res://scenes/planet/ShateredPlanet.tscn<>uid://c0jviop3fdx4c::::res://scenes/harvester/Harvester.tscn<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn
+level2.tscn::PackedScene::5837127715040196247::1714288592::0::1::::<><>::res://levels/level2.gd<>res://levels/FishEye.gdshader<>uid://m0pul1vrrkn1::::res://scenes/planet/ShateredPlanet.tscn<>uid://c0jviop3fdx4c::::res://scenes/harvester/Harvester.tscn<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://cinv0f0wiju1v::::res://scenes/dialog_area/LoreArea.tscn<>uid://6xaviah41n5s::::res://ui/FinishLorePanel.tscn
 ::res://scenes/::1714268031
-::res://scenes/box/::1714268028
+::res://scenes/box/::1714288089
 box.gd::GDScript::-1::1714177894::0::1::::<>RefCounted<>::
-box.tscn::PackedScene::3167447849758911948::1714257866::0::1::::<><>::uid://dqipf1wqvhrs4::::res://assets/icon.svg
+box.tscn::PackedScene::3167447849758911948::1714288089::0::1::::<><>::uid://c46mb1xhrgqcu::::res://assets/Box.png
 BoxSpawner.gd::GDScript::-1::1714220616::0::1::::<>Area2D<>::
 BoxSpawner.tscn::PackedScene::5473916316399496884::1714268028::0::1::::<><>::res://scenes/box/BoxSpawner.gd<>uid://blelnyh6fur1e::::res://scenes/box/box.tscn<>uid://dbebls33j8ii0::::res://assets/Magazyn.png
 ::res://scenes/crystal/::1714268028
@@ -163,11 +164,11 @@ crystal.gd::GDScript::-1::1714230960::0::1::::<>Node2D<>::
 crystal.tscn::PackedScene::6253889798292636102::1714254113::0::1::::<><>::res://scenes/crystal/crystal.gd<>uid://chk0xgxdvxpo::::res://assets/crystals/k1.png
 hidden_crystal.gd::GDScript::-1::1714220616::0::1::::<>Node2D<>::
 hidden_crystal.tscn::PackedScene::752210773044749477::1714268028::0::1::::<><>::res://scenes/crystal/hidden_crystal.gd<>uid://dqipf1wqvhrs4::::res://assets/icon.svg
-::res://scenes/dialog_area/::1714268028
+::res://scenes/dialog_area/::1714288089
 DialogArea.gd::GDScript::-1::1714268028::0::1::::<>Area2D<>::
 DialogArea.tscn::PackedScene::8019165196847122094::1714246336::0::1::::<><>::res://scenes/dialog_area/DialogArea.gd
-LoreArea.gd::GDScript::-1::1714268028::0::1::::<>Area2D<>::
-LoreArea.tscn::PackedScene::5362509031236465313::1714268028::0::1::::<><>::res://scenes/dialog_area/LoreArea.gd<>uid://b3xmp0msg0yl3::::res://ui/LorePanel.tscn
+LoreArea.gd::GDScript::-1::1714287675::0::1::::<>Area2D<>::
+LoreArea.tscn::PackedScene::5362509031236465313::1714288089::0::1::::<><>::res://scenes/dialog_area/LoreArea.gd<>uid://b3xmp0msg0yl3::::res://ui/LorePanel.tscn
 ::res://scenes/enemy/::1714268028
 enemy.gd::GDScript::-1::1714268028::0::1::::<>RigidBody2D<>::
 enemy.tscn::PackedScene::7988465043995312073::1714268028::0::1::::<><>::res://scenes/enemy/enemy.gd<>uid://co3v54bcxuavb::::res://assets/enemy/IMG_0406.png<>uid://dpkjiiesg08dg::::res://assets/enemy/IMG_0407.png
@@ -177,17 +178,22 @@ Harvester.tscn::PackedScene::6547431961100871904::1714268028::0::1::::<><>::res:
 ::res://scenes/ladder/::1714268028
 Ladder.gd::GDScript::-1::1714268028::0::1::::<>Node2D<>::
 Ladder.tscn::PackedScene::1018967906050131227::1714268028::0::1::::<><>::res://scenes/ladder/Ladder.gd<>uid://d1bgte13b74ep::::res://assets/drabina.png
-::res://scenes/planet/::1714284203
+::res://scenes/planet/::1714288089
 Planet.gd::GDScript::-1::1714268028::0::1::::<>StaticBody2D<>::
 Planet.tscn::PackedScene::4624627217179331998::1714222320::0::1::::<><>::uid://ccut1cb1yk4b8::::res://assets/moon.png<>res://scenes/planet/Planet.gd
-Planet_A.tscn::PackedScene::5772499057036594297::1714284203::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://e035rec0km1r::::res://assets/planet_A/planeta_a_2_warstwa.png<>uid://2qhhsu6vv0h8::::res://assets/planet_B/pB1_glow.png<>uid://dpduv8aebw8yh::::res://assets/planet_A/planeta_a.png
-Planet_C.tscn::PackedScene::4498968975662695677::1714268739::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://q6sn2kui3k3f::::res://assets/planet_C/planeta_c_1lvl.png<>uid://2qhhsu6vv0h8::::res://assets/planet_B/pB1_glow.png
-Planet_D.tscn::PackedScene::2277306089238635706::1714284957::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://2qhhsu6vv0h8::::res://assets/planet_B/pB1_glow.png<>uid://dpduv8aebw8yh::::res://assets/planet_A/planeta_a.png<>uid://e035rec0km1r::::res://assets/planet_A/planeta_a_2_warstwa.png
+Planet_A.tscn::PackedScene::5772499057036594297::1714285763::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://e035rec0km1r::::res://assets/planet_A/planeta_a_2_warstwa.png<>uid://2qhhsu6vv0h8::::res://assets/planet_B/pB1_glow.png<>uid://dpduv8aebw8yh::::res://assets/planet_A/planeta_a.png
+Planet_C.tscn::PackedScene::4498968975662695677::1714288089::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://q6sn2kui3k3f::::res://assets/planet_C/planeta_c_1lvl.png<>uid://drsvf8klwhqqg::::res://assets/other_planets/2 gradient.png
+Planet_D.tscn::PackedScene::2277306089238635706::1714285911::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://djpdjmdoiivka::::res://assets/other_planets/1 gradient.png<>uid://cx8nxyyho2yvl::::res://assets/other_planets/1.PNG
+Planet_E.tscn::PackedScene::8633312375378046088::1714286144::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://drsvf8klwhqqg::::res://assets/other_planets/2 gradient.png<>uid://cbtunvd81nq33::::res://assets/other_planets/2.png
+Planet_F.tscn::PackedScene::2869287785982949112::1714286169::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://b64n3l5uubsn1::::res://assets/other_planets/3 gradient.png<>uid://dwncil1mhnqyx::::res://assets/other_planets/3.png
+Planet_G.tscn::PackedScene::551382820434770941::1714286701::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://cjrbrlyry0pm3::::res://assets/other_planets/4 gradient.png<>uid://clrv5qvkx56xe::::res://assets/other_planets/4.png
+Planet_I.tscn::PackedScene::60110172107238645::1714286701::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://cb5oj6xk0q07o::::res://assets/other_planets/6 gradient.png<>uid://dfveknjeboh7c::::res://assets/other_planets/6.png
+Planet_J.tscn::PackedScene::7293629293389991306::1714286797::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://cjrbrlyry0pm3::::res://assets/other_planets/4 gradient.png<>uid://i321warobjru::::res://assets/other_planets/5.png
 ShateredPlanet.gd::GDScript::-1::1714268028::0::1::::<>StaticBody2D<>::
 ShateredPlanet.tscn::PackedScene::894822657176786100::1714268028::0::1::::<><>::res://scenes/planet/ShateredPlanet.gd<>uid://djkpd1d3wpp5x::::res://assets/planet_B/pB3_orbita.png<>uid://7wv706g521l4::::res://assets/planet_B/pB5_core.png<>uid://2qhhsu6vv0h8::::res://assets/planet_B/pB1_glow.png<>uid://msbl0c0rmchx::::res://assets/planet_B/pB2_rocks.png<>uid://csr4mdtgty1x::::res://assets/planet_B/pB4_background.png<>uid://bajl8c1vdrurl::::res://scenes/ShateredPiece/ShateredPieceBig.tscn<>uid://cgodkks1j31ku::::res://scenes/ShateredPiece/ShateredPieceSmall.tscn<>uid://domygxbtkv475::::res://scenes/ShateredPiece/ShateredPieceMid.tscn
-::res://scenes/player/::1714284701
-player.gd::GDScript::-1::1714284545::0::1::::<>RigidBody2D<>::
-player.tscn::PackedScene::4682700470366732820::1714284701::0::1::::<><>::res://scenes/player/player.gd<>uid://b1g7rpxixynkr::::res://assets/player/fall/1.png<>uid://cjpscer75c17f::::res://assets/player/fall/2.png<>uid://d4ckkxuoyty3k::::res://assets/player/idle/1.png<>uid://b7w8of2s544ha::::res://assets/player/run/1.png<>uid://drfkvue5jyhsw::::res://assets/player/idle/2.png<>uid://b1xrjidubc51j::::res://assets/player/fall/3.png<>uid://cgqxm1f4vendr::::res://assets/player/fall/4.png<>uid://dgbpwmr1r37rx::::res://assets/player/idle/3.png<>uid://cgktt5ayi7m72::::res://assets/player/run/3.png<>uid://c86jbglp67och::::res://assets/player/fall/5.png<>uid://dtjkp3e0t3pf7::::res://assets/player/idle/4.png<>uid://bvo15jmtc6quu::::res://assets/player/run/4.png<>uid://cnl1oioearkge::::res://assets/player/idle/5.png<>uid://cux5cmguqrany::::res://assets/player/run/5.png<>uid://cuhhdpnq5dmgy::::res://assets/player/fall/6.png<>uid://e7sy4b1iiwoy::::res://assets/player/run/6.png<>uid://cu0yxo5j1eami::::res://assets/player/fall/7.png<>uid://bdtcil431um2c::::res://assets/player/run/7.png<>uid://cul6xspqvdnbd::::res://assets/player/run/8.png<>uid://b583wp1k2fqry::::res://assets/player/kick/1.png<>uid://fpihnbwarut2::::res://assets/player/kick/2.png<>uid://rmpo1h0so3hu::::res://assets/player/kick/3.png<>uid://cy1saauvvrmnj::::res://assets/player/kick/4.png<>uid://f113jtb2mj8r::::res://assets/player/kick/5.png
+::res://scenes/player/::1714287021
+player.gd::GDScript::-1::1714287021::0::1::::<>RigidBody2D<>::
+player.tscn::PackedScene::4682700470366732820::1714286047::0::1::::<><>::res://scenes/player/player.gd<>uid://b1g7rpxixynkr::::res://assets/player/fall/1.png<>uid://cjpscer75c17f::::res://assets/player/fall/2.png<>uid://d4ckkxuoyty3k::::res://assets/player/idle/1.png<>uid://b7w8of2s544ha::::res://assets/player/run/1.png<>uid://drfkvue5jyhsw::::res://assets/player/idle/2.png<>uid://b1xrjidubc51j::::res://assets/player/fall/3.png<>uid://cgqxm1f4vendr::::res://assets/player/fall/4.png<>uid://dgbpwmr1r37rx::::res://assets/player/idle/3.png<>uid://cgktt5ayi7m72::::res://assets/player/run/3.png<>uid://c86jbglp67och::::res://assets/player/fall/5.png<>uid://dtjkp3e0t3pf7::::res://assets/player/idle/4.png<>uid://bvo15jmtc6quu::::res://assets/player/run/4.png<>uid://cnl1oioearkge::::res://assets/player/idle/5.png<>uid://cux5cmguqrany::::res://assets/player/run/5.png<>uid://cuhhdpnq5dmgy::::res://assets/player/fall/6.png<>uid://e7sy4b1iiwoy::::res://assets/player/run/6.png<>uid://cu0yxo5j1eami::::res://assets/player/fall/7.png<>uid://bdtcil431um2c::::res://assets/player/run/7.png<>uid://cul6xspqvdnbd::::res://assets/player/run/8.png<>uid://b583wp1k2fqry::::res://assets/player/kick/1.png<>uid://fpihnbwarut2::::res://assets/player/kick/2.png<>uid://rmpo1h0so3hu::::res://assets/player/kick/3.png<>uid://cy1saauvvrmnj::::res://assets/player/kick/4.png<>uid://f113jtb2mj8r::::res://assets/player/kick/5.png
 ::res://scenes/ShateredPiece/::1714268028
 ShateredPiece.gd::GDScript::-1::1714224168::0::1::::<>AnimatableBody2D<>::
 ShateredPieceBig.tscn::PackedScene::2405727047769391605::1714268028::0::1::::<><>::res://scenes/ShateredPiece/ShateredPiece.gd<>uid://c7dmqkqeh3wg2::::res://assets/planet_B/pB6_big_platform.png
@@ -200,13 +206,17 @@ SpaceShip.gd::GDScript::-1::1714284656::0::1::::<>Node2D<>::
 SpaceShip.tscn::PackedScene::1975801056318468633::1714268739::0::1::::<><>::res://scenes/spaceship/SpaceShip.gd<>uid://d3ie10d2wk27h::::res://assets/ship/1.png<>uid://5s0d4rq40pnn::::res://assets/ship/2.png<>uid://doj21f0sgrggk::::res://assets/ship/3.png<>uid://bjlw0vt7p7rl0::::res://assets/ship/4.png<>uid://cydpflft2g3vo::::res://assets/ship/5.png<>uid://jwmtlvvcpx3n::::res://assets/ship/6.png<>uid://bdtl3tcruxfg8::::res://assets/ship/7.png<>uid://blfmwtbydhwkh::::res://assets/ship/8.png
 SpawnSpaceShip.gd::GDScript::-1::1714268028::0::1::::<>PathFollow2D<>::
 SpawnSpaceShip.tscn::PackedScene::5976090303848857015::1714243871::0::1::::<><>::res://scenes/spaceship/SpawnSpaceShip.gd<>uid://b7ylnl3t7oefk::::res://scenes/player/player.tscn<>uid://b3oxxnraa50bh::::res://assets/Illustration3.png
-::res://ui/::1714284723
+::res://sounds/::1714289950
+cosmo_soundtrack.mp3::AudioStreamMP3::6665324851426345592::1714289950::1714289951::1::::<><>::
+::res://ui/::1714288287
 ClashDisplay-Semibold.otf::FontFile::6811238396876647128::1714268028::1714268028::1::::<><>::
 ClashDisplay-Variable.ttf::FontFile::3855425253724362337::1714268028::1714268028::1::::<><>::
 dialog_panel.gd::GDScript::-1::1714284701::0::1::::<>Control<>::
 dialog_panel.tscn::PackedScene::6391559549983213113::1714284723::0::1::::<><>::res://ui/dialog_panel.gd<>uid://b1n2w1fh0dmbr::::res://assets/UI/menu_dialog_box.png
-LorePanel.gd::GDScript::-1::1714268028::0::1::::<>CanvasLayer<>::
-LorePanel.tscn::PackedScene::4399945717171426650::1714268028::0::1::::<><>::uid://dqipf1wqvhrs4::::res://assets/icon.svg<>res://ui/LorePanel.gd
+FinishLorePanel.gd::GDScript::-1::1714288287::0::1::::<>CanvasLayer<>::
+FinishLorePanel.tscn::PackedScene::2223372763339022402::1714288287::0::1::::<><>::res://ui/FinishLorePanel.gd
+LorePanel.gd::GDScript::-1::1714287868::0::1::::<>CanvasLayer<>::
+LorePanel.tscn::PackedScene::4399945717171426650::1714288131::0::1::::<><>::res://ui/LorePanel.gd
 ::res://ui/main_menu/::1714268028
 MainMenu.gd::GDScript::-1::1714268028::0::1::::<>CanvasLayer<>::
 MainMenu.tscn::PackedScene::3917246064061360942::1714268028::0::1::::<><>::uid://dlndnhukoqc2a::::res://assets/dialog_panel.png<>res://ui/main_menu/MainMenu.gd<>uid://t2g1j7toyjx2::::res://assets/UI/menu_grafika2.png

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://blelnyh6fur1e"]
 
-[ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="1_okilm"]
+[ext_resource type="Texture2D" uid="uid://c46mb1xhrgqcu" path="res://assets/Box.png" id="1_ocejn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6b6a0"]
 size = Vector2(125, 125)
@@ -10,7 +10,8 @@ mass = 0.25
 gravity_scale = 0.25
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_okilm")
+position = Vector2(5, -2)
+texture = ExtResource("1_ocejn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6b6a0")
