@@ -1,0 +1,86 @@
+[gd_scene load_steps=9 format=3 uid="uid://bg450ryv2u417"]
+
+[ext_resource type="Script" path="res://scenes/planet/Planet.gd" id="1_awj0u"]
+[ext_resource type="Texture2D" uid="uid://b64n3l5uubsn1" path="res://assets/other_planets/3 gradient.png" id="2_ind8c"]
+[ext_resource type="Texture2D" uid="uid://dwncil1mhnqyx" path="res://assets/other_planets/3.png" id="3_yj2r2"]
+
+[sub_resource type="Animation" id="Animation_gdbp8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite4:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.33, 0.33)]
+}
+
+[sub_resource type="Animation" id="Animation_upbmk"]
+resource_name = "bg_scale"
+length = 10.0
+loop_mode = 1
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite4:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.9, 0.9), Vector2(1.1, 1.1), Vector2(0.9, 0.9)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tdbxy"]
+_data = {
+"RESET": SubResource("Animation_gdbp8"),
+"bg_scale": SubResource("Animation_upbmk")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4fg0l"]
+radius = 253.86
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vgn5s"]
+radius = 587.87
+
+[node name="Planet_F" type="StaticBody2D"]
+script = ExtResource("1_awj0u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tdbxy")
+}
+autoplay = "bg_scale"
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.286275)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("2_ind8c")
+
+[node name="Front" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.847059)
+z_index = 1
+scale = Vector2(1.31491, 1.29443)
+texture = ExtResource("3_yj2r2")
+offset = Vector2(-0.52, 2.14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4fg0l")
+
+[node name="GravityArea" type="Area2D" parent="."]
+gravity_space_override = 3
+gravity_point = true
+gravity_point_center = Vector2(2.08165e-12, 2.08165e-12)
+gravity_direction = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GravityArea"]
+shape = SubResource("CircleShape2D_vgn5s")
+
+[connection signal="body_entered" from="GravityArea" to="." method="_on_gravity_area_body_entered"]
+[connection signal="body_exited" from="GravityArea" to="." method="_on_gravity_area_body_exited"]

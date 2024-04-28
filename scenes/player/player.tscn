@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b7ylnl3t7oefk"]
+[gd_scene load_steps=33 format=3 uid="uid://b7ylnl3t7oefk"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_mfcxx"]
 [ext_resource type="Texture2D" uid="uid://b1g7rpxixynkr" path="res://assets/player/fall/1.png" id="2_sgb0k"]
@@ -20,6 +20,12 @@
 [ext_resource type="Texture2D" uid="uid://cu0yxo5j1eami" path="res://assets/player/fall/7.png" id="8_uxua2"]
 [ext_resource type="Texture2D" uid="uid://bdtcil431um2c" path="res://assets/player/run/7.png" id="9_opshd"]
 [ext_resource type="Texture2D" uid="uid://cul6xspqvdnbd" path="res://assets/player/run/8.png" id="10_ypl5r"]
+[ext_resource type="Texture2D" uid="uid://b583wp1k2fqry" path="res://assets/player/kick/1.png" id="14_v73xm"]
+[ext_resource type="Texture2D" uid="uid://fpihnbwarut2" path="res://assets/player/kick/2.png" id="15_hwuei"]
+[ext_resource type="Texture2D" uid="uid://rmpo1h0so3hu" path="res://assets/player/kick/3.png" id="16_4ben3"]
+[ext_resource type="Texture2D" uid="uid://cy1saauvvrmnj" path="res://assets/player/kick/4.png" id="17_i60hd"]
+[ext_resource type="Texture2D" uid="uid://f113jtb2mj8r" path="res://assets/player/kick/5.png" id="18_3ag81"]
+[ext_resource type="Texture2D" uid="uid://c22wkmojlrmk6" path="res://assets/UI_STEROWANIE.png" id="26_bres2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwxtt"]
 bg_color = Color(0, 0, 0, 1)
@@ -73,6 +79,26 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_v73xm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hwuei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4ben3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_i60hd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3ag81")
+}],
+"loop": false,
+"name": &"kick",
 "speed": 5.0
 }, {
 "frames": [{
@@ -152,12 +178,24 @@ max_value = 1000.0
 value = 142.29
 show_percentage = false
 
+[node name="TextureRect" type="TextureRect" parent="CrystalDetectorCanvas"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_bottom = 310.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+texture = ExtResource("26_bres2")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 3
 position = Vector2(2.08165e-12, -23.29)
 scale = Vector2(0.72, 0.72)
 sprite_frames = SubResource("SpriteFrames_rn7dd")
-animation = &"fly"
-frame_progress = 0.0342702
+animation = &"kick"
+frame = 2
+frame_progress = 0.798583
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_pgnkq")

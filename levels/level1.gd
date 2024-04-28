@@ -16,17 +16,23 @@ func _ready():
 	GameEvents.connect("enemy_killed", on_enemy_killed)
 
 
+func _physics_process(delta):
+	$Tasks/MarginContainer/VBoxContainer/crystals.text = "Kryształki:" + str(crystal_count_current) + "/" + str(crystal_count_to_dig)
+	$Tasks/MarginContainer/VBoxContainer/enemies.text = "Przeciwnicy:" + str(enemy_count_current) + "/" + str(enemy_count_to_kill)
+	var ship = get_tree().get_first_node_in_group("box_ship")
+	if ship:
+		$Tasks/MarginContainer/VBoxContainer/boxes.text = "Pudełka:" + str(ship.box_count_current) + "/" + str(ship.box_count_to_kick)
+	
+	
 func on_crystal_gather():
 	crystal_count_current += 1
 	if crystal_count_current >= crystal_count_to_dig:
 		all_crystals_conected()
-	#print(str(crystal_count_current) + " / " + str(crystal_count_to_dig))
 	
 func on_enemy_killed():
 	enemy_count_current += 1
 	if enemy_count_current >= enemy_count_to_kill:
 		all_enemies_killed()
-	#print(str(enemy_count_current) + " / " + str(enemy_count_to_kill))
 
 func all_crystals_conected():
 	current_task_count += 1
@@ -44,11 +50,9 @@ func all_enemies_killed():
 		
 func flip_planets():
 	if should_flip:
-		print("DSNOIA")
-		#DialogManager.start_dialog("res://dialogs/3_crystals_2.txt")
+		DialogManager.start_dialog("res://dialogs/3_crystals_2.txt")
 		var a_planets = get_tree().get_nodes_in_group("planet_a")
 		for planet in a_planets:
-			#print(planet.get_node("Front").texture)
 			planet.get_node("Front").texture = load("res://assets/planet_A/planeta a_corrupted.png")
 			planet.get_node("Sprite4").texture = load("res://assets/planet_A/planeta a gradient_corrupted.png")
 						

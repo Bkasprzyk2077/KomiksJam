@@ -10,11 +10,13 @@ func _ready():
 
 func next_image():
 	if images:
-		$TextureRect.texture = load(images.pop_front())
+		$AnimationPlayer.play("next")
 	else:
 		get_tree().paused = false
 		queue_free()
 
+func change_img():
+	$TextureRect.texture = load(images.pop_front())
 
 func _on_timer_timeout():
 	next_image()

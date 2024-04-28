@@ -45,7 +45,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xxjmc"]
 size = Vector2(994, 468.5)
 
-[node name="SpaceShip" type="Node2D"]
+[node name="SpaceShip" type="Node2D" groups=["box_ship"]]
 script = ExtResource("1_iwsfl")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]

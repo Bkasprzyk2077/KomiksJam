@@ -31,5 +31,4 @@ func _on_area_2d_body_entered(body):
 
 
 func on_call_escape_ship():
-	print("TEST")
 	can_go = true

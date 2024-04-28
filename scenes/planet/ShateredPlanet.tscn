@@ -25,7 +25,7 @@ tracks/0/keys = {
 "values": [Vector2(0.33, 0.33)]
 }
 
-[sub_resource type="Animation" id="Animation_upbmk"]
+[sub_resource type="Animation" id="Animation_axbdy"]
 resource_name = "bg_scale"
 length = 10.0
 loop_mode = 1
@@ -40,13 +40,13 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 5, 10),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(0.33, 0.33), Vector2(0.4, 0.4), Vector2(0.33, 0.33)]
+"values": [Vector2(0.8, 0.8), Vector2(1, 1), Vector2(0.8, 0.8)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tdbxy"]
 _data = {
 "RESET": SubResource("Animation_gdbp8"),
-"bg_scale": SubResource("Animation_upbmk")
+"bg_scale": SubResource("Animation_axbdy")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgn5s"]
@@ -55,7 +55,7 @@ radius = 814.69
 [sub_resource type="CircleShape2D" id="CircleShape2D_kt1kw"]
 radius = 74.67
 
-[node name="ShateredPlanet" type="StaticBody2D"]
+[node name="ShateredPlanet" type="StaticBody2D" groups=["big_s"]]
 script = ExtResource("1_763s4")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -86,6 +86,7 @@ texture = ExtResource("2_i3wfi")
 offset = Vector2(-27.99, 2.08165e-12)
 
 [node name="GravityArea" type="Area2D" parent="."]
+visible = false
 gravity_space_override = 3
 gravity_point = true
 gravity_point_center = Vector2(2.08165e-12, 2.08165e-12)

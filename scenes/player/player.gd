@@ -5,7 +5,7 @@ extends RigidBody2D
 @onready var kick_shape = $BoxKickArea/CollisionShape2D
 @onready var progress_bar = $CrystalDetectorCanvas/VBoxContainer/ProgressBar
 
-
+var is_kicking
 var current_moon
 var moon_direction
 
@@ -14,6 +14,8 @@ func _ready():
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
+	if Input.is_action_just_pressed("reset"):
+		SceneTransition.reload_scene()
 	zoom()
 	animate()
 	switch_camera()
@@ -41,7 +43,14 @@ func _physics_process(delta):
 	
 	
 func animate():
-	if !current_moon:
+	if is_kicking:
+		return
+	if Input.is_action_just_pressed("kick"):
+		is_kicking = true
+		sprite_2d.play("kick")
+		await sprite_2d.animation_finished
+		is_kicking = false
+	elif !current_moon:
 		sprite_2d.play("fly")
 	elif !$FloorDetect.overlaps_body(current_moon):
 		sprite_2d.play("fly")
