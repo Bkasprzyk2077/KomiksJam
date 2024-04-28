@@ -34,13 +34,15 @@ func flip_planets():
 		DialogManager.start_dialog("res://dialogs/3_crystals_2.txt")
 		var big_s = get_tree().get_nodes_in_group("big_s")
 		for planet in big_s:
-			planet.get_node("Front").texture = load("res://assets/planet_A/planeta a_corrupted.png")
-			planet.get_node("Sprite4").texture = load("res://assets/planet_A/planeta a gradient_corrupted.png")
+			planet.get_node("Sprite1").texture = load("res://assets/planet_B/pB5_core_corrupted.png")
+			planet.get_node("Sprite2").texture = load("res://assets/planet_B/pB2_orbita_corrupted.png")
+			planet.get_node("Sprite3").texture = load("res://assets/planet_B/pB4_background_corrupted.png")
+			planet.get_node("Sprite4").texture = load("res://assets/planet_B/pB1_glow_corrupted.png")
 						
 		var small_s = get_tree().get_nodes_in_group("small_s")
 		for planet in small_s:
-			planet.get_node("Front").texture = load("res://assets/planet_C/planeta_c_corrupted.png")
-			planet.get_node("Sprite4").texture = load("res://assets/planet_A/planeta a gradient_corrupted.png")
+			planet.get_node("Front").texture = load("res://assets/other_planets/2LVL_SMALL_PLANET_corrupted.png")
+			planet.get_node("Sprite4").texture = load("res://assets/other_planets/2LVL_SMALL_PLANET_GLOW_corrupted.png")
 
 
 func all_crystals_conected():
