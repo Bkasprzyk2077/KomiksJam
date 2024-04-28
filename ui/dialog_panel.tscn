@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cxceb1cu70igf"]
+[gd_scene load_steps=9 format=3 uid="uid://cxceb1cu70igf"]
 
 [ext_resource type="Script" path="res://ui/dialog_panel.gd" id="1_svuhd"]
 [ext_resource type="Texture2D" uid="uid://b1n2w1fh0dmbr" path="res://assets/UI/menu_dialog_box.png" id="2_w3g8e"]
+[ext_resource type="AudioStream" uid="uid://cnff4tbj0p3ne" path="res://sounds/glos robota dialog.wav" id="3_k1df0"]
 
 [sub_resource type="SystemFont" id="SystemFont_v5mh0"]
 
@@ -158,5 +159,8 @@ libraries = {
 "": SubResource("AnimationLibrary_ejsng")
 }
 autoplay = "in"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_k1df0")
 
 [connection signal="timeout" from="LetterDisplayTimer" to="." method="_on_letter_display_timer_timeout"]

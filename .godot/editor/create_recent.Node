@@ -1,10 +1,10 @@
+AudioStreamPlayer
 AnimatedSprite2D
 MarginContainer
 CanvasLayer
 Label
 VBoxContainer
 TextureRect
-AudioStreamPlayer
 Node
 AnimationPlayer
 AnimatableBody2D
