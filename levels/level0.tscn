@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cyuucb651mmwe"]
+[gd_scene load_steps=15 format=3 uid="uid://cyuucb651mmwe"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_oj6bn"]
 [ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_y2oi7"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cvdowe4v0qw83" path="res://scenes/crystal/crystal.tscn" id="10_gxjfp"]
 [ext_resource type="PackedScene" uid="uid://oruit62yrf76" path="res://scenes/ladder/Ladder.tscn" id="10_kf26b"]
 [ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="11_2v7bo"]
+[ext_resource type="PackedScene" uid="uid://7pe5s0pan5by" path="res://scenes/planet/Planet_D.tscn" id="11_5u58i"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
 shader = ExtResource("2_y2oi7")
@@ -29,7 +30,6 @@ point_count = 4
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_oj6bn")
-should_flip = true
 
 [node name="BackGround" type="CanvasLayer" parent="."]
 layer = -1
@@ -56,7 +56,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(558, 507)
+position = Vector2(-2105, 362)
 curve = SubResource("Curve2D_wfxu5")
 
 [node name="SpawnSpaceShip" parent="Path2D" instance=ExtResource("11_2v7bo")]
@@ -71,10 +71,6 @@ curve = SubResource("Curve2D_kmaac")
 position = Vector2(5751, 1121)
 rotation = -2.42788
 next_level = "res://levels/level1.tscn"
-
-[node name="Planet" parent="." instance=ExtResource("4_f8e8t")]
-position = Vector2(-52, 109)
-metadata/_edit_group_ = true
 
 [node name="Planet5" parent="." instance=ExtResource("4_f8e8t")]
 position = Vector2(760, -1258)
@@ -125,10 +121,10 @@ position = Vector2(2479, 537)
 position = Vector2(2631, 568)
 
 [node name="Enemy" parent="." instance=ExtResource("8_4eu5p")]
-position = Vector2(2925, -477)
+position = Vector2(5507, -28)
 
 [node name="DialogArea" parent="." instance=ExtResource("9_3s6kg")]
-position = Vector2(-53, 478)
+position = Vector2(-187, 481)
 dialog_text_file = "res://dialogs/2_Tutorial0.txt"
 
 [node name="DialogArea2" parent="." instance=ExtResource("9_3s6kg")]
@@ -148,7 +144,7 @@ position = Vector2(3331, 367)
 dialog_text_file = "res://dialogs/2_Tutorial7.txt"
 
 [node name="DialogArea3" parent="." instance=ExtResource("9_3s6kg")]
-position = Vector2(-87, -256)
+position = Vector2(-132, -268)
 dialog_text_file = "res://dialogs/2_Tutorial2.txt"
 
 [node name="Ladder" parent="." instance=ExtResource("10_kf26b")]
@@ -156,7 +152,9 @@ position = Vector2(4376, 512)
 rotation = 1.56337
 scale = Vector2(1.97594, 3.90043)
 
-[editable path="Planet"]
+[node name="Planet_D" parent="." instance=ExtResource("11_5u58i")]
+position = Vector2(-161, 96)
+
 [editable path="Planet5"]
 [editable path="Planet6"]
 [editable path="Planet7"]

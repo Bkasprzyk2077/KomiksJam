@@ -11,11 +11,9 @@ func _on_box_catcher_body_entered(body):
 			all_boxes_kicked()
 
 func all_boxes_kicked():
-	print("ALL boxes colected")
 	get_parent().current_task_count += 1
 	$BoxCatcher/CollisionShape2D.disabled = true
 	DialogManager.start_dialog("res://dialogs/task_end_boxes.txt")
 	if get_parent().current_task_count >= get_parent().task_count:
-		#print("test")
 		GameEvents.emit_call_escape_ship()
 		get_parent().flip_planets()

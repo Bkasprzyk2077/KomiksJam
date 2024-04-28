@@ -29,7 +29,6 @@ func _input(event):
 		display_line()
 
 func set_up_text(text_file: String):
-	print(text_file)
 	var file = FileAccess.open(text_file, FileAccess.READ)
 	while not file.eof_reached():
 		dialog_lines.append(file.get_line())
