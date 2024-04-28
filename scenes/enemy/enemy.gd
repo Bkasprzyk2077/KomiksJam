@@ -21,8 +21,8 @@ func _physics_process(delta):
 
 
 func death():
-	#var player = get_tree().get_first_node_in_group("player")
-	#player.apply_impulse(-moon_direction * 1000)
+	var player = get_tree().get_first_node_in_group("player")
+	player.apply_impulse(-moon_direction * 300)
 	GameEvents.emit_enemy_killed()
 	queue_free()
 
@@ -32,6 +32,7 @@ func death():
 func _on_player_kicker_body_entered(body):
 	move_direction *= -1
 	$PlayerKicker.scale.x *= -1
+	$AnimatedSprite2D.flip_h = !$AnimatedSprite2D.flip_h
 	var player = get_tree().get_first_node_in_group("player")
 	if body == player:
 		player.apply_impulse(global_position.direction_to(player.global_position) * 1000)

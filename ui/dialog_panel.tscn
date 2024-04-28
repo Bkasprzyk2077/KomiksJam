@@ -1,8 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://cxceb1cu70igf"]
 
-[ext_resource type="Texture2D" uid="uid://dlndnhukoqc2a" path="res://assets/dialog_panel.png" id="1_e648d"]
 [ext_resource type="Script" path="res://ui/dialog_panel.gd" id="1_svuhd"]
-[ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="2_8til7"]
+[ext_resource type="Texture2D" uid="uid://b1n2w1fh0dmbr" path="res://assets/UI/menu_dialog_box.png" id="2_w3g8e"]
+
+[sub_resource type="SystemFont" id="SystemFont_v5mh0"]
 
 [sub_resource type="Animation" id="Animation_3awa4"]
 length = 0.001
@@ -32,7 +33,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(2.08165e-12, 2.08165e-12), Vector2(1, 1)]
+"values": [Vector2(2.08165e-12, 1), Vector2(1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_j428i"]
@@ -48,7 +49,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1, 1), Vector2(2.08165e-12, 2.08165e-12)]
+"values": [Vector2(1, 1), Vector2(2.08165e-12, 1)]
 }
 tracks/1/type = "method"
 tracks/1/imported = false
@@ -72,58 +73,82 @@ _data = {
 "out": SubResource("Animation_j428i")
 }
 
-[node name="DialogPanel" type="MarginContainer"]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
+[node name="DialogPanel" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -332.0
-offset_top = -144.0
-offset_right = 332.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
+pivot_offset = Vector2(2.08165e-12, 1080)
 script = ExtResource("1_svuhd")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 texture_filter = 1
-layout_mode = 2
-texture = ExtResource("1_e648d")
-region_rect = Rect2(0, 0, 36, 36)
-patch_margin_left = 12
-patch_margin_top = 12
-patch_margin_right = 12
-patch_margin_bottom = 12
+custom_minimum_size = Vector2(2.08165e-12, 244.25)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_w3g8e")
+region_rect = Rect2(0, 0, 1635, 255)
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-layout_mode = 2
+[node name="MarginContainer" type="MarginContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 150.0
+offset_top = -195.125
+offset_right = 1383.0
+offset_bottom = 107.875
+grow_vertical = 2
+size_flags_vertical = 8
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
-layout_mode = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_top = 8
-theme_override_constants/margin_right = 8
-theme_override_constants/margin_bottom = 8
-
-[node name="Label" type="Label" parent="HBoxContainer/MarginContainer"]
+[node name="Label" type="Label" parent="NinePatchRect/MarginContainer"]
 custom_minimum_size = Vector2(1000, 2.08165e-12)
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.956863, 0.360784, 0.192157, 1)
+theme_override_fonts/font = SubResource("SystemFont_v5mh0")
+theme_override_font_sizes/font_size = 40
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer"]
-layout_mode = 2
+[node name="MarginContainer2" type="MarginContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -144.0
+offset_top = -144.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(5.67934, 5.67934)
+pivot_offset = Vector2(142.44, 144.31)
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="Avatar" type="TextureRect" parent="HBoxContainer/MarginContainer2"]
+[node name="Avatar" type="TextureRect" parent="NinePatchRect/MarginContainer2"]
 layout_mode = 2
-texture = ExtResource("2_8til7")
 expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 1164.0
+offset_bottom = 144.0
 
 [node name="LetterDisplayTimer" type="Timer" parent="."]
 one_shot = true

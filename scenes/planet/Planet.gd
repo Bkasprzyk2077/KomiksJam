@@ -2,7 +2,10 @@ extends StaticBody2D
 
 var i = 0
 
-	
+#
+#func _ready():
+	#$AnimationPlayer.speed_scale = randf_range(0.8, 1.2)
+	#
 func _on_gravity_area_body_entered(body):
 	if "current_moon" in body:
 		body.current_moon = self

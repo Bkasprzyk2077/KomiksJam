@@ -1,0 +1,6 @@
+!To planeta bogata w rzadkie zasoby.
+!Zbierz 5 kryształów, zniszcz 3 mieszkańców i dostarcz 3 pudełka na statek.
+!Uwaga! Niektóre kryształy są pod powierzchnią planet.
+!Użyj radaru na górze ekranu, żeby je odnaleźć.
+?Czy planecie nie zaszkodzi, że zabierzemy jej zasoby?
+!Badania prowadzone przez X-Colony wskazują, że nie.

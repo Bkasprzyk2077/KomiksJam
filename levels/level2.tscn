@@ -1,0 +1,82 @@
+[gd_scene load_steps=11 format=3 uid="uid://cpfsv1uf5ygyp"]
+
+[ext_resource type="Script" path="res://levels/level2.gd" id="1_586f0"]
+[ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_gteak"]
+[ext_resource type="PackedScene" uid="uid://m0pul1vrrkn1" path="res://scenes/planet/ShateredPlanet.tscn" id="3_yhqa5"]
+[ext_resource type="PackedScene" uid="uid://c0jviop3fdx4c" path="res://scenes/harvester/Harvester.tscn" id="4_wudko"]
+[ext_resource type="PackedScene" uid="uid://coiihl2p3mc6t" path="res://scenes/planet/Planet_A.tscn" id="5_0s4eh"]
+[ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="5_b8jw8"]
+[ext_resource type="PackedScene" uid="uid://cm7vqlildigai" path="res://scenes/spaceship/EscapeSpaceShip.tscn" id="6_d60kh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_klb14"]
+shader = ExtResource("2_gteak")
+shader_parameter/effect_amount = 1.05
+
+[sub_resource type="Curve2D" id="Curve2D_w0np5"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -360, -1590, -230.406, 75.6807, 230.406, -75.6807, 307, -1594, -163.134, 57.181, 163.134, -57.181, 880, -1858, -164.816, -47.0902, 164.816, 47.0902, 1472, -1900, -139.589, -156.407, 139.589, 156.407, 2106, -1434, 0, 0, 0, 0, 2780, -1095)
+}
+point_count = 6
+
+[sub_resource type="Curve2D" id="Curve2D_rpmpj"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -2653, 2481, -221.749, 127.356, 221.749, -127.356, -2047, 2257, -154.326, 8.98984, 154.326, -8.98984, -1513, 2093, -182.793, -11.9865, 182.793, 11.9865, -846, 2047, 0, 0, 0, 0, 13, 2161)
+}
+point_count = 5
+
+[node name="Level2" type="Node2D"]
+script = ExtResource("1_586f0")
+task_count = 1
+
+[node name="BackGround" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="BackGround"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0745098, 0, 0.341176, 1)
+
+[node name="FishEye" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="FishEye"]
+material = SubResource("ShaderMaterial_klb14")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Planet" parent="." instance=ExtResource("3_yhqa5")]
+
+[node name="GravityArea" parent="Planet" index="6"]
+scale = Vector2(0.8, 0.8)
+
+[node name="Harvester" parent="Planet/ShateredPieceSmall" index="2" instance=ExtResource("4_wudko")]
+position = Vector2(2.771, -76.388)
+
+[node name="Planet2" parent="." instance=ExtResource("5_0s4eh")]
+position = Vector2(1360, -1488)
+
+[node name="Planet3" parent="." instance=ExtResource("5_0s4eh")]
+position = Vector2(-1256, 1604)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_w0np5")
+
+[node name="SpawnSpaceShip" parent="Path2D" instance=ExtResource("5_b8jw8")]
+position = Vector2(-360, -1590)
+rotation = -0.00599693
+big_jump = true
+
+[node name="Path2D2" type="Path2D" parent="."]
+position = Vector2(-60, -9)
+curve = SubResource("Curve2D_rpmpj")
+
+[node name="ExitSpaceShip" parent="Path2D2" instance=ExtResource("6_d60kh")]
+position = Vector2(-2653, 2481)
+rotation = -0.354061
+
+[editable path="Planet"]

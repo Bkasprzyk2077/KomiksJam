@@ -1,18 +1,18 @@
 [gd_scene load_steps=5 format=3 uid="uid://cj8uup5kdv1fk"]
 
 [ext_resource type="Script" path="res://scenes/box/BoxSpawner.gd" id="1_8imbd"]
-[ext_resource type="Texture2D" uid="uid://dqipf1wqvhrs4" path="res://assets/icon.svg" id="2_es4tq"]
 [ext_resource type="PackedScene" uid="uid://blelnyh6fur1e" path="res://scenes/box/box.tscn" id="2_kscn7"]
+[ext_resource type="Texture2D" uid="uid://dbebls33j8ii0" path="res://assets/Magazyn.png" id="3_4s00v"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qqnjq"]
-radius = 112.4
+radius = 209.41
 
 [node name="BoxSpawner" type="Area2D"]
 script = ExtResource("1_8imbd")
 box_scene = ExtResource("2_kscn7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_es4tq")
+texture = ExtResource("3_4s00v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_qqnjq")

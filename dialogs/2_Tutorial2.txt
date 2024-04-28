@@ -1,0 +1,1 @@
+!System chodzenia sprawny. Teraz przetestuj skok, wciskając W.

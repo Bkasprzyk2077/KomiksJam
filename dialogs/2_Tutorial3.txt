@@ -1,0 +1,2 @@
+!Skakanie działa. Wypróbuj zasięg skoku i skocz na na planetę obok.
+!Planety mają różne pola grawitacyjne. Nie do każdej w zasięgu wzroku możesz od razu doskoczyć.

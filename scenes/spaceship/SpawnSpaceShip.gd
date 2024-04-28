@@ -4,9 +4,10 @@ var points_to_visit = []
 var next_point
 var spawned_player = false
 
+@export var big_jump: bool = false
 @export var player_scene: PackedScene
 @export var spawn_player_ratio: float = .5
-@export var speed: float = 200
+@export var speed: float = 500
 
 func _process(delta):
 	if progress_ratio >= spawn_player_ratio and !spawned_player:
@@ -25,4 +26,6 @@ func spawn_player():
 	var player_instance = player_scene.instantiate()
 	get_parent().get_parent().add_child(player_instance)
 	player_instance.global_position = $Sprite2D.global_position
+	if big_jump:
+		player_instance.jump_force = 800
 	$Sprite2D/Camera2D.enabled = false

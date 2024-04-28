@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://oruit62yrf76"]
+[gd_scene load_steps=4 format=3 uid="uid://oruit62yrf76"]
 
 [ext_resource type="Script" path="res://scenes/ladder/Ladder.gd" id="1_ksnt1"]
+[ext_resource type="Texture2D" uid="uid://d1bgte13b74ep" path="res://assets/drabina.png" id="2_wfmbr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6mnm8"]
 size = Vector2(50, 300)
@@ -9,6 +10,8 @@ size = Vector2(50, 300)
 script = ExtResource("1_ksnt1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.375365, 0.375365)
+texture = ExtResource("2_wfmbr")
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -1,11 +1,11 @@
-extends MarginContainer
+extends Control
 
-@onready var label = $HBoxContainer/MarginContainer/Label
-@onready var texture_rect = $HBoxContainer/MarginContainer2/Avatar
+@onready var label = $NinePatchRect/MarginContainer/Label
+@onready var texture_rect = $NinePatchRect/MarginContainer2/Avatar
 @onready var letter_display_timer = $LetterDisplayTimer
 @onready var animation_player = $AnimationPlayer
 
-var faces = ["res://assets/icon.svg", "res://assets/siencetist/naukowiec.png"]
+var faces = ["res://assets/siencetist/naukowiec.png", "res://assets/player/avatars/robot awatar 1.png", "res://assets/player/avatars/robot awatar 2.png", "res://assets/player/avatars/robot awatar 3.png"]
 
 var dialog_lines = []
 
@@ -18,6 +18,9 @@ var space_time = 0.06
 var punctuation_time = 0.2
 
 signal animation_finished
+
+func _ready():
+	get_tree().paused = true
 
 
 func _input(event):
@@ -44,6 +47,10 @@ func display_line():
 	match text[0]:
 		'!':
 			texture_rect.texture = load(faces[0])
+		'#':
+			texture_rect.texture = load(faces[2])
+		'$':
+			texture_rect.texture = load(faces[3])
 		'?':
 			texture_rect.texture = load(faces[1])
 	text = text.erase(0, 1)
@@ -61,6 +68,7 @@ func emit_animation_finished():
 	animation_finished.emit()
 	
 func end_dialog():
+	get_tree().paused = false
 	animation_player.play("out")
 
 func _on_letter_display_timer_timeout():
