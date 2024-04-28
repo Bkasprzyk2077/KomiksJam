@@ -29,7 +29,7 @@ window/size/viewport_height=1080
 
 [gui]
 
-theme/custom_font="res://ui/ClashDisplay-Variable.ttf"
+theme/custom_font="res://ui/ClashDisplay-Semibold.otf"
 
 [input]
 

@@ -50,7 +50,7 @@ radius = 253.86
 [sub_resource type="CircleShape2D" id="CircleShape2D_vgn5s"]
 radius = 587.87
 
-[node name="Planet" type="StaticBody2D"]
+[node name="Planet" type="StaticBody2D" groups=["planet_a"]]
 script = ExtResource("1_rml37")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

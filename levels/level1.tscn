@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://g3i700whpyd1"]
+[gd_scene load_steps=17 format=3 uid="uid://g3i700whpyd1"]
 
 [ext_resource type="Script" path="res://levels/level1.gd" id="1_fw2l1"]
 [ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_ccg2i"]
@@ -8,8 +8,11 @@
 [ext_resource type="PackedScene" uid="uid://cm7vqlildigai" path="res://scenes/spaceship/EscapeSpaceShip.tscn" id="4_qryw7"]
 [ext_resource type="PackedScene" uid="uid://3fdfi4qqyp74" path="res://scenes/spaceship/SpaceShip.tscn" id="5_cpx14"]
 [ext_resource type="PackedScene" uid="uid://kym2ito8cchp" path="res://scenes/crystal/hidden_crystal.tscn" id="8_jdxb7"]
+[ext_resource type="PackedScene" uid="uid://cvdowe4v0qw83" path="res://scenes/crystal/crystal.tscn" id="9_ubgyu"]
 [ext_resource type="PackedScene" uid="uid://dl2w38cym5jdp" path="res://scenes/enemy/enemy.tscn" id="10_5vyxm"]
+[ext_resource type="PackedScene" uid="uid://b5dlmkfds7kxh" path="res://scenes/planet/Planet_C.tscn" id="10_aquyx"]
 [ext_resource type="PackedScene" uid="uid://oruit62yrf76" path="res://scenes/ladder/Ladder.tscn" id="10_x4q3o"]
+[ext_resource type="PackedScene" uid="uid://dmisqj6t8fr15" path="res://scenes/dialog_area/DialogArea.tscn" id="13_u2m7l"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nrclr"]
 shader = ExtResource("2_ccg2i")
@@ -30,6 +33,7 @@ point_count = 7
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_fw2l1")
 task_count = 3
+should_flip = true
 
 [node name="BackGround" type="CanvasLayer" parent="."]
 layer = -1
@@ -65,7 +69,7 @@ position = Vector2(-506, 1497)
 rotation = -0.065996
 
 [node name="Path2D2" type="Path2D" parent="."]
-position = Vector2(-196, -42)
+position = Vector2(19, 532)
 curve = SubResource("Curve2D_4bs8i")
 
 [node name="ExitSpaceShip" parent="Path2D2" instance=ExtResource("4_qryw7")]
@@ -80,50 +84,24 @@ position = Vector2(519, 587)
 position = Vector2(-1499, 705)
 
 [node name="Planet12" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(216, -1212)
+position = Vector2(-589, -825)
 
 [node name="Planet15" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-2349, -2075)
+position = Vector2(-3154, -1688)
 
 [node name="Planet17" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-5447, -1823)
-
-[node name="Planet7" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-2798, 1920)
-
-[node name="Planet9" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-2130, 2728)
-scale = Vector2(0.804849, 0.804849)
+position = Vector2(-5413, -1377)
 
 [node name="Planet10" parent="." instance=ExtResource("3_0en5b")]
 position = Vector2(-1314, 3208)
 scale = Vector2(0.804849, 0.804849)
 
-[node name="Planet8" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-3966, 1920)
-
-[node name="Planet3" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(2291, 937)
-rotation = 2.43813
-
 [node name="Planet2" parent="." instance=ExtResource("3_0en5b")]
 position = Vector2(1309, 1203)
 scale = Vector2(0.705312, 0.705312)
 
-[node name="Planet4" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-491, 655)
-scale = Vector2(0.705312, 0.705312)
-
-[node name="Planet13" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-483, -1935)
-scale = Vector2(0.705312, 0.705312)
-
-[node name="Planet14" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-1336, -1988)
-scale = Vector2(0.705312, 0.705312)
-
 [node name="Planet16" parent="." instance=ExtResource("3_0en5b")]
-position = Vector2(-3062, -1401)
+position = Vector2(-3867, -1014)
 scale = Vector2(0.705312, 0.705312)
 
 [node name="Planet11" parent="." instance=ExtResource("3_0en5b")]
@@ -144,18 +122,75 @@ position = Vector2(3019, 283)
 rotation = 0.724537
 box_count_to_kick = 3
 
-[node name="HiddenCrystal" parent="." instance=ExtResource("8_jdxb7")]
-position = Vector2(1145, 1459)
-
 [node name="Ladder" parent="." instance=ExtResource("10_x4q3o")]
-position = Vector2(-921, -671)
+position = Vector2(-1297, -485)
 rotation = 1.13597
-scale = Vector2(3.642, 6.81486)
+scale = Vector2(2.61722, 3.62192)
 
 [node name="Ladder2" parent="." instance=ExtResource("10_x4q3o")]
-position = Vector2(-4228, -1598)
+position = Vector2(-4605, -1157)
 rotation = -1.37035
-scale = Vector2(2.50603, 6.44327)
+scale = Vector2(2.68325, 3.62794)
 
 [node name="Enemy" parent="." instance=ExtResource("10_5vyxm")]
-position = Vector2(904, 666)
+position = Vector2(-3248, 1203)
+
+[node name="Enemy2" parent="." instance=ExtResource("10_5vyxm")]
+position = Vector2(-2722, 2231)
+
+[node name="Enemy3" parent="." instance=ExtResource("10_5vyxm")]
+position = Vector2(-167, -616)
+
+[node name="Planet18" parent="." instance=ExtResource("10_aquyx")]
+position = Vector2(2295, 917)
+scale = Vector2(1.03883, 1.03883)
+
+[node name="Planet3" parent="." instance=ExtResource("10_aquyx")]
+position = Vector2(-493, 666)
+scale = Vector2(0.740679, 0.740679)
+
+[node name="Planet4" parent="." instance=ExtResource("10_aquyx")]
+position = Vector2(-1607, 2417)
+scale = Vector2(0.630851, 0.630851)
+
+[node name="Planet7" parent="." instance=ExtResource("10_aquyx")]
+position = Vector2(-2913, 1739)
+scale = Vector2(1.46271, 1.46271)
+
+[node name="GravityArea" parent="Planet7" index="3"]
+scale = Vector2(0.836, 0.836)
+
+[node name="Planet8" parent="." instance=ExtResource("10_aquyx")]
+position = Vector2(-2143, -1814)
+scale = Vector2(0.746527, 0.746527)
+
+[node name="Planet9" parent="." instance=ExtResource("10_aquyx")]
+position = Vector2(-1397, -1457)
+scale = Vector2(0.746527, 0.746527)
+
+[node name="Crystal" parent="." instance=ExtResource("9_ubgyu")]
+position = Vector2(503, 251)
+rotation = -0.0780559
+
+[node name="Crystal2" parent="." instance=ExtResource("9_ubgyu")]
+position = Vector2(1628, 1152)
+rotation = -5.33169
+
+[node name="HiddenCrystal" parent="." instance=ExtResource("8_jdxb7")]
+position = Vector2(-1036, 3090)
+
+[node name="HiddenCrystal2" parent="." instance=ExtResource("8_jdxb7")]
+position = Vector2(-3145, -2069)
+
+[node name="HiddenCrystal3" parent="." instance=ExtResource("8_jdxb7")]
+position = Vector2(-5392, -971)
+
+[node name="DialogArea" parent="." instance=ExtResource("13_u2m7l")]
+position = Vector2(1896, 1025)
+dialog_text_file = "res://dialogs/3_crystals_1.txt"
+
+[node name="DialogArea2" parent="." instance=ExtResource("13_u2m7l")]
+position = Vector2(703, 277)
+dialog_text_file = "res://dialogs/3_crystals_0.txt"
+
+[editable path="Planet7"]

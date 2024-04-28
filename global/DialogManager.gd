@@ -8,6 +8,8 @@ func _ready():
 
 func start_dialog(dialog_text_file):
 	dialog_canvas = get_tree().get_first_node_in_group("dialog_canvas")
+	for n in dialog_canvas.get_children():
+		n.queue_free()
 	var dialog_panel_instance = dialog_panel_scene.instantiate()
 	dialog_canvas.add_child(dialog_panel_instance)
 	await dialog_panel_instance.get_node("AnimationPlayer").animation_finished

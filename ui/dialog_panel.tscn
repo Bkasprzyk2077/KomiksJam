@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cxceb1cu70igf"]
+[gd_scene load_steps=8 format=3 uid="uid://cxceb1cu70igf"]
 
 [ext_resource type="Script" path="res://ui/dialog_panel.gd" id="1_svuhd"]
 [ext_resource type="Texture2D" uid="uid://b1n2w1fh0dmbr" path="res://assets/UI/menu_dialog_box.png" id="2_w3g8e"]
+
+[sub_resource type="SystemFont" id="SystemFont_v5mh0"]
 
 [sub_resource type="Animation" id="Animation_3awa4"]
 length = 0.001
@@ -116,6 +118,7 @@ size_flags_vertical = 8
 custom_minimum_size = Vector2(1000, 2.08165e-12)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.956863, 0.360784, 0.192157, 1)
+theme_override_fonts/font = SubResource("SystemFont_v5mh0")
 theme_override_font_sizes/font_size = 40
 vertical_alignment = 1
 autowrap_mode = 2

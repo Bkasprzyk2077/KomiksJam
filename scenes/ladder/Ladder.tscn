@@ -1,14 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://oruit62yrf76"]
+[gd_scene load_steps=4 format=3 uid="uid://oruit62yrf76"]
 
 [ext_resource type="Script" path="res://scenes/ladder/Ladder.gd" id="1_ksnt1"]
 [ext_resource type="Texture2D" uid="uid://d1bgte13b74ep" path="res://assets/drabina.png" id="2_wfmbr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6mnm8"]
 size = Vector2(50, 300)
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_db2ne"]
-radius = 9.7
-height = 220.59
 
 [node name="Ladder" type="Node2D"]
 script = ExtResource("1_ksnt1")
@@ -27,17 +23,5 @@ position = Vector2(0, 150)
 
 [node name="End" type="Marker2D" parent="."]
 position = Vector2(0, -147)
-
-[node name="barrier" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="barrier"]
-position = Vector2(-36, 0)
-shape = SubResource("CapsuleShape2D_db2ne")
-
-[node name="barrier2" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="barrier2"]
-position = Vector2(36, 0)
-shape = SubResource("CapsuleShape2D_db2ne")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
