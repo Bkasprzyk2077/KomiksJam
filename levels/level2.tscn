@@ -1,14 +1,15 @@
-[gd_scene load_steps=13 format=3 uid="uid://cpfsv1uf5ygyp"]
+[gd_scene load_steps=14 format=3 uid="uid://cpfsv1uf5ygyp"]
 
 [ext_resource type="Script" path="res://levels/level2.gd" id="1_586f0"]
 [ext_resource type="Shader" path="res://levels/FishEye.gdshader" id="2_gteak"]
 [ext_resource type="PackedScene" uid="uid://m0pul1vrrkn1" path="res://scenes/planet/ShateredPlanet.tscn" id="3_yhqa5"]
 [ext_resource type="PackedScene" uid="uid://c0jviop3fdx4c" path="res://scenes/harvester/Harvester.tscn" id="4_wudko"]
-[ext_resource type="PackedScene" uid="uid://coiihl2p3mc6t" path="res://scenes/planet/Planet_A.tscn" id="5_0s4eh"]
 [ext_resource type="PackedScene" uid="uid://cre4lmk4xb56j" path="res://scenes/spaceship/SpawnSpaceShip.tscn" id="5_b8jw8"]
 [ext_resource type="PackedScene" uid="uid://cm7vqlildigai" path="res://scenes/spaceship/EscapeSpaceShip.tscn" id="6_d60kh"]
 [ext_resource type="PackedScene" uid="uid://cinv0f0wiju1v" path="res://scenes/dialog_area/LoreArea.tscn" id="8_3va5c"]
 [ext_resource type="PackedScene" uid="uid://6xaviah41n5s" path="res://ui/FinishLorePanel.tscn" id="9_4hg22"]
+[ext_resource type="PackedScene" uid="uid://bqt5kuck0d3uo" path="res://scenes/planet/Planet_x.tscn" id="9_fyrdq"]
+[ext_resource type="PackedScene" uid="uid://dmisqj6t8fr15" path="res://scenes/dialog_area/DialogArea.tscn" id="10_qaduf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_klb14"]
 shader = ExtResource("2_gteak")
@@ -59,14 +60,13 @@ layer = 2
 [node name="GravityArea" parent="Planet" index="6"]
 scale = Vector2(0.8, 0.8)
 
-[node name="Harvester" parent="Planet/ShateredPieceSmall" index="2" instance=ExtResource("4_wudko")]
+[node name="DialogArea2" parent="Planet/ShateredPieceSmall" index="2" instance=ExtResource("10_qaduf")]
+position = Vector2(-4.229, -74.388)
+scale = Vector2(0.765868, 0.765868)
+dialog_text_file = "res://dialogs/kombajn.txt"
+
+[node name="Harvester" parent="Planet/ShateredPieceSmall" index="3" instance=ExtResource("4_wudko")]
 position = Vector2(2.771, -76.388)
-
-[node name="Planet2" parent="." instance=ExtResource("5_0s4eh")]
-position = Vector2(1360, -1488)
-
-[node name="Planet3" parent="." instance=ExtResource("5_0s4eh")]
-position = Vector2(-1256, 1604)
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_w0np5")
@@ -90,6 +90,16 @@ disabled = true
 [node name="LoreArea" parent="Path2D2/ExitSpaceShip" instance=ExtResource("8_3va5c")]
 scale = Vector2(1.54969, 1.54969)
 lore = ExtResource("9_4hg22")
+
+[node name="Planet_x" parent="." instance=ExtResource("9_fyrdq")]
+position = Vector2(-1229, 1625)
+
+[node name="Planet_x2" parent="." instance=ExtResource("9_fyrdq")]
+position = Vector2(1321, -1567)
+
+[node name="DialogArea" parent="." instance=ExtResource("10_qaduf")]
+position = Vector2(1144, -1871)
+dialog_text_file = "res://dialogs/shattered_0.txt"
 
 [editable path="Planet"]
 [editable path="Path2D2/ExitSpaceShip"]

@@ -46,9 +46,9 @@ func display_line():
 	match text[0]:
 		'!':
 			texture_rect.texture = load(faces[0])
-		'#':
+		'@':
 			texture_rect.texture = load(faces[2])
-		'$':
+		'#':
 			texture_rect.texture = load(faces[3])
 		'?':
 			texture_rect.texture = load(faces[1])

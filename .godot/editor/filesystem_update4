@@ -31,3 +31,12 @@ res://scenes/spaceship/SpawnSpaceShip.tscn
 res://scenes/spaceship/EscapeSpaceShip.tscn
 res://dialogs/3_crystals_1.txt
 res://scenes/player/player2.tscn
+res://scenes/spaceship/SpaceShip.tscn
+res://scenes/planet/Planet_x.tscn
+res://dialogs/shattered_0.txt
+res://scenes/harvester/Harvester.tscn
+res://scenes/harvester/Harvester.gd
+res://dialogs/kombajn.txt
+res://levels/level2.gd
+res://scenes/spaceship/EscapeSpaceShip.gd
+res://scenes/planet/ShateredPlanet.tscn

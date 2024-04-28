@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714290298
+::res://::1714295399
 export_presets.cfg::TextFile::-1::1714268650::0::1::::<><>::
-::res://assets/::1714290401
+::res://assets/::1714295536
 Box.png::CompressedTexture2D::6873045334450722168::1714287194::1714287195::1::::<><>::
 dialog_panel.png::CompressedTexture2D::7958382007232733886::1714177894::1714177894::1::::<><>::
 drabina.png::CompressedTexture2D::8986634846996131739::1714268028::1714268028::1::::<><>::
@@ -10,8 +10,12 @@ Illustration3.png::CompressedTexture2D::4382047867274720957::1714177894::1714177
 Magazyn.png::CompressedTexture2D::7237789756419646689::1714268028::1714268028::1::::<><>::
 moon.png::CompressedTexture2D::4955706771052876935::1714157315::1714157315::1::::<><>::
 robot_png.png::CompressedTexture2D::1067909829933888620::1714230960::1714230960::1::::<><>::
+solarny kombajn (1).png::CompressedTexture2D::6233902005394994805::1714295536::1714295536::1::::<><>::
+solarny kombajn.png::CompressedTexture2D::4128537636592519047::1714295381::1714295400::1::::<><>::
 UI_STEROWANIE.png::CompressedTexture2D::6725032629084366075::1714290401::1714290401::1::::<><>::
 WHITE_CIRCLE.png::CompressedTexture2D::6090353834579790950::1714220616::1714220616::1::::<><>::
+::res://assets/bg/::1714291816
+tło tutorial.png::CompressedTexture2D::6136362990499064829::1714291809::1714291816::1::::<><>::
 ::res://assets/crystals/::1714230968
 k1.png::CompressedTexture2D::155481364685526304::1714230959::1714230959::1::::<><>::
 k2.png::CompressedTexture2D::1296992671136397142::1714230959::1714230959::1::::<><>::
@@ -21,7 +25,9 @@ k5.png::CompressedTexture2D::3420350252020758263::1714230959::1714230959::1::::<
 ::res://assets/enemy/::1714268031
 IMG_0406.png::CompressedTexture2D::5814617910941923803::1714268028::1714268028::1::::<><>::
 IMG_0407.png::CompressedTexture2D::8233299649669419352::1714268028::1714268028::1::::<><>::
-::res://assets/other_planets/::1714284890
+::res://assets/lore/::1714292152
+INTRO_ILU_1.png::CompressedTexture2D::692903205674437463::1714292151::1714292152::1::::<><>::
+::res://assets/other_planets/::1714294404
 1 gradient.png::CompressedTexture2D::7822126168817675368::1714284874::1714284877::1::::<><>::
 1 gradient_corrupted.png::CompressedTexture2D::8369074263200689100::1714284874::1714284877::1::::<><>::
 1.PNG::CompressedTexture2D::6456140929084251981::1714284874::1714284875::1::::<><>::
@@ -29,6 +35,12 @@ IMG_0407.png::CompressedTexture2D::8233299649669419352::1714268028::1714268028::
 2 gradient.png::CompressedTexture2D::8390916927564632030::1714284874::1714284878::1::::<><>::
 2 gradient_corrupted.png::CompressedTexture2D::3327489754029913454::1714284874::1714284877::1::::<><>::
 2.png::CompressedTexture2D::4883492052686873596::1714284874::1714284875::1::::<><>::
+2LVL_SMALL_PLANET.png::CompressedTexture2D::3706148765623382391::1714294403::1714294404::1::::<><>::
+2LVL_SMALL_PLANET_corrupted.png::CompressedTexture2D::727301075092670836::1714294403::1714294404::1::::<><>::
+2LVL_SMALL_PLANET_GLOW.png::CompressedTexture2D::4823209020833489866::1714294403::1714294404::1::::<><>::
+2LVL_SMALL_PLANET_GLOW_corrupted.png::CompressedTexture2D::8085668626996058294::1714294403::1714294404::1::::<><>::
+2LVL_SMALL_PLANET_HANDS.png::CompressedTexture2D::1094019658553879274::1714294403::1714294404::1::::<><>::
+2LVL_SMALL_PLANET_HANDS_corrupted.png::CompressedTexture2D::1111061233079606283::1714294403::1714294404::1::::<><>::
 2_corrupted.png::CompressedTexture2D::6205134160254376510::1714284874::1714284875::1::::<><>::
 3 gradient.png::CompressedTexture2D::4622981739511619428::1714284874::1714284877::1::::<><>::
 3 gradient_corrupted.png::CompressedTexture2D::1917088347190163882::1714284874::1714284876::1::::<><>::
@@ -53,15 +65,23 @@ planeta a gradient_corrupted.png::CompressedTexture2D::391161345943350945::17142
 planeta a_corrupted.png::CompressedTexture2D::1279701600492349022::1714268028::1714268028::1::::<><>::
 planeta_a.png::CompressedTexture2D::8219541413893836795::1714242156::1714242156::1::::<><>::
 planeta_a_2_warstwa.png::CompressedTexture2D::334119367219088981::1714242156::1714242156::1::::<><>::
-::res://assets/planet_B/::1714230968
+::res://assets/planet_B/::1714296344
 pB1_glow.png::CompressedTexture2D::1928567319552336971::1714230960::1714230960::1::::<><>::
+pB1_glow_corrupted.png::CompressedTexture2D::6466278651817899483::1714296344::1714296351::1::::<><>::
+pB2_orbita_corrupted.png::CompressedTexture2D::7008840332338665871::1714296344::1714296351::1::::<><>::
 pB2_rocks.png::CompressedTexture2D::879506601287624861::1714230960::1714230960::1::::<><>::
 pB3_orbita.png::CompressedTexture2D::7812522905179120231::1714230960::1714230960::1::::<><>::
+pB3_orbita_corrupted.png::CompressedTexture2D::3663510114421018391::1714296344::1714296347::1::::<><>::
 pB4_background.png::CompressedTexture2D::178621099536094083::1714230960::1714230960::1::::<><>::
+pB4_background_corrupted.png::CompressedTexture2D::7276395409096003862::1714296344::1714296347::1::::<><>::
 pB5_core.png::CompressedTexture2D::2292792870545888563::1714230960::1714230960::1::::<><>::
+pB5_core_corrupted.png::CompressedTexture2D::5269483494081341106::1714296344::1714296351::1::::<><>::
 pB6_big_platform.png::CompressedTexture2D::7025835223823687951::1714230960::1714230960::1::::<><>::
+pB6_big_platform_corrupted.png::CompressedTexture2D::4809080639708057285::1714296344::1714296344::1::::<><>::
 pB6_medium_platform.png::CompressedTexture2D::1380266020013230010::1714230960::1714230960::1::::<><>::
+pB6_medium_platform_corrupted.png::CompressedTexture2D::4893426814849315117::1714296344::1714296344::1::::<><>::
 pB6_small_platform.png::CompressedTexture2D::557949550482920051::1714230960::1714230960::1::::<><>::
+pB6_small_platform_corrupted.png::CompressedTexture2D::2405151208559430070::1714296344::1714296344::1::::<><>::
 ::res://assets/planet_C/::1714268028
 planeta c gradient_corrupted.png::CompressedTexture2D::8025959084270389292::1714268028::1714268028::1::::<><>::
 planeta_c_1lvl.png::CompressedTexture2D::1188134764273941445::1714242156::1714242156::1::::<><>::
@@ -149,14 +169,14 @@ robot awatar 3.png::CompressedTexture2D::5981609492879324169::1714268028::171426
 4.png::CompressedTexture2D::2037742357569664563::1714290582::1714290582::1::::<><>::
 ::res://assets/siencetist/::1714230968
 naukowiec.png::CompressedTexture2D::3488900062876859270::1714230960::1714230960::1::::<><>::
-::res://assets/UI/::1714268030
+::res://assets/UI/::1714295399
 Group 3.png::CompressedTexture2D::2088039706343106377::1714268028::1714268028::1::::<><>::
 Group 4.png::CompressedTexture2D::9180114921706205967::1714268028::1714268028::1::::<><>::
 Group 5.png::CompressedTexture2D::364862386933261558::1714268028::1714268028::1::::<><>::
 Group 6.png::CompressedTexture2D::7577573764388271781::1714268028::1714268028::1::::<><>::
 menu_dialog_box.png::CompressedTexture2D::4239847549038036395::1714268028::1714268028::1::::<><>::
 menu_grafika2.png::CompressedTexture2D::1389737484107184205::1714268028::1714268028::1::::<><>::
-::res://dialogs/::1714291053
+::res://dialogs/::1714295811
 1_Start.txt::TextFile::-1::1714268028::0::1::::<><>::
 2_Tutorial0.txt::TextFile::-1::1714268028::0::1::::<><>::
 2_Tutorial1.txt::TextFile::-1::1714268028::0::1::::<><>::
@@ -170,26 +190,27 @@ menu_grafika2.png::CompressedTexture2D::1389737484107184205::1714268028::1714268
 3_crystals_0.txt::TextFile::-1::1714268028::0::1::::<><>::
 3_crystals_1.txt::TextFile::-1::1714291053::0::1::::<><>::
 3_crystals_2.txt::TextFile::-1::1714268028::0::1::::<><>::
+kombajn.txt::TextFile::-1::1714295811::0::1::::<><>::
 dialog1.txt::TextFile::-1::1714177894::0::1::::<><>::
-shattered_0.txt::TextFile::-1::1714268028::0::1::::<><>::
+shattered_0.txt::TextFile::-1::1714295135::0::1::::<><>::
 shattered_1.txt::TextFile::-1::1714268028::0::1::::<><>::
 task_end_boxes.txt::TextFile::-1::1714268028::0::1::::<><>::
 task_end_crystals.txt::TextFile::-1::1714268028::0::1::::<><>::
 task_end_enemies.txt::TextFile::-1::1714268028::0::1::::<><>::
-::res://global/::1714291346
+::res://global/::1714296119
 DialogManager.gd::GDScript::-1::1714268028::0::1::::<>Node<>::
 GameEvents.gd::GDScript::-1::1714242156::0::1::::<>Node<>::
 SceneTransition.gd::GDScript::-1::1714242156::0::1::::<>Node2D<>::
-SceneTransition.gdshader::Shader::-1::1714291346::0::1::::<><>::
+SceneTransition.gdshader::Shader::-1::1714296119::0::1::::<><>::
 SceneTransition.tscn::PackedScene::155818325458980889::1714236773::0::1::::<><>::res://global/SceneTransition.gd<>res://global/SceneTransition.gdshader<>uid://cs1hic7hdi4xu::::res://assets/WHITE_CIRCLE.png
-::res://levels/::1714291346
-FilmGrain.gdshader::Shader::-1::1714291346::0::1::::<><>::
-FishEye.gdshader::Shader::-1::1714291346::0::1::::<><>::
-level0.tscn::PackedScene::6499879183033894688::1714291136::0::1::::<><>::res://levels/level1.gd<>res://levels/FishEye.gdshader<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://blelnyh6fur1e::::res://scenes/box/box.tscn<>uid://dl2w38cym5jdp::::res://scenes/enemy/enemy.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn<>uid://cvdowe4v0qw83::::res://scenes/crystal/crystal.tscn<>uid://oruit62yrf76::::res://scenes/ladder/Ladder.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://7pe5s0pan5by::::res://scenes/planet/Planet_D.tscn<>uid://dvabnm4lfnr4s::::res://scenes/planet/Planet_E.tscn<>uid://bg450ryv2u417::::res://scenes/planet/Planet_F.tscn<>uid://h4dgu3obdes8::::res://scenes/planet/Planet_G.tscn<>uid://4eagwde0gdp::::res://scenes/planet/Planet_I.tscn<>uid://db6dakh28nd4m::::res://scenes/planet/Planet_J.tscn<>uid://cinv0f0wiju1v::::res://scenes/dialog_area/LoreArea.tscn
-level1.gd::GDScript::-1::1714284639::0::1::::<>Node2D<>::
-level1.tscn::PackedScene::479479873002371528::1714291053::0::1::::<><>::res://levels/level1.gd<>res://levels/FishEye.gdshader<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://cj8uup5kdv1fk::::res://scenes/box/BoxSpawner.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://3fdfi4qqyp74::::res://scenes/spaceship/SpaceShip.tscn<>uid://kym2ito8cchp::::res://scenes/crystal/hidden_crystal.tscn<>uid://cvdowe4v0qw83::::res://scenes/crystal/crystal.tscn<>uid://dl2w38cym5jdp::::res://scenes/enemy/enemy.tscn<>uid://b5dlmkfds7kxh::::res://scenes/planet/Planet_C.tscn<>uid://oruit62yrf76::::res://scenes/ladder/Ladder.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn
-level2.gd::GDScript::-1::1714268028::0::1::::<>Node2D<>::
-level2.tscn::PackedScene::5837127715040196247::1714290972::0::1::::<><>::res://levels/level2.gd<>res://levels/FishEye.gdshader<>uid://m0pul1vrrkn1::::res://scenes/planet/ShateredPlanet.tscn<>uid://c0jviop3fdx4c::::res://scenes/harvester/Harvester.tscn<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://cinv0f0wiju1v::::res://scenes/dialog_area/LoreArea.tscn<>uid://6xaviah41n5s::::res://ui/FinishLorePanel.tscn
+::res://levels/::1714296119
+FilmGrain.gdshader::Shader::-1::1714296119::0::1::::<><>::
+FishEye.gdshader::Shader::-1::1714296119::0::1::::<><>::
+level0.tscn::PackedScene::6499879183033894688::1714295813::0::1::::<><>::res://levels/level1.gd<>uid://ctorachpk4m6h::::res://assets/bg/tło tutorial.png<>res://levels/FishEye.gdshader<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://blelnyh6fur1e::::res://scenes/box/box.tscn<>uid://dl2w38cym5jdp::::res://scenes/enemy/enemy.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn<>uid://cvdowe4v0qw83::::res://scenes/crystal/crystal.tscn<>uid://oruit62yrf76::::res://scenes/ladder/Ladder.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://7pe5s0pan5by::::res://scenes/planet/Planet_D.tscn<>uid://dvabnm4lfnr4s::::res://scenes/planet/Planet_E.tscn<>uid://bg450ryv2u417::::res://scenes/planet/Planet_F.tscn<>uid://h4dgu3obdes8::::res://scenes/planet/Planet_G.tscn<>uid://4eagwde0gdp::::res://scenes/planet/Planet_I.tscn<>uid://db6dakh28nd4m::::res://scenes/planet/Planet_J.tscn<>uid://cinv0f0wiju1v::::res://scenes/dialog_area/LoreArea.tscn
+level1.gd::GDScript::-1::1714294023::0::1::::<>Node2D<>::
+level1.tscn::PackedScene::479479873002371528::1714295869::0::1::::<><>::res://levels/level1.gd<>res://levels/FishEye.gdshader<>uid://ctorachpk4m6h::::res://assets/bg/tło tutorial.png<>uid://coiihl2p3mc6t::::res://scenes/planet/Planet_A.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://cj8uup5kdv1fk::::res://scenes/box/BoxSpawner.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://3fdfi4qqyp74::::res://scenes/spaceship/SpaceShip.tscn<>uid://kym2ito8cchp::::res://scenes/crystal/hidden_crystal.tscn<>uid://cvdowe4v0qw83::::res://scenes/crystal/crystal.tscn<>uid://dl2w38cym5jdp::::res://scenes/enemy/enemy.tscn<>uid://b5dlmkfds7kxh::::res://scenes/planet/Planet_C.tscn<>uid://oruit62yrf76::::res://scenes/ladder/Ladder.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn
+level2.gd::GDScript::-1::1714296119::0::1::::<>Node2D<>::
+level2.tscn::PackedScene::5837127715040196247::1714296024::0::1::::<><>::res://levels/level2.gd<>res://levels/FishEye.gdshader<>uid://m0pul1vrrkn1::::res://scenes/planet/ShateredPlanet.tscn<>uid://c0jviop3fdx4c::::res://scenes/harvester/Harvester.tscn<>uid://cre4lmk4xb56j::::res://scenes/spaceship/SpawnSpaceShip.tscn<>uid://cm7vqlildigai::::res://scenes/spaceship/EscapeSpaceShip.tscn<>uid://cinv0f0wiju1v::::res://scenes/dialog_area/LoreArea.tscn<>uid://6xaviah41n5s::::res://ui/FinishLorePanel.tscn<>uid://bqt5kuck0d3uo::::res://scenes/planet/Planet_x.tscn<>uid://dmisqj6t8fr15::::res://scenes/dialog_area/DialogArea.tscn
 ::res://scenes/::1714268031
 ::res://scenes/box/::1714288089
 box.gd::GDScript::-1::1714177894::0::1::::<>RefCounted<>::
@@ -209,50 +230,51 @@ LoreArea.tscn::PackedScene::5362509031236465313::1714288089::0::1::::<><>::res:/
 ::res://scenes/enemy/::1714268028
 enemy.gd::GDScript::-1::1714268028::0::1::::<>RigidBody2D<>::
 enemy.tscn::PackedScene::7988465043995312073::1714268028::0::1::::<><>::res://scenes/enemy/enemy.gd<>uid://co3v54bcxuavb::::res://assets/enemy/IMG_0406.png<>uid://dpkjiiesg08dg::::res://assets/enemy/IMG_0407.png
-::res://scenes/harvester/::1714268031
-Harvester.gd::GDScript::-1::1714268028::0::1::::<>Area2D<>::
-Harvester.tscn::PackedScene::6547431961100871904::1714268028::0::1::::<><>::res://scenes/harvester/Harvester.gd<>uid://dqipf1wqvhrs4::::res://assets/icon.svg
+::res://scenes/harvester/::1714295814
+Harvester.gd::GDScript::-1::1714295473::0::1::::<>Area2D<>::
+Harvester.tscn::PackedScene::6547431961100871904::1714295814::0::1::::<><>::res://scenes/harvester/Harvester.gd<>uid://cu20pqi6pfqft::::res://assets/solarny kombajn (1).png
 ::res://scenes/ladder/::1714268028
 Ladder.gd::GDScript::-1::1714268028::0::1::::<>Node2D<>::
 Ladder.tscn::PackedScene::1018967906050131227::1714268028::0::1::::<><>::res://scenes/ladder/Ladder.gd<>uid://d1bgte13b74ep::::res://assets/drabina.png
-::res://scenes/planet/::1714288089
+::res://scenes/planet/::1714296119
 Planet.gd::GDScript::-1::1714268028::0::1::::<>StaticBody2D<>::
 Planet.tscn::PackedScene::4624627217179331998::1714222320::0::1::::<><>::uid://ccut1cb1yk4b8::::res://assets/moon.png<>res://scenes/planet/Planet.gd
 Planet_A.tscn::PackedScene::5772499057036594297::1714285763::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://e035rec0km1r::::res://assets/planet_A/planeta_a_2_warstwa.png<>uid://2qhhsu6vv0h8::::res://assets/planet_B/pB1_glow.png<>uid://dpduv8aebw8yh::::res://assets/planet_A/planeta_a.png
-Planet_C.tscn::PackedScene::4498968975662695677::1714288089::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://q6sn2kui3k3f::::res://assets/planet_C/planeta_c_1lvl.png<>uid://drsvf8klwhqqg::::res://assets/other_planets/2 gradient.png
+Planet_C.tscn::PackedScene::4498968975662695677::1714295814::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://q6sn2kui3k3f::::res://assets/planet_C/planeta_c_1lvl.png<>uid://drsvf8klwhqqg::::res://assets/other_planets/2 gradient.png
 Planet_D.tscn::PackedScene::2277306089238635706::1714285911::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://djpdjmdoiivka::::res://assets/other_planets/1 gradient.png<>uid://cx8nxyyho2yvl::::res://assets/other_planets/1.PNG
 Planet_E.tscn::PackedScene::8633312375378046088::1714286144::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://drsvf8klwhqqg::::res://assets/other_planets/2 gradient.png<>uid://cbtunvd81nq33::::res://assets/other_planets/2.png
 Planet_F.tscn::PackedScene::2869287785982949112::1714286169::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://b64n3l5uubsn1::::res://assets/other_planets/3 gradient.png<>uid://dwncil1mhnqyx::::res://assets/other_planets/3.png
 Planet_G.tscn::PackedScene::551382820434770941::1714286701::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://cjrbrlyry0pm3::::res://assets/other_planets/4 gradient.png<>uid://clrv5qvkx56xe::::res://assets/other_planets/4.png
 Planet_I.tscn::PackedScene::60110172107238645::1714286701::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://cb5oj6xk0q07o::::res://assets/other_planets/6 gradient.png<>uid://dfveknjeboh7c::::res://assets/other_planets/6.png
 Planet_J.tscn::PackedScene::7293629293389991306::1714286797::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://cjrbrlyry0pm3::::res://assets/other_planets/4 gradient.png<>uid://i321warobjru::::res://assets/other_planets/5.png
+Planet_x.tscn::PackedScene::3550505780995323150::1714296119::0::1::::<><>::res://scenes/planet/Planet.gd<>uid://caynsvmn1e3du::::res://assets/other_planets/2LVL_SMALL_PLANET_GLOW.png<>uid://bs2jy1mu76tm2::::res://assets/other_planets/2LVL_SMALL_PLANET.png<>uid://pt7lxue44afi::::res://assets/other_planets/2LVL_SMALL_PLANET_HANDS.png
 ShateredPlanet.gd::GDScript::-1::1714268028::0::1::::<>StaticBody2D<>::
-ShateredPlanet.tscn::PackedScene::894822657176786100::1714268028::0::1::::<><>::res://scenes/planet/ShateredPlanet.gd<>uid://djkpd1d3wpp5x::::res://assets/planet_B/pB3_orbita.png<>uid://7wv706g521l4::::res://assets/planet_B/pB5_core.png<>uid://2qhhsu6vv0h8::::res://assets/planet_B/pB1_glow.png<>uid://msbl0c0rmchx::::res://assets/planet_B/pB2_rocks.png<>uid://csr4mdtgty1x::::res://assets/planet_B/pB4_background.png<>uid://bajl8c1vdrurl::::res://scenes/ShateredPiece/ShateredPieceBig.tscn<>uid://cgodkks1j31ku::::res://scenes/ShateredPiece/ShateredPieceSmall.tscn<>uid://domygxbtkv475::::res://scenes/ShateredPiece/ShateredPieceMid.tscn
-::res://scenes/player/::1714291346
-player2.tscn::PackedScene::2679630788038431038::1714291346::0::1::::<><>::res://scenes/player/player.gd<>uid://c22wkmojlrmk6::::res://assets/UI_STEROWANIE.png<>uid://b6rcvxhxd256e::::res://assets/player/alt_fly/1.png<>uid://bolk0am1o34ce::::res://assets/player/alt_fly/2.png<>uid://bbplsl5t6yj4x::::res://assets/player/alt_fly/3.png<>uid://dklkdyxakyev6::::res://assets/player/alt_fly/4.png<>uid://drcg8lyn76xw6::::res://assets/player/alt_fly/5.png<>uid://bc5rhy6wvmbtd::::res://assets/player/alt_fly/6.png<>uid://pyffl8m4sdkg::::res://assets/player/alt_fly/7.png<>uid://50ek413nr8e8::::res://assets/player/alt_idle/1.png<>uid://c84a4owjcrk2w::::res://assets/player/alt_idle/2.png<>uid://vsen1ykkhsck::::res://assets/player/alt_idle/3.png<>uid://du7uvdtr5dkm3::::res://assets/player/alt_idle/4.png<>uid://4mx03qjpmrli::::res://assets/player/alt_idle/5.png<>uid://b8yuca4ku8q4y::::res://assets/player/alt_run/2.png<>uid://cqs14sf7o2ri3::::res://assets/player/alt_run/4.png<>uid://bge7wxnylsxw6::::res://assets/player/alt_run/5.png<>uid://c1j5sh0qogqn4::::res://assets/player/alt_run/6.png<>uid://csbh16m0lih71::::res://assets/player/alt_run/7.png<>uid://d0uh7d3p8a7qx::::res://assets/player/alt_run/8.png<>uid://ckggif2d56d4a::::res://assets/player/alt_run/9.png
+ShateredPlanet.tscn::PackedScene::894822657176786100::1714296085::0::1::::<><>::res://scenes/planet/ShateredPlanet.gd<>uid://djkpd1d3wpp5x::::res://assets/planet_B/pB3_orbita.png<>uid://7wv706g521l4::::res://assets/planet_B/pB5_core.png<>uid://2qhhsu6vv0h8::::res://assets/planet_B/pB1_glow.png<>uid://msbl0c0rmchx::::res://assets/planet_B/pB2_rocks.png<>uid://csr4mdtgty1x::::res://assets/planet_B/pB4_background.png<>uid://bajl8c1vdrurl::::res://scenes/ShateredPiece/ShateredPieceBig.tscn<>uid://cgodkks1j31ku::::res://scenes/ShateredPiece/ShateredPieceSmall.tscn<>uid://domygxbtkv475::::res://scenes/ShateredPiece/ShateredPieceMid.tscn
+::res://scenes/player/::1714292948
+player2.tscn::PackedScene::2679630788038431038::1714292948::0::1::::<><>::res://scenes/player/player.gd<>uid://c22wkmojlrmk6::::res://assets/UI_STEROWANIE.png<>uid://b6rcvxhxd256e::::res://assets/player/alt_fly/1.png<>uid://bolk0am1o34ce::::res://assets/player/alt_fly/2.png<>uid://bbplsl5t6yj4x::::res://assets/player/alt_fly/3.png<>uid://dklkdyxakyev6::::res://assets/player/alt_fly/4.png<>uid://drcg8lyn76xw6::::res://assets/player/alt_fly/5.png<>uid://bc5rhy6wvmbtd::::res://assets/player/alt_fly/6.png<>uid://pyffl8m4sdkg::::res://assets/player/alt_fly/7.png<>uid://50ek413nr8e8::::res://assets/player/alt_idle/1.png<>uid://c84a4owjcrk2w::::res://assets/player/alt_idle/2.png<>uid://vsen1ykkhsck::::res://assets/player/alt_idle/3.png<>uid://du7uvdtr5dkm3::::res://assets/player/alt_idle/4.png<>uid://4mx03qjpmrli::::res://assets/player/alt_idle/5.png<>uid://ci22sqhbkjqlu::::res://assets/player/alt_kick/1.png<>uid://b8yuca4ku8q4y::::res://assets/player/alt_run/2.png<>uid://bpr2xq5tog85m::::res://assets/player/alt_kick/2.png<>uid://2jrv72cn8p57::::res://assets/player/alt_kick/3.png<>uid://cqs14sf7o2ri3::::res://assets/player/alt_run/4.png<>uid://dt6fvnvyb07t0::::res://assets/player/alt_kick/4.png<>uid://bge7wxnylsxw6::::res://assets/player/alt_run/5.png<>uid://dwegcfya3eba1::::res://assets/player/alt_kick/5.png<>uid://c1j5sh0qogqn4::::res://assets/player/alt_run/6.png<>uid://csbh16m0lih71::::res://assets/player/alt_run/7.png<>uid://d0uh7d3p8a7qx::::res://assets/player/alt_run/8.png<>uid://ckggif2d56d4a::::res://assets/player/alt_run/9.png
 player.gd::GDScript::-1::1714287021::0::1::::<>RigidBody2D<>::
-player.tscn::PackedScene::4682700470366732820::1714290972::0::1::::<><>::res://scenes/player/player.gd<>uid://b1g7rpxixynkr::::res://assets/player/fall/1.png<>uid://cjpscer75c17f::::res://assets/player/fall/2.png<>uid://d4ckkxuoyty3k::::res://assets/player/idle/1.png<>uid://b7w8of2s544ha::::res://assets/player/run/1.png<>uid://drfkvue5jyhsw::::res://assets/player/idle/2.png<>uid://b1xrjidubc51j::::res://assets/player/fall/3.png<>uid://cgqxm1f4vendr::::res://assets/player/fall/4.png<>uid://dgbpwmr1r37rx::::res://assets/player/idle/3.png<>uid://cgktt5ayi7m72::::res://assets/player/run/3.png<>uid://c86jbglp67och::::res://assets/player/fall/5.png<>uid://dtjkp3e0t3pf7::::res://assets/player/idle/4.png<>uid://bvo15jmtc6quu::::res://assets/player/run/4.png<>uid://cnl1oioearkge::::res://assets/player/idle/5.png<>uid://cux5cmguqrany::::res://assets/player/run/5.png<>uid://cuhhdpnq5dmgy::::res://assets/player/fall/6.png<>uid://e7sy4b1iiwoy::::res://assets/player/run/6.png<>uid://cu0yxo5j1eami::::res://assets/player/fall/7.png<>uid://bdtcil431um2c::::res://assets/player/run/7.png<>uid://cul6xspqvdnbd::::res://assets/player/run/8.png<>uid://b583wp1k2fqry::::res://assets/player/kick/1.png<>uid://fpihnbwarut2::::res://assets/player/kick/2.png<>uid://rmpo1h0so3hu::::res://assets/player/kick/3.png<>uid://cy1saauvvrmnj::::res://assets/player/kick/4.png<>uid://f113jtb2mj8r::::res://assets/player/kick/5.png<>uid://c22wkmojlrmk6::::res://assets/UI_STEROWANIE.png
+player.tscn::PackedScene::4682700470366732820::1714292948::0::1::::<><>::res://scenes/player/player.gd<>uid://b1g7rpxixynkr::::res://assets/player/fall/1.png<>uid://cjpscer75c17f::::res://assets/player/fall/2.png<>uid://d4ckkxuoyty3k::::res://assets/player/idle/1.png<>uid://b7w8of2s544ha::::res://assets/player/run/1.png<>uid://drfkvue5jyhsw::::res://assets/player/idle/2.png<>uid://b1xrjidubc51j::::res://assets/player/fall/3.png<>uid://cgqxm1f4vendr::::res://assets/player/fall/4.png<>uid://dgbpwmr1r37rx::::res://assets/player/idle/3.png<>uid://cgktt5ayi7m72::::res://assets/player/run/3.png<>uid://c86jbglp67och::::res://assets/player/fall/5.png<>uid://dtjkp3e0t3pf7::::res://assets/player/idle/4.png<>uid://bvo15jmtc6quu::::res://assets/player/run/4.png<>uid://cnl1oioearkge::::res://assets/player/idle/5.png<>uid://cux5cmguqrany::::res://assets/player/run/5.png<>uid://cuhhdpnq5dmgy::::res://assets/player/fall/6.png<>uid://e7sy4b1iiwoy::::res://assets/player/run/6.png<>uid://cu0yxo5j1eami::::res://assets/player/fall/7.png<>uid://bdtcil431um2c::::res://assets/player/run/7.png<>uid://cul6xspqvdnbd::::res://assets/player/run/8.png<>uid://b583wp1k2fqry::::res://assets/player/kick/1.png<>uid://fpihnbwarut2::::res://assets/player/kick/2.png<>uid://rmpo1h0so3hu::::res://assets/player/kick/3.png<>uid://cy1saauvvrmnj::::res://assets/player/kick/4.png<>uid://f113jtb2mj8r::::res://assets/player/kick/5.png<>uid://c22wkmojlrmk6::::res://assets/UI_STEROWANIE.png
 ::res://scenes/ShateredPiece/::1714268028
 ShateredPiece.gd::GDScript::-1::1714224168::0::1::::<>AnimatableBody2D<>::
 ShateredPieceBig.tscn::PackedScene::2405727047769391605::1714268028::0::1::::<><>::res://scenes/ShateredPiece/ShateredPiece.gd<>uid://c7dmqkqeh3wg2::::res://assets/planet_B/pB6_big_platform.png
 ShateredPieceMid.tscn::PackedScene::8168147528109652538::1714268028::0::1::::<><>::res://scenes/ShateredPiece/ShateredPiece.gd<>uid://twu1rk7eei63::::res://assets/planet_B/pB6_medium_platform.png
 ShateredPieceSmall.tscn::PackedScene::5223076280923041536::1714268028::0::1::::<><>::res://scenes/ShateredPiece/ShateredPiece.gd<>uid://h7jl22ilotcd::::res://assets/planet_B/pB6_small_platform.png
-::res://scenes/spaceship/::1714290972
-EscapeSpaceShip.gd::GDScript::-1::1714242156::0::1::::<>PathFollow2D<>::
+::res://scenes/spaceship/::1714296024
+EscapeSpaceShip.gd::GDScript::-1::1714296024::0::1::::<>PathFollow2D<>::
 EscapeSpaceShip.tscn::PackedScene::5682471799342484592::1714290972::0::1::::<><>::res://scenes/spaceship/EscapeSpaceShip.gd<>uid://bkaxy6ksftgh8::::res://assets/ship/bez/1.png<>uid://cihtuwrksk3rq::::res://assets/ship/bez/2.png<>uid://ba1kn6now4jkd::::res://assets/ship/bez/3.png<>uid://4bdk3wqvuaf0::::res://assets/ship/bez/4.png
 SpaceShip.gd::GDScript::-1::1714284656::0::1::::<>Node2D<>::
-SpaceShip.tscn::PackedScene::1975801056318468633::1714268739::0::1::::<><>::res://scenes/spaceship/SpaceShip.gd<>uid://d3ie10d2wk27h::::res://assets/ship/1.png<>uid://5s0d4rq40pnn::::res://assets/ship/2.png<>uid://doj21f0sgrggk::::res://assets/ship/3.png<>uid://bjlw0vt7p7rl0::::res://assets/ship/4.png<>uid://cydpflft2g3vo::::res://assets/ship/5.png<>uid://jwmtlvvcpx3n::::res://assets/ship/6.png<>uid://bdtl3tcruxfg8::::res://assets/ship/7.png<>uid://blfmwtbydhwkh::::res://assets/ship/8.png
+SpaceShip.tscn::PackedScene::1975801056318468633::1714294210::0::1::::<><>::res://scenes/spaceship/SpaceShip.gd<>uid://d3ie10d2wk27h::::res://assets/ship/1.png<>uid://5s0d4rq40pnn::::res://assets/ship/2.png<>uid://doj21f0sgrggk::::res://assets/ship/3.png<>uid://bjlw0vt7p7rl0::::res://assets/ship/4.png<>uid://cydpflft2g3vo::::res://assets/ship/5.png<>uid://jwmtlvvcpx3n::::res://assets/ship/6.png<>uid://bdtl3tcruxfg8::::res://assets/ship/7.png<>uid://blfmwtbydhwkh::::res://assets/ship/8.png
 SpawnSpaceShip.gd::GDScript::-1::1714268028::0::1::::<>PathFollow2D<>::
 SpawnSpaceShip.tscn::PackedScene::5976090303848857015::1714290972::0::1::::<><>::res://scenes/spaceship/SpawnSpaceShip.gd<>uid://b7ylnl3t7oefk::::res://scenes/player/player.tscn<>uid://bkaxy6ksftgh8::::res://assets/ship/bez/1.png<>uid://cihtuwrksk3rq::::res://assets/ship/bez/2.png<>uid://ba1kn6now4jkd::::res://assets/ship/bez/3.png<>uid://4bdk3wqvuaf0::::res://assets/ship/bez/4.png
 ::res://sounds/::1714290238
 cosmo_soundtrack.mp3::AudioStreamMP3::6665324851426345592::1714289950::1714289951::1::::<><>::
 MusicPlayer.gd::GDScript::-1::1714290186::0::1::::<>Node<>::
 MusicPlayer.tscn::PackedScene::4911432592571370606::1714290238::0::1::::<><>::uid://c17y6ravytw8g::::res://sounds/cosmo_soundtrack.mp3
-::res://ui/::1714288287
+::res://ui/::1714295814
 ClashDisplay-Semibold.otf::FontFile::6811238396876647128::1714268028::1714268028::1::::<><>::
 ClashDisplay-Variable.ttf::FontFile::3855425253724362337::1714268028::1714268028::1::::<><>::
-dialog_panel.gd::GDScript::-1::1714284701::0::1::::<>Control<>::
-dialog_panel.tscn::PackedScene::6391559549983213113::1714284723::0::1::::<><>::res://ui/dialog_panel.gd<>uid://b1n2w1fh0dmbr::::res://assets/UI/menu_dialog_box.png
+dialog_panel.gd::GDScript::-1::1714295202::0::1::::<>Control<>::
+dialog_panel.tscn::PackedScene::6391559549983213113::1714295814::0::1::::<><>::res://ui/dialog_panel.gd<>uid://b1n2w1fh0dmbr::::res://assets/UI/menu_dialog_box.png
 FinishLorePanel.gd::GDScript::-1::1714288287::0::1::::<>CanvasLayer<>::
 FinishLorePanel.tscn::PackedScene::2223372763339022402::1714288287::0::1::::<><>::res://ui/FinishLorePanel.gd
 LorePanel.gd::GDScript::-1::1714287868::0::1::::<>CanvasLayer<>::

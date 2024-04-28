@@ -11,3 +11,4 @@ func _process(delta):
 				sprite_2d.visible = true
 				collision_shape_2d.disabled = true
 				GameEvents.emit_crystal_gather()
+				DialogManager.start_dialog("res://dialogs/shattered_1.txt")

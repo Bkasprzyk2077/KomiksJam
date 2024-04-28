@@ -16,6 +16,14 @@ func _ready():
 	GameEvents.connect("enemy_killed", on_enemy_killed)
 
 
+func _physics_process(delta):
+	$Tasks/MarginContainer/VBoxContainer/crystals.text = "Kryształki:" + str(crystal_count_current) + "/" + str(crystal_count_to_dig)
+	$Tasks/MarginContainer/VBoxContainer/enemies.text = "Przeciwnicy:" + str(enemy_count_current) + "/" + str(enemy_count_to_kill)
+	var ship = get_tree().get_first_node_in_group("box_ship")
+	if ship:
+		$Tasks/MarginContainer/VBoxContainer/boxes.text = "Pudełka:" + str(ship.box_count_current) + "/" + str(ship.box_count_to_kick)
+	
+	
 func on_crystal_gather():
 	crystal_count_current += 1
 	if crystal_count_current >= crystal_count_to_dig:

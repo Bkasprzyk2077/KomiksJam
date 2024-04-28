@@ -55,7 +55,7 @@ radius = 814.69
 [sub_resource type="CircleShape2D" id="CircleShape2D_kt1kw"]
 radius = 74.67
 
-[node name="ShateredPlanet" type="StaticBody2D"]
+[node name="ShateredPlanet" type="StaticBody2D" groups=["big_s"]]
 script = ExtResource("1_763s4")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
